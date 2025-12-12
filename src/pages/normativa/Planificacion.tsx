@@ -54,10 +54,10 @@ export default function Planificacion() {
     const getFileUrl = (path: string) => `${getBasePath()}${path}`;
 
     return (
-        <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-l-4 border-l-blue-500">
-                <h1 className="text-2xl font-bold text-gray-800 mb-2">Planificación Forestal</h1>
-                <p className="text-gray-600">
+        <div className="space-y-3">
+            <div className="bg-white p-3 rounded-lg shadow-sm border border-l-4 border-l-blue-500">
+                <h1 className="text-2xl font-bold text-gray-800 mb-1">Planificación Forestal</h1>
+                <p className="text-gray-600 text-sm">
                     Instrumentos de gestión y planificación estratégica que orientan el desarrollo del sector forestal a largo plazo.
                 </p>
             </div>

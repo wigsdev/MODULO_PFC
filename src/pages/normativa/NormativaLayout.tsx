@@ -13,7 +13,7 @@ const NORMATIVA_ITEMS = [
 
 export default function NormativaLayout() {
     return (
-        <div className="flex h-[calc(100vh-64px)]">
+        <div className="flex h-full">
             <Sidebar
                 items={NORMATIVA_ITEMS}
                 title="NORMATIVA"
