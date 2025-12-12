@@ -8,6 +8,12 @@ import EspacialDocs from '@/pages/espacial/EspacialDocs';
 import Deforestacion from '@/pages/sector/Deforestacion';
 import Precios from '@/pages/economia/Precios';
 import Inicio from '@/pages/inicio/Inicio';
+import Decomisos from '@/pages/sector/Decomisos';
+import EspeciesDecomisadas from '@/pages/sector/EspeciesDecomisadas';
+import ReservasBiosfera from '@/pages/sector/ReservasBiosfera';
+import AreasDeclaradas from '@/pages/sector/AreasDeclaradas';
+import SitiosDeclarados from '@/pages/sector/SitiosDeclarados';
+import Carbono from '@/pages/sector/Carbono';
 
 const Normativa = () => <div className="p-8"><h1>Normativa y Documentación</h1></div>;
 
@@ -33,9 +39,12 @@ function App() {
           <Route path="sector" element={<SectorLayout />}>
             <Route index element={<Navigate to="deforestacion" replace />} />
             <Route path="deforestacion" element={<Deforestacion />} />
-            <Route path="decomisos" element={<Pending title="Control y Vigilancia" />} />
-            <Route path="especies" element={<Pending title="Especies Vulnerables" />} />
-            <Route path="conservacion" element={<Pending title="Áreas de Conservación" />} />
+            <Route path="decomisos" element={<Decomisos />} />
+            <Route path="especies" element={<EspeciesDecomisadas />} />
+            <Route path="reservas" element={<ReservasBiosfera />} />
+            <Route path="areas" element={<AreasDeclaradas />} />
+            <Route path="sitios" element={<SitiosDeclarados />} />
+            <Route path="carbono" element={<Carbono />} />
           </Route>
 
           {/* Economia Routes */}
