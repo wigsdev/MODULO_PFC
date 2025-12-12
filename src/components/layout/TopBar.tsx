@@ -6,7 +6,7 @@ export default function TopBar() {
             <div className="container mx-auto px-4 py-2 flex justify-between items-center">
                 <div className="flex items-center gap-4">
                     <img
-                        src="/images/midagri.jpg"
+                        src={`${import.meta.env.BASE_URL}images/midagri.jpg`}
                         alt="Minagri"
                         className="h-8 md:h-10 object-contain"
                     />
