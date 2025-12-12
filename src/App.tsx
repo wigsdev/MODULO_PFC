@@ -1,4 +1,7 @@
+// Normativa Imports
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import NormativaLayout from './pages/normativa/NormativaLayout';
+import NormativaInicio from './pages/normativa/NormativaInicio';
 import Layout from '@/components/layout/Layout';
 import SectorLayout from '@/pages/sector/SectorLayout';
 import EconomiaLayout from '@/pages/economia/EconomiaLayout';
@@ -30,7 +33,7 @@ import ConsumoIntensidad from './pages/economia/ConsumoIntensidad';
 import CostosPlantaciones from './pages/economia/CostosPlantaciones';
 import GeovisorCostos from './pages/economia/GeovisorCostos';
 
-const Normativa = () => <div className="p-8"><h1>Normativa y Documentación</h1></div>;
+
 
 function App() {
   return (
@@ -80,7 +83,16 @@ function App() {
             <Route path="geovisor-costos" element={<GeovisorCostos />} />
           </Route>
 
-          <Route path="normativa" element={<Normativa />} />
+          {/* Rutas de Normativa */}
+          <Route path="/normativa" element={<NormativaLayout />}>
+            <Route index element={<Navigate to="/normativa/inicio" replace />} />
+            <Route path="inicio" element={<NormativaInicio />} />
+            {/* Pendientes de implementar */}
+            <Route path="planificacion" element={<div className="p-6">Planificación (En construcción)</div>} />
+            <Route path="lineamientos" element={<div className="p-6">Lineamientos (En construcción)</div>} />
+            <Route path="manejo" element={<div className="p-6">Manejo (En construcción)</div>} />
+            <Route path="incentivos" element={<div className="p-6">Incentivos (En construcción)</div>} />
+          </Route>
         </Route>
       </Routes>
     </Router>
