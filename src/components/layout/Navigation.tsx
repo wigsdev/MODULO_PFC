@@ -4,7 +4,18 @@ import { useState } from 'react';
 import clsx from 'clsx';
 
 const MENU_ITEMS = [
-    { id: 'inicio', label: 'INICIO', path: '/' },
+    {
+        id: 'inicio',
+        label: 'INICIO',
+        path: '/',
+        type: 'dropdown',
+        subItems: [
+            { id: 'mision', label: 'MISIÓN', path: '/#mision', icon: LayoutDashboard },
+            { id: 'vision', label: 'VISIÓN', path: '/#vision', icon: LayoutDashboard },
+            { id: 'objetivos', label: 'OBJETIVOS', path: '/#objetivos', icon: LayoutDashboard },
+            { id: 'gestion', label: 'GESTIÓN ORGANIZACIONAL', path: '/gestion', icon: FileText },
+        ]
+    },
     {
         id: 'espacial',
         label: 'ESPACIAL',

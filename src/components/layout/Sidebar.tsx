@@ -97,6 +97,16 @@ export default function Sidebar({ title, items }: SidebarProps) {
                 to={item.path!}
                 className={commonClasses}
                 style={{ paddingLeft: `${paddingLeft}px` }}
+                // If linking to a hash on the same page, we might want to close mobile menu or just handle scroll
+                onClick={(e) => {
+                    if (item.path?.startsWith('#')) {
+                        e.preventDefault();
+                        const id = item.path.substring(1);
+                        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+                        // Update URL hash without scroll jump (optional)
+                        window.history.pushState(null, '', item.path);
+                    }
+                }}
             >
                 <item.icon size={16} className={isActive ? 'text-yellow-400' : 'text-green-300'} />
                 <span>{item.label}</span>

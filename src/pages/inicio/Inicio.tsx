@@ -76,12 +76,12 @@ export default function Inicio() {
                         <div className="w-16 h-1 bg-serfor mx-auto mt-2"></div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-white p-8 rounded shadow-sm relative">
+                        <div id="mision" className="bg-white p-8 rounded shadow-sm relative scroll-mt-24">
                             <Activity className="text-green-200 absolute top-4 right-4" size={48} />
                             <h3 className="text-lg font-bold text-serfor-dark mb-3">Misión</h3>
                             <p className="text-sm text-gray-600">Operar como la plataforma oficial de inteligencia que integra y valida datos estratégicos para la toma de decisiones de inversión pública y privada.</p>
                         </div>
-                        <div className="bg-white p-8 rounded shadow-sm relative">
+                        <div id="vision" className="bg-white p-8 rounded shadow-sm relative scroll-mt-24">
                             <Layers className="text-blue-200 absolute top-4 right-4" size={48} />
                             <h3 className="text-lg font-bold text-blue-800 mb-3">Visión</h3>
                             <p className="text-sm text-gray-600">Ser el referente nacional de información abierta, trazable e interoperable, articulado con la IDE-i SERFOR.</p>

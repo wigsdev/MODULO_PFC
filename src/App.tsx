@@ -46,6 +46,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Inicio />} />
           <Route path="inicio" element={<Navigate to="/" replace />} />
+          <Route path="gestion/*" element={<GestionOrganizacional />} />
+          <Route path="gestion/*" element={<GestionOrganizacional />} />
 
           {/* Espacial Routes */}
           <Route path="espacial" element={<EspacialLayout />}>
