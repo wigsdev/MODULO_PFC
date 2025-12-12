@@ -119,6 +119,16 @@ export default function Navigation() {
                             )}
                         </li>
                     ))}
+                    <li className="h-full flex items-center px-4">
+                        <a
+                            href="https://sniffs.serfor.gob.pe/inicio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-serfor hover:bg-serfor-dark text-white font-bold py-1.5 px-4 rounded text-xs transition-colors shadow-sm border border-transparent"
+                        >
+                            SNIFFS
+                        </a>
+                    </li>
                 </ul>
 
                 {/* Mobile Btn */}
