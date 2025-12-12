@@ -8,14 +8,14 @@ export default function TopBar() {
                     <img
                         src={`${import.meta.env.BASE_URL}images/midagri.jpg`}
                         alt="Minagri"
-                        className="h-12 object-contain"
+                        className="h-12 object-contain ml-[40px] px-[20px]"
                     />
                 </div>
                 <div className="flex items-center gap-3">
                     <img
                         src={`${import.meta.env.BASE_URL}images/serfor-1-1.png`}
                         alt="SERFOR"
-                        className="h-12 object-contain"
+                        className="h-12 object-contain mr-[40px] px-[20px]"
                     />
                 </div>
             </div>
