@@ -1,15 +1,16 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '@/components/layout/Sidebar';
-import { Trees, AlertTriangle, ShieldAlert, Globe, MapPin, Cloud, PackageX } from 'lucide-react';
+import { Trees, AlertTriangle, ShieldAlert, Globe, MapPin, Cloud, PackageX, Home } from 'lucide-react';
 
 const SECTOR_ITEMS = [
-    { id: 'deforestacion', label: '3.1 Tasa Anual de Deforestación', icon: AlertTriangle, path: '/sector/deforestacion' },
-    { id: 'decomisos', label: '3.2 Volumen Decomisado', icon: PackageX, path: '/sector/decomisos' },
-    { id: 'especies', label: '3.3 Especies Decomisadas', icon: Trees, path: '/sector/especies' },
-    { id: 'reservas', label: '3.4 Reservas de Biosfera', icon: Globe, path: '/sector/reservas' },
-    { id: 'areas', label: '3.5 Áreas Declaradas', icon: ShieldAlert, path: '/sector/areas' },
-    { id: 'sitios', label: '3.6 Sitios Declarados', icon: MapPin, path: '/sector/sitios' },
-    { id: 'carbono', label: '3.7 Contenidos de Carbono', icon: Cloud, path: '/sector/carbono' },
+    { id: 'inicio', label: 'Inicio', icon: Home, path: '/sector/inicio' },
+    { id: 'deforestacion', label: 'Tasa Anual de Deforestación', icon: AlertTriangle, path: '/sector/deforestacion' },
+    { id: 'decomisos', label: 'Volumen Decomisado', icon: PackageX, path: '/sector/decomisos' },
+    { id: 'especies', label: 'Especies Decomisadas', icon: Trees, path: '/sector/especies' },
+    { id: 'reservas', label: 'Reservas de Biosfera', icon: Globe, path: '/sector/reservas' },
+    { id: 'areas', label: 'Áreas Declaradas', icon: ShieldAlert, path: '/sector/areas' },
+    { id: 'sitios', label: 'Sitios Declarados', icon: MapPin, path: '/sector/sitios' },
+    { id: 'carbono', label: 'Contenidos de Carbono', icon: Cloud, path: '/sector/carbono' },
 ];
 
 export default function SectorLayout() {
