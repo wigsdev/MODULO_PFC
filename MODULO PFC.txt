@@ -1,0 +1,595 @@
+import React, { useState, useEffect } from 'react';
+import { 
+  Map, 
+  Home, 
+  BarChart2, 
+  Book, 
+  ChevronDown, 
+  ChevronRight,
+  DollarSign, 
+  Activity,
+  Trees,
+  Search,
+  ExternalLink,
+  Filter,
+  Info,
+  Layers,
+  Menu,
+  X,
+  User,
+  Globe,
+  FileText,
+  TrendingUp,
+  AlertTriangle,
+  Leaf
+} from 'lucide-react';
+
+// --- 1. ESTRUCTURA DE DATOS Y MENÚS ---
+
+const MENU_STRUCTURE = [
+  {
+    id: 'inicio',
+    label: 'INICIO',
+    type: 'dropdown',
+    subItems: [
+      { id: 'pres', label: 'Presentación Institucional', anchor: 'presentacion' },
+      { id: 'obj', label: 'Objetivos y Misión', anchor: 'objetivos' },
+      { id: 'org', label: 'Gestión Organizacional', anchor: 'gestion' },
+      { id: 'lineas', label: 'Líneas Prioritarias', anchor: 'lineas' }
+    ]
+  },
+  {
+    id: 'espacial',
+    label: 'ESPACIAL',
+    type: 'dropdown',
+    subItems: [
+      { id: 'visor', label: 'Geovisor Principal', action: 'open_visor' }
+    ]
+  },
+  {
+    id: 'sector',
+    label: 'SECTOR',
+    type: 'direct', // Apunta directo al Dashboard
+    sidebarItems: [
+      { id: '3.1', label: 'Plantaciones Registradas', icon: Trees },
+      { id: '3.2', label: 'Títulos Habilitantes', icon: FileText },
+      { id: '3.3', label: 'Control y Vigilancia', icon: AlertTriangle },
+      { id: '3.4', label: 'Zonificación', icon: Map }
+    ]
+  },
+  {
+    id: 'economia',
+    label: 'ECONOMÍA',
+    type: 'direct', // Apunta directo al Dashboard
+    sidebarItems: [
+      { id: '4.1', label: 'Producción Maderable', icon: TrendingUp },
+      { id: '4.2', label: 'Comercio Exterior', icon: Globe },
+      { id: '4.3', label: 'Transformación Industrial', icon: Home },
+      { id: '4.4', label: 'Precios de Mercado', icon: DollarSign }
+    ]
+  },
+  {
+    id: 'normativa',
+    label: 'NORMATIVA',
+    type: 'dropdown',
+    subItems: [
+      { id: '5.1', label: 'Planificación' },
+      { id: '5.2', label: 'Política Forestal' },
+      { id: '5.3', label: 'Manejo y Aprovechamiento' },
+      { id: '5.4', label: 'Incentivos' }
+    ]
+  }
+];
+
+// --- 2. COMPONENTES DE UI ---
+
+const TopBar = () => (
+  <div className="w-full bg-white z-50 relative border-b border-gray-200">
+    <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div className="flex items-center gap-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Logo_del_gobierno_del_Per%C3%BA_%282024%29.png" alt="Minagri" className="h-8 md:h-10 object-contain"/>
+        <div className="h-8 w-px bg-gray-300 hidden md:block"></div>
+        <img src="https://www.gob.pe/institucion/serfor/informes-publicaciones/anuario-forestal/assets/logo_serfor.png" alt="SERFOR" className="h-8 md:h-10 object-contain hidden md:block" onError={(e) => e.target.style.display = 'none'}/>
+      </div>
+      <div className="flex items-center gap-3">
+         <div className="hidden md:flex flex-col items-end mr-2">
+            <span className="text-[10px] text-gray-500 font-bold tracking-widest">SISTEMA NACIONAL DE INFORMACIÓN</span>
+            <span className="text-[10px] text-[#2e7d32] font-bold">SNIFFS</span>
+         </div>
+         <button className="bg-[#4caf50] hover:bg-[#388e3c] text-white font-bold py-1.5 px-4 rounded shadow text-xs transition-transform transform hover:scale-105">
+            IR AL SNIFFS
+         </button>
+      </div>
+    </div>
+    <div className="bg-[#689f38] h-8 flex items-center justify-end px-4 md:px-10 text-white gap-4 shadow-sm text-xs">
+       <span className="hidden md:inline hover:underline cursor-pointer">Mapa del Sitio</span>
+       <span className="hidden md:inline hover:underline cursor-pointer">Contacto</span>
+       <div className="h-4 border-l border-green-400 mx-2"></div>
+       <User size={14} className="cursor-pointer hover:text-green-200"/>
+       <Globe size={14} className="cursor-pointer hover:text-green-200"/>
+    </div>
+  </div>
+);
+
+const Sidebar = ({ title, items, activeItem, onItemClick }) => (
+  <div className="w-64 bg-[#1b5e20] text-white flex-shrink-0 flex flex-col h-full shadow-xl transition-all">
+    <div className="p-5 bg-[#144a18] border-b border-green-800">
+      <h3 className="font-bold text-sm uppercase tracking-wider text-green-100">{title}</h3>
+      <p className="text-[10px] text-green-400 mt-1">Navegación Interna</p>
+    </div>
+    <div className="flex-1 overflow-y-auto py-2">
+      {items.map((item) => (
+        <button
+          key={item.id}
+          onClick={() => onItemClick(item.id)}
+          className={`w-full flex items-center gap-3 px-5 py-3 text-xs text-left transition-all border-l-4 ${
+            activeItem === item.id 
+              ? 'bg-[#2e7d32] border-yellow-400 text-white font-bold shadow-inner' 
+              : 'border-transparent text-green-100 hover:bg-[#206b24] hover:text-white'
+          }`}
+        >
+          {item.icon && <item.icon size={16} className={activeItem === item.id ? 'text-yellow-400' : 'text-green-300'} />}
+          <span>{item.label}</span>
+          {activeItem === item.id && <ChevronRight size={14} className="ml-auto text-yellow-400"/>}
+        </button>
+      ))}
+    </div>
+    <div className="p-4 bg-[#0d3310] text-[9px] text-green-500 text-center border-t border-green-900">
+       <p>Fuente: Anuario 2024</p>
+       <p>Actualizado: Sep 2025</p>
+    </div>
+  </div>
+);
+
+// --- 3. APLICACIÓN PRINCIPAL ---
+
+export default function App() {
+  const [activeTab, setActiveTab] = useState('inicio');
+  const [activeSidebarItem, setActiveSidebarItem] = useState(''); 
+  const [hoveredMenu, setHoveredMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [iframeUrl, setIframeUrl] = useState('');
+
+  // Efecto para inicializar el sidebar item correcto cuando cambia el tab
+  useEffect(() => {
+    const menu = MENU_STRUCTURE.find(m => m.id === activeTab);
+    if (menu?.sidebarItems) {
+      setActiveSidebarItem(menu.sidebarItems[0].id);
+    }
+  }, [activeTab]);
+
+  const handleMenuClick = (menuItem) => {
+    if (menuItem.type === 'direct') {
+      setActiveTab(menuItem.id);
+      setIframeUrl(''); // Limpiar iframe si salimos de espacial
+    }
+    // Si es dropdown, se maneja en el subitem click
+  };
+
+  const handleSubItemClick = (parent, sub) => {
+    setHoveredMenu(null); // Cerrar dropdown
+    if (parent.id === 'espacial' && sub.id === 'visor') {
+      setActiveTab('espacial');
+      setIframeUrl('https://wigsdev.github.io/GEOVISOR/');
+    } else if (parent.id === 'inicio') {
+      setActiveTab('inicio');
+      // Simular scroll (en una app real usaríamos refs)
+      const element = document.getElementById(sub.anchor);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
+    } else if (parent.id === 'normativa') {
+      setActiveTab('normativa');
+      // Lógica de normativa
+    }
+  };
+
+  // --- RENDERIZADO DE CONTENIDOS ---
+
+  const renderContent = () => {
+    // === INICIO ===
+    if (activeTab === 'inicio') {
+      return (
+        <div className="flex-1 overflow-y-auto bg-gray-50 scroll-smooth">
+          {/* Hero Section */}
+          <div className="relative h-[450px] flex items-center justify-center text-center text-white">
+            <div className="absolute inset-0 overflow-hidden">
+               <img src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2000&auto=format&fit=crop" className="w-full h-full object-cover"/>
+               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+            </div>
+            <div className="relative z-10 max-w-4xl px-4 animate-fadeIn">
+               <span className="inline-block py-1 px-3 rounded-full bg-green-600/80 text-[10px] font-bold tracking-wider mb-4 border border-green-400">SNIFFS - SERFOR</span>
+               <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+                 Observatorio de <br/>
+                 <span className="text-yellow-400">Plantaciones Forestales</span>
+               </h1>
+               <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+                 Información estratégica, espacial y estadística para impulsar la competitividad del sector forestal en las regiones priorizadas.
+               </p>
+               <div className="flex gap-4 justify-center">
+                  <button onClick={() => { setActiveTab('espacial'); setIframeUrl('https://wigsdev.github.io/GEOVISOR/'); }} className="bg-[#4caf50] hover:bg-[#43a047] text-white px-8 py-3 rounded font-bold shadow-lg transition-transform hover:scale-105 flex items-center gap-2">
+                     <Map size={18}/> Ver Geovisor
+                  </button>
+                  <button onClick={() => setActiveTab('economia')} className="bg-white/10 hover:bg-white/20 backdrop-blur border border-white text-white px-8 py-3 rounded font-bold transition-all flex items-center gap-2">
+                     <BarChart2 size={18}/> Ver Cifras 2024
+                  </button>
+               </div>
+            </div>
+          </div>
+
+          {/* Sections */}
+          <div className="max-w-6xl mx-auto px-6 py-16 space-y-20">
+             <section id="presentacion" className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                   <h2 className="text-3xl font-bold text-green-800 mb-6 border-l-4 border-yellow-400 pl-4">¿Qué es el Observatorio?</h2>
+                   <p className="text-gray-600 mb-4 leading-relaxed text-justify">
+                      Es un módulo especializado del SNIFFS diseñado para recopilar, procesar y difundir información sobre la cadena de valor de las <strong>Plantaciones Forestales Comerciales (PFC)</strong>.
+                   </p>
+                   <p className="text-gray-600 leading-relaxed text-justify">
+                      Busca reducir la asimetría de información y conectar la oferta de productores con la demanda de mercado, focalizándose en las regiones de <strong>Áncash, Cajamarca, Huánuco, Junín, Pasco, San Martín y Madre de Dios</strong>.
+                   </p>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                   <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-green-600">
+                      <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-green-700 font-bold">A</div>
+                      <h4 className="font-bold text-gray-800 text-sm">Directorio PFC</h4>
+                      <p className="text-xs text-gray-500 mt-1">Proveedores y Servicios</p>
+                   </div>
+                   <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-blue-600">
+                      <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-blue-700 font-bold">B</div>
+                      <h4 className="font-bold text-gray-800 text-sm">Registros</h4>
+                      <p className="text-xs text-gray-500 mt-1">Integración Administrativa</p>
+                   </div>
+                   <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-orange-600 col-span-2">
+                      <div className="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-orange-700 font-bold">C</div>
+                      <h4 className="font-bold text-gray-800 text-sm">Inteligencia de Mercado</h4>
+                      <p className="text-xs text-gray-500 mt-1">Precios, Costos y Comercio Exterior</p>
+                   </div>
+                </div>
+             </section>
+
+             <section id="objetivos" className="bg-green-50 p-10 rounded-2xl">
+                <div className="text-center mb-10">
+                   <h2 className="text-2xl font-bold text-gray-800">Nuestra Misión y Visión</h2>
+                   <div className="w-16 h-1 bg-green-500 mx-auto mt-2"></div>
+                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                   <div className="bg-white p-8 rounded shadow-sm relative">
+                      <Activity className="text-green-200 absolute top-4 right-4" size={48}/>
+                      <h3 className="text-lg font-bold text-green-800 mb-3">Misión</h3>
+                      <p className="text-sm text-gray-600">Operar como la plataforma oficial de inteligencia que integra y valida datos estratégicos para la toma de decisiones de inversión pública y privada.</p>
+                   </div>
+                   <div className="bg-white p-8 rounded shadow-sm relative">
+                      <Layers className="text-blue-200 absolute top-4 right-4" size={48}/>
+                      <h3 className="text-lg font-bold text-blue-800 mb-3">Visión</h3>
+                      <p className="text-sm text-gray-600">Ser el referente nacional de información abierta, trazable e interoperable, articulado con la IDE-i SERFOR.</p>
+                   </div>
+                </div>
+             </section>
+          </div>
+        </div>
+      );
+    }
+
+    // === ESPACIAL ===
+    if (activeTab === 'espacial') {
+      return (
+        <div className="w-full h-full relative bg-gray-200 flex flex-col">
+           {iframeUrl ? (
+             <iframe 
+                src={iframeUrl} 
+                title="Geovisor SNIFFS"
+                className="flex-grow w-full border-0"
+                allowFullScreen
+             />
+           ) : (
+             <div className="flex items-center justify-center h-full flex-col text-gray-500">
+                <Map size={64} className="mb-4 text-green-200"/>
+                <p>Seleccione "Geovisor Principal" en el menú superior para cargar el mapa.</p>
+             </div>
+           )}
+        </div>
+      );
+    }
+
+    // === SECTOR (DASHBOARD) ===
+    if (activeTab === 'sector') {
+      return (
+        <div className="flex h-full bg-gray-100 overflow-hidden">
+          <Sidebar 
+             title="SECTOR FORESTAL" 
+             items={MENU_STRUCTURE.find(m => m.id === 'sector').sidebarItems} 
+             activeItem={activeSidebarItem}
+             onItemClick={setActiveSidebarItem}
+          />
+          <div className="flex-1 overflow-y-auto p-8">
+             {/* Header del Dashboard */}
+             <div className="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">
+                <div>
+                   <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                      <Trees className="text-green-600"/>
+                      {MENU_STRUCTURE.find(m => m.id === 'sector').sidebarItems.find(i => i.id === activeSidebarItem)?.label}
+                   </h2>
+                   <p className="text-sm text-gray-500 mt-1">Fuente: Anuario Forestal 2024 (Tablas 21-23)</p>
+                </div>
+                <div className="text-right">
+                   <span className="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full border border-green-200">Datos Oficiales 2024</span>
+                </div>
+             </div>
+
+             {/* Contenido Dinámico Sector */}
+             {activeSidebarItem === '3.1' && (
+                <>
+                   {/* KPIs Plantaciones */}
+                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+                      <div className="bg-white p-4 rounded shadow-sm border-l-4 border-green-500">
+                         <p className="text-xs font-bold text-gray-400 uppercase">Superficie Total Registrada</p>
+                         <p className="text-2xl font-bold text-gray-800 mt-1">8,723.72 ha</p>
+                         <p className="text-[10px] text-green-600">Año 2024</p>
+                      </div>
+                      <div className="bg-white p-4 rounded shadow-sm border-l-4 border-blue-500">
+                         <p className="text-xs font-bold text-gray-400 uppercase">Certificados Emitidos</p>
+                         <p className="text-2xl font-bold text-gray-800 mt-1">2,087</p>
+                         <p className="text-[10px] text-blue-600">Nuevos registros</p>
+                      </div>
+                      <div className="bg-white p-4 rounded shadow-sm border-l-4 border-yellow-500">
+                         <p className="text-xs font-bold text-gray-400 uppercase">Mayor Superficie</p>
+                         <p className="text-xl font-bold text-gray-800 mt-1">Cusco</p>
+                         <p className="text-[10px] text-gray-500">1,517.62 ha</p>
+                      </div>
+                      <div className="bg-white p-4 rounded shadow-sm border-l-4 border-orange-500">
+                         <p className="text-xs font-bold text-gray-400 uppercase">Región Clave</p>
+                         <p className="text-xl font-bold text-gray-800 mt-1">Huánuco</p>
+                         <p className="text-[10px] text-gray-500">896.20 ha</p>
+                      </div>
+                   </div>
+
+                   {/* Gráfico Plantaciones por Región (Tabla 21) */}
+                   <div className="bg-white p-6 rounded shadow-sm mb-6">
+                      <h3 className="font-bold text-gray-700 mb-6 flex items-center gap-2"><BarChart2 size={16}/> Superficie de Plantaciones por Departamento (2024)</h3>
+                      <div className="space-y-4">
+                         {[
+                            { label: 'Cusco', val: 1517.6, max: 1600, color: 'bg-green-600' },
+                            { label: 'Huánuco', val: 896.2, max: 1600, color: 'bg-green-500' },
+                            { label: 'Apurímac', val: 566.5, max: 1600, color: 'bg-green-400' },
+                            { label: 'Pasco', val: 399.5, max: 1600, color: 'bg-green-400' },
+                            { label: 'Loreto', val: 346.5, max: 1600, color: 'bg-green-300' },
+                            { label: 'San Martín', val: 329.8, max: 1600, color: 'bg-green-300' },
+                            { label: 'Cajamarca', val: 268.1, max: 1600, color: 'bg-green-200' },
+                         ].map((d, i) => (
+                            <div key={i} className="flex items-center gap-4 text-sm">
+                               <div className="w-24 text-right font-medium text-gray-600">{d.label}</div>
+                               <div className="flex-1 bg-gray-100 rounded-full h-3">
+                                  <div className={`h-3 rounded-full ${d.color}`} style={{ width: `${(d.val / d.max) * 100}%` }}></div>
+                               </div>
+                               <div className="w-20 font-bold text-gray-800">{d.val} ha</div>
+                            </div>
+                         ))}
+                      </div>
+                   </div>
+                </>
+             )}
+
+             {/* Fallback para otras secciones de sector */}
+             {activeSidebarItem !== '3.1' && (
+                <div className="flex flex-col items-center justify-center h-64 border-2 border-dashed border-gray-300 rounded bg-gray-50 text-gray-400">
+                   <Info size={32} className="mb-2"/>
+                   <p>Seleccione "Plantaciones Registradas" para ver los datos cargados del Anuario 2024.</p>
+                </div>
+             )}
+          </div>
+        </div>
+      );
+    }
+
+    // === ECONOMÍA (DASHBOARD) ===
+    if (activeTab === 'economia') {
+      return (
+        <div className="flex h-full bg-gray-100 overflow-hidden">
+          <Sidebar 
+             title="ECONOMÍA Y MERCADO" 
+             items={MENU_STRUCTURE.find(m => m.id === 'economia').sidebarItems} 
+             activeItem={activeSidebarItem}
+             onItemClick={setActiveSidebarItem}
+          />
+          <div className="flex-1 overflow-y-auto p-8">
+             <div className="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">
+                <div>
+                   <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                      <DollarSign className="text-blue-600"/>
+                      {MENU_STRUCTURE.find(m => m.id === 'economia').sidebarItems.find(i => i.id === activeSidebarItem)?.label}
+                   </h2>
+                   <p className="text-sm text-gray-500 mt-1">Fuente: Anuario Forestal 2024 (Tablas 46, 48, 54)</p>
+                </div>
+             </div>
+
+             {/* KPIs Comercio Exterior (Tabla 54) */}
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-6 rounded-lg shadow-lg">
+                   <div className="flex justify-between items-start mb-2">
+                      <p className="text-xs font-bold uppercase opacity-80">Exportaciones Totales</p>
+                      <ExternalLink size={16} className="opacity-50"/>
+                   </div>
+                   <p className="text-3xl font-bold">$ 466.9 M</p>
+                   <p className="text-xs mt-2 opacity-80">Prod. Maderables: $ 217.8 M</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                   <div className="flex justify-between items-start mb-2">
+                      <p className="text-xs font-bold uppercase text-gray-500">Importaciones Totales</p>
+                      <Activity size={16} className="text-red-300"/>
+                   </div>
+                   <p className="text-3xl font-bold text-gray-800">$ 1,195.4 M</p>
+                   <p className="text-xs mt-2 text-red-500 font-medium">Mayormente papel y cartón</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                   <div className="flex justify-between items-start mb-2">
+                      <p className="text-xs font-bold uppercase text-gray-500">Balanza Comercial</p>
+                      <TrendingUp size={16} className="text-orange-300"/>
+                   </div>
+                   <p className="text-3xl font-bold text-red-600">- $ 728.5 M</p>
+                   <p className="text-xs mt-2 text-gray-500">Déficit comercial sectorial</p>
+                </div>
+             </div>
+
+             {/* Gráfico de Producción (Tabla 27) */}
+             {activeSidebarItem === '4.1' && (
+                <div className="bg-white p-6 rounded shadow-sm mb-6">
+                   <h3 className="font-bold text-gray-700 mb-6">Producción de Madera Rolliza por Departamento (2024)</h3>
+                   <div className="h-64 flex items-end justify-around gap-2 pb-6 border-b border-gray-200">
+                      {[
+                         { d: 'Ucayali', v: 750.4, h: 90 },
+                         { d: 'Loreto', v: 350.2, h: 50 }, // Est. based on rank
+                         { d: 'M. de Dios', v: 280.5, h: 40 },
+                         { d: 'Junín', v: 121.1, h: 25 },
+                         { d: 'Huánuco', v: 69.3, h: 15 },
+                      ].map((item, idx) => (
+                         <div key={idx} className="flex flex-col items-center group w-16">
+                            <div className="relative w-full flex justify-center">
+                               <div className="bg-blue-500 w-10 rounded-t transition-all group-hover:bg-blue-600" style={{ height: `${item.h * 2}px` }}></div>
+                               <span className="absolute -top-6 text-xs font-bold text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity">{item.v}k</span>
+                            </div>
+                            <span className="text-[10px] mt-2 font-medium text-gray-500 text-center leading-tight">{item.d}</span>
+                         </div>
+                      ))}
+                   </div>
+                   <p className="text-center text-xs text-gray-400 mt-2">Volumen en miles de m³</p>
+                </div>
+             )}
+
+             {activeSidebarItem !== '4.1' && (
+                <div className="text-center py-12 bg-white rounded border border-dashed border-gray-300">
+                   <p className="text-gray-400 text-sm">Seleccione "Producción Maderable" para ver los gráficos de detalle.</p>
+                </div>
+             )}
+          </div>
+        </div>
+      );
+    }
+
+    // === NORMATIVA ===
+    if (activeTab === 'normativa') {
+      return (
+        <div className="p-8 max-w-5xl mx-auto h-full overflow-y-auto bg-gray-50">
+           <h2 className="text-3xl font-bold text-gray-800 mb-2 border-b pb-2">Repositorio de Normas</h2>
+           <p className="text-sm text-gray-500 mb-8">Marco legal actualizado para la gestión de plantaciones.</p>
+           
+           <div className="bg-white shadow rounded-lg overflow-hidden">
+              {[
+                 { t: 'LEY', n: 'N° 29763', d: 'Ley Forestal y de Fauna Silvestre', f: '2011' },
+                 { t: 'D.S.', n: '018-2015-MINAGRI', d: 'Reglamento para la Gestión Forestal', f: '2015' },
+                 { t: 'D.S.', n: '020-2015-MINAGRI', d: 'Reglamento para la Gestión de Plantaciones', f: '2015', highlight: true },
+                 { t: 'R.D.E.', n: 'D000190-2021', d: 'Estrategia de Promoción de Plantaciones 2021-2050', f: '2021', highlight: true },
+                 { t: 'LEY', n: 'N° 31110', d: 'Ley del Régimen Laboral Agrario y de Incentivos', f: '2020' },
+              ].map((norm, i) => (
+                 <div key={i} className={`p-4 flex items-center justify-between border-b last:border-0 hover:bg-gray-50 ${norm.highlight ? 'bg-green-50/50' : ''}`}>
+                    <div className="flex items-center gap-4">
+                       <div className={`w-12 h-12 rounded flex items-center justify-center text-xs font-bold flex-col ${norm.highlight ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                          <span>{norm.t}</span>
+                       </div>
+                       <div>
+                          <h4 className="font-bold text-sm text-gray-800">{norm.d}</h4>
+                          <p className="text-xs text-gray-500">{norm.n} • Publicado: {norm.f}</p>
+                       </div>
+                    </div>
+                    <button className="text-blue-600 hover:text-blue-800">
+                       <ExternalLink size={18}/>
+                    </button>
+                 </div>
+              ))}
+           </div>
+        </div>
+      );
+    }
+  };
+
+  // --- RENDERIZADO DEL MENÚ SUPERIOR ---
+
+  return (
+    <div className="h-screen flex flex-col font-sans text-gray-800 overflow-hidden bg-gray-50">
+      <TopBar />
+
+      {/* Main Nav */}
+      <nav className="bg-white shadow-md z-40 relative px-4">
+         <div className="container mx-auto flex justify-between h-16 items-center">
+            {/* Logo Text */}
+            <div className="flex flex-col cursor-pointer" onClick={() => setActiveTab('inicio')}>
+               <span className="text-xl font-extrabold text-[#1b5e20] leading-none">SNIFFS</span>
+               <span className="text-[10px] text-gray-500 tracking-wide font-medium">MÓDULO DE CONTROL</span>
+            </div>
+
+            {/* Desktop Menu */}
+            <ul className="hidden md:flex space-x-1 h-full">
+               {MENU_STRUCTURE.map((item) => (
+                  <li 
+                     key={item.id} 
+                     className="h-full relative group"
+                     onMouseEnter={() => setHoveredMenu(item.id)}
+                     onMouseLeave={() => setHoveredMenu(null)}
+                  >
+                     <button
+                        onClick={() => handleMenuClick(item)}
+                        className={`h-full px-5 text-xs font-bold uppercase transition-colors flex items-center gap-1 border-b-4 ${
+                           activeTab === item.id 
+                             ? 'border-[#4caf50] text-[#2e7d32] bg-green-50' 
+                             : 'border-transparent text-gray-500 hover:text-[#2e7d32] hover:bg-gray-50'
+                        }`}
+                     >
+                        {item.label}
+                        {item.type === 'dropdown' && <ChevronDown size={12}/>}
+                     </button>
+
+                     {/* Dropdown Menu */}
+                     {item.type === 'dropdown' && hoveredMenu === item.id && (
+                        <div className="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-[#4caf50] py-2 animate-fadeIn rounded-b-md">
+                           {item.subItems.map((sub) => (
+                              <button
+                                 key={sub.id}
+                                 onClick={() => handleSubItemClick(item, sub)}
+                                 className="block w-full text-left px-4 py-3 text-xs text-gray-600 hover:bg-green-50 hover:text-[#2e7d32] transition-colors border-l-4 border-transparent hover:border-[#2e7d32]"
+                              >
+                                 {sub.label}
+                              </button>
+                           ))}
+                        </div>
+                     )}
+                  </li>
+               ))}
+            </ul>
+
+            {/* Mobile Btn */}
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-gray-600">
+               {mobileMenuOpen ? <X/> : <Menu/>}
+            </button>
+         </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+         <div className="md:hidden absolute top-32 left-0 w-full bg-white z-50 shadow-xl border-t">
+            {MENU_STRUCTURE.map((item) => (
+               <div key={item.id} className="border-b border-gray-100">
+                  <button 
+                     className="w-full text-left px-6 py-4 font-bold text-sm text-gray-700 bg-gray-50 flex justify-between"
+                     onClick={() => handleMenuClick(item)}
+                  >
+                     {item.label}
+                  </button>
+                  {item.subItems && (
+                     <div className="bg-white pl-8">
+                        {item.subItems.map(sub => (
+                           <button key={sub.id} className="block w-full text-left py-3 text-xs text-gray-500 border-b border-gray-50">
+                              {sub.label}
+                           </button>
+                        ))}
+                     </div>
+                  )}
+               </div>
+            ))}
+         </div>
+      )}
+
+      {/* Main Content */}
+      <main className="flex-1 overflow-hidden relative flex flex-col">
+         {renderContent()}
+      </main>
+    </div>
+  );
+}
