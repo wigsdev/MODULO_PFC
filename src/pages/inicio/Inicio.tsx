@@ -70,7 +70,7 @@ export default function Inicio() {
                     </div>
                 </section>
 
-                <section id="objetivos" className="bg-green-50 p-10 rounded-2xl">
+                <section className="bg-green-50 p-10 rounded-2xl">
                     <div className="text-center mb-10">
                         <h2 className="text-2xl font-bold text-gray-800">Nuestra Misión y Visión</h2>
                         <div className="w-16 h-1 bg-serfor mx-auto mt-2"></div>
@@ -79,12 +79,45 @@ export default function Inicio() {
                         <div id="mision" className="bg-white p-8 rounded shadow-sm relative scroll-mt-24">
                             <Activity className="text-green-200 absolute top-4 right-4" size={48} />
                             <h3 className="text-lg font-bold text-serfor-dark mb-3">Misión</h3>
-                            <p className="text-sm text-gray-600">Operar como la plataforma oficial de inteligencia que integra y valida datos estratégicos para la toma de decisiones de inversión pública y privada.</p>
+                            <p className="text-sm text-gray-600 leading-relaxed text-justify">
+                                Operar como la plataforma oficial de inteligencia para las Plantaciones Forestales Comerciales (PFC), que registra, integra y valida información estratégica de toda la cadena de valor (proveedores, producción y mercado). El Observatorio funciona como un módulo especializado articulado al SNIFFS e interoperable con GEOSERFOR, GEOBOSQUES y OSINFOR, con el fin de reducir la asimetría de información, fomentar la transparencia y potenciar la competitividad del sector mediante datos trazables para la toma de decisiones de inversión pública y privada.
+                            </p>
                         </div>
                         <div id="vision" className="bg-white p-8 rounded shadow-sm relative scroll-mt-24">
                             <Layers className="text-blue-200 absolute top-4 right-4" size={48} />
                             <h3 className="text-lg font-bold text-blue-800 mb-3">Visión</h3>
-                            <p className="text-sm text-gray-600">Ser el referente nacional de información abierta, trazable e interoperable, articulado con la IDE-i SERFOR.</p>
+                            <p className="text-sm text-gray-600 leading-relaxed text-justify">
+                                Consolidar al Observatorio de Plantaciones Forestales Comerciales (PFC) como la plataforma nacional de referencia para el acceso a información abierta, trazable e interoperable sobre la cadena de valor forestal. Integrado al SNIFFS y articulado con la IDE-i SERFOR, el Observatorio garantizará la disponibilidad de datos oficiales bajo estándares internacionales (OGC), permitiendo a los actores públicos, privados y académicos tomar decisiones estratégicas basadas en evidencia verificable y de calidad.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="objetivos" className="scroll-mt-24">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-orange-500 pl-4">Objetivos Estratégicos</h2>
+                    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                        <p className="text-gray-700 mb-8 leading-relaxed text-lg">
+                            Desarrollar e implementar los mecanismos de selección, reconocimiento y gestión de información estratégica de mercado de bienes y servicios para las plantaciones forestales, materializados a través del Observatorio de Plantaciones Forestales Comerciales (PFC). Este instrumento técnico operará como un módulo especializado e interoperable del SNIFFS, focalizado en las siete regiones priorizadas.
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { title: '1. Estructurar la Gobernanza', desc: 'Establecer un modelo de gestión organizacional articulado al SNIFFS que defina roles, flujos de validación y protocolos de interoperabilidad.' },
+                                { title: '2. Consolidar la Oferta', desc: 'Implementar un directorio comercial verificable de los tres eslabones de la cadena de valor, integrando registros administrativos.' },
+                                { title: '3. Generar Inteligencia Territorial', desc: 'Proveer herramientas de análisis geoespacial que identifiquen Zonas Susceptibles al Mercado y áreas de formalización.' },
+                                { title: '4. Monitorear el Contexto Ambiental', desc: 'Contextualizar la actividad productiva mediante interoperabilidad con GeoBosques para visualizar cobertura y deforestación.' },
+                                { title: '5. Proveer Indicadores de Competitividad', desc: 'Publicar indicadores estratégicos de precios, comercio exterior y costos de publicación regionalizados.' }
+                            ].map((obj, i) => (
+                                <div key={i} className="flex gap-4 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:shadow-md transition-all">
+                                    <div className="bg-orange-100 text-orange-600 font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                        {i + 1}
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800 mb-1">{obj.title.split('. ')[1]}</h4>
+                                        <p className="text-sm text-gray-600">{obj.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
