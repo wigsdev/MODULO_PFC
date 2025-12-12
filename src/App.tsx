@@ -15,6 +15,7 @@ import EspacialDocs from '@/pages/espacial/EspacialDocs';
 import Deforestacion from '@/pages/sector/Deforestacion';
 import Precios from '@/pages/economia/Precios';
 import Inicio from '@/pages/inicio/Inicio';
+import GestionOrganizacional from '@/pages/inicio/GestionOrganizacional';
 import Decomisos from '@/pages/sector/Decomisos';
 import EspeciesDecomisadas from '@/pages/sector/EspeciesDecomisadas';
 import ReservasBiosfera from '@/pages/sector/ReservasBiosfera';

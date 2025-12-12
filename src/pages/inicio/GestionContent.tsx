@@ -1,4 +1,4 @@
-import { Network, FileCheck, Server, UserCheck, Users, Briefcase, Map } from 'lucide-react';
+import { Network, FileCheck, Server, Users, Briefcase, Map } from 'lucide-react';
 
 export default function GestionContent() {
     return (

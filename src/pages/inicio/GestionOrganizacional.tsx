@@ -1,7 +1,8 @@
-import { Briefcase, LayoutGrid, Users, Map, Calendar, Settings } from 'lucide-react';
+import { Briefcase, LayoutGrid, Users, Map, Calendar } from 'lucide-react';
 import Sidebar, { SidebarItem } from '@/components/layout/Sidebar';
 import GestionContent from './GestionContent';
-import { useLocation, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const GESTION_ITEMS: SidebarItem[] = [
     {
