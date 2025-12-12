@@ -4,6 +4,7 @@ import NormativaLayout from './pages/normativa/NormativaLayout';
 import NormativaInicio from './pages/normativa/NormativaInicio';
 import Planificacion from './pages/normativa/Planificacion';
 import Lineamientos from './pages/normativa/Lineamientos';
+import ManejoAprovechamiento from './pages/normativa/ManejoAprovechamiento';
 import Layout from '@/components/layout/Layout';
 import SectorLayout from '@/pages/sector/SectorLayout';
 import EconomiaLayout from '@/pages/economia/EconomiaLayout';
@@ -92,7 +93,7 @@ function App() {
             {/* Pendientes de implementar */}
             <Route path="planificacion" element={<Planificacion />} />
             <Route path="lineamientos" element={<Lineamientos />} />
-            <Route path="manejo" element={<div className="p-6">Manejo (En construcción)</div>} />
+             <Route path="manejo" element={<ManejoAprovechamiento />} />
             <Route path="incentivos" element={<div className="p-6">Incentivos (En construcción)</div>} />
           </Route>
         </Route>
