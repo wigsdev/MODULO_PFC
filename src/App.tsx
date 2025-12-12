@@ -14,11 +14,23 @@ import ReservasBiosfera from '@/pages/sector/ReservasBiosfera';
 import AreasDeclaradas from '@/pages/sector/AreasDeclaradas';
 import SitiosDeclarados from '@/pages/sector/SitiosDeclarados';
 import Carbono from '@/pages/sector/Carbono';
+import SectorInicio from './pages/sector/SectorInicio';
+import EconomiaInicio from './pages/economia/EconomiaInicio';
+import EspeciesAprovechadas from './pages/economia/EspeciesAprovechadas';
+import TransformacionIndustrial from './pages/economia/TransformacionIndustrial';
+import VolumenMovilizado from './pages/economia/VolumenMovilizado';
+import Concesiones from './pages/economia/Concesiones';
+import Exportaciones from './pages/economia/Exportaciones';
+import Importaciones from './pages/economia/Importaciones';
+import BalanzaComercial from './pages/economia/BalanzaComercial';
+import OfertaForestal from './pages/economia/OfertaForestal';
+import ConsumoIntermedio from './pages/economia/ConsumoIntermedio';
+import UtilizacionTotal from './pages/economia/UtilizacionTotal';
+import ConsumoIntensidad from './pages/economia/ConsumoIntensidad';
+import CostosPlantaciones from './pages/economia/CostosPlantaciones';
+import GeovisorCostos from './pages/economia/GeovisorCostos';
 
 const Normativa = () => <div className="p-8"><h1>Normativa y Documentación</h1></div>;
-
-// Placeholders for other routes
-const Pending = ({ title }: { title: string }) => <div className="p-4"><h2 className="text-xl font-bold">{title}</h2><p className="text-gray-500">En construcción</p></div>;
 
 function App() {
   return (
@@ -37,7 +49,8 @@ function App() {
 
           {/* Sector Routes */}
           <Route path="sector" element={<SectorLayout />}>
-            <Route index element={<Navigate to="deforestacion" replace />} />
+            <Route index element={<Navigate to="inicio" replace />} />
+            <Route path="inicio" element={<SectorInicio />} />
             <Route path="deforestacion" element={<Deforestacion />} />
             <Route path="decomisos" element={<Decomisos />} />
             <Route path="especies" element={<EspeciesDecomisadas />} />
