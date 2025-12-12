@@ -5,6 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
+    base: '/MODULO_PFC/',
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),
