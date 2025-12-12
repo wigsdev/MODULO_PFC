@@ -1,9 +1,24 @@
-import { Map, BarChart2, Activity, Layers } from 'lucide-react';
+import { Map, BarChart2, Activity, Layers, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Inicio() {
+    const [showBackToTop, setShowBackToTop] = useState(false);
+
+    const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
+        if (e.currentTarget.scrollTop > 300) {
+            setShowBackToTop(true);
+        } else {
+            setShowBackToTop(false);
+        }
+    };
+
+    const scrollToTop = () => {
+        document.getElementById('inicio-container')?.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
-        <div className="flex-1 overflow-y-auto bg-gray-50 scroll-smooth h-full">
+        <div id="inicio-container" onScroll={handleScroll} className="flex-1 overflow-y-auto bg-gray-50 scroll-smooth h-full relative">
             {/* Hero Section */}
             <div className="relative h-[450px] flex items-center justify-center text-center text-white">
                 <div className="absolute inset-0 overflow-hidden">
@@ -41,14 +56,14 @@ export default function Inicio() {
 
             {/* Sections */}
             <div className="max-w-6xl mx-auto px-6 py-16 space-y-20">
-                <section id="presentacion" className="grid md:grid-cols-2 gap-12 items-center">
+                <section id="presentacion" className="grid md:grid-cols-2 gap-12 items-center scroll-mt-24">
                     <div>
                         <h2 className="text-3xl font-bold text-serfor-dark mb-6 border-l-4 border-yellow-400 pl-4">¿Qué es el Observatorio?</h2>
                         <p className="text-gray-600 mb-4 leading-relaxed text-justify">
                             Es un módulo especializado del SNIFFS diseñado para recopilar, procesar y difundir información sobre la cadena de valor de las <strong>Plantaciones Forestales Comerciales (PFC)</strong>.
                         </p>
                         <p className="text-gray-600 leading-relaxed text-justify">
-                            Busca reducir la asimetría de información y conectar la oferta de productores con la demanda de mercado, focalizándose en las regiones de <strong>Áncash, Cajamarca, Huánuco, Junín, Pasco, San Martín y Madre de Dios</strong>.
+                            Busca reducir la asimetría de información y conectar la oferta de productores con la demanda de mercado, focalizándose en las regiones de <strong>Áncash, Cajamarca, Huánín, Junín, Pasco, San Martín y Madre de Dios</strong>.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -70,20 +85,20 @@ export default function Inicio() {
                     </div>
                 </section>
 
-                <section className="bg-green-50 p-10 rounded-2xl">
+                <section id="mision-vision" className="bg-green-50 p-10 rounded-2xl scroll-mt-24">
                     <div className="text-center mb-10">
                         <h2 className="text-2xl font-bold text-gray-800">Nuestra Misión y Visión</h2>
                         <div className="w-16 h-1 bg-serfor mx-auto mt-2"></div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div id="mision" className="bg-white p-8 rounded shadow-sm relative scroll-mt-24">
+                        <div className="bg-white p-8 rounded shadow-sm relative">
                             <Activity className="text-green-200 absolute top-4 right-4" size={48} />
                             <h3 className="text-lg font-bold text-serfor-dark mb-3">Misión</h3>
                             <p className="text-sm text-gray-600 leading-relaxed text-justify">
                                 Operar como la plataforma oficial de inteligencia para las Plantaciones Forestales Comerciales (PFC), que registra, integra y valida información estratégica de toda la cadena de valor (proveedores, producción y mercado). El Observatorio funciona como un módulo especializado articulado al SNIFFS e interoperable con GEOSERFOR, GEOBOSQUES y OSINFOR, con el fin de reducir la asimetría de información, fomentar la transparencia y potenciar la competitividad del sector mediante datos trazables para la toma de decisiones de inversión pública y privada.
                             </p>
                         </div>
-                        <div id="vision" className="bg-white p-8 rounded shadow-sm relative scroll-mt-24">
+                        <div className="bg-white p-8 rounded shadow-sm relative">
                             <Layers className="text-blue-200 absolute top-4 right-4" size={48} />
                             <h3 className="text-lg font-bold text-blue-800 mb-3">Visión</h3>
                             <p className="text-sm text-gray-600 leading-relaxed text-justify">
@@ -122,6 +137,18 @@ export default function Inicio() {
                     </div>
                 </section>
             </div>
+
+            {/* Back to Top Button */}
+            <div className={`fixed bottom-8 right-8 transition-opacity duration-300 ${showBackToTop ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+                <button
+                    onClick={scrollToTop}
+                    className="bg-serfor hover:bg-serfor-dark text-white p-3 rounded-full shadow-lg transition-transform hover:scale-110"
+                    title="Volver al inicio"
+                >
+                    <ArrowUp size={24} />
+                </button>
+            </div>
         </div>
     );
 }
+

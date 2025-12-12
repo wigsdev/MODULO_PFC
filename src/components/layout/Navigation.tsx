@@ -1,6 +1,7 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, ExternalLink, Globe, LayoutDashboard, FileText } from 'lucide-react';
+
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, ChevronDown, ExternalLink, Globe, LayoutDashboard, FileText, Info, Target } from 'lucide-react';
 import clsx from 'clsx';
 
 const MENU_ITEMS = [
@@ -10,9 +11,9 @@ const MENU_ITEMS = [
         path: '/',
         type: 'dropdown',
         subItems: [
-            { id: 'mision', label: 'MISIÓN', path: '/#mision', icon: LayoutDashboard },
-            { id: 'vision', label: 'VISIÓN', path: '/#vision', icon: LayoutDashboard },
-            { id: 'objetivos', label: 'OBJETIVOS', path: '/#objetivos', icon: LayoutDashboard },
+            { id: 'acerca', label: 'ACERCA DEL OBSERVATORIO', path: '/#presentacion', icon: Info },
+            { id: 'mision-vision', label: 'MISIÓN Y VISIÓN', path: '/#mision-vision', icon: LayoutDashboard },
+            { id: 'objetivos', label: 'OBJETIVOS', path: '/#objetivos', icon: Target },
             { id: 'gestion', label: 'GESTIÓN ORGANIZACIONAL', path: '/gestion', icon: FileText },
         ]
     },
@@ -167,7 +168,7 @@ export default function Navigation() {
                                                     href={sub.path}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="block w-full text-left px-6 py-3 font-medium text-xs text-gray-600 hover:text-serfor flex items-center justify-between"
+                                                    className="w-full text-left px-6 py-3 font-medium text-xs text-gray-600 hover:text-serfor flex items-center justify-between"
                                                 >
                                                     {sub.label}
                                                     <ExternalLink size={12} />
