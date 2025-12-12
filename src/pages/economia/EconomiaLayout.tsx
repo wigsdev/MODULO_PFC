@@ -25,44 +25,44 @@ const ECONOMIA_ITEMS: SidebarItem[] = [
     },
     {
         id: 'productividad',
-        label: '4.1 Productividad y Rendimiento',
+        label: 'Productividad y Rendimiento',
         icon: TrendingUp,
         subItems: [
-            { id: 'especies', label: '4.1.1 Especies Aprovechadas', icon: TreePine, path: '/economia/especies' },
-            { id: 'precios', label: '4.1.2 Precios Maderas', icon: DollarSign, path: '/economia/precios' },
-            { id: 'industria', label: '4.1.3 Transformación Industrial', icon: Factory, path: '/economia/industria' },
+            { id: 'especies', label: 'Especies Aprovechadas', icon: TreePine, path: '/economia/especies' },
+            { id: 'precios', label: 'Precios Maderas', icon: DollarSign, path: '/economia/precios' },
+            { id: 'industria', label: 'Transformación Industrial', icon: Factory, path: '/economia/industria' },
         ]
     },
     {
         id: 'mercado',
-        label: '4.2 Datos de Mercado',
+        label: 'Datos de Mercado',
         icon: BarChart3,
         subItems: [
-            { id: 'movilizado', label: '4.2.1 Volumen Movilizado', icon: Truck, path: '/economia/movilizado' },
-            { id: 'concesiones', label: '4.2.2 Concesiones', icon: FileText, path: '/economia/concesiones' },
-            { id: 'exportaciones', label: '4.2.3 Exportaciones', icon: Globe, path: '/economia/exportaciones' },
-            { id: 'importaciones', label: '4.2.4 Importaciones', icon: Anchor, path: '/economia/importaciones' },
-            { id: 'balanza', label: '4.2.5 Balanza Comercial', icon: Scale, path: '/economia/balanza' },
+            { id: 'movilizado', label: 'Volumen Movilizado', icon: Truck, path: '/economia/movilizado' },
+            { id: 'concesiones', label: 'Concesiones', icon: FileText, path: '/economia/concesiones' },
+            { id: 'exportaciones', label: 'Exportaciones', icon: Globe, path: '/economia/exportaciones' },
+            { id: 'importaciones', label: 'Importaciones', icon: Anchor, path: '/economia/importaciones' },
+            { id: 'balanza', label: 'Balanza Comercial', icon: Scale, path: '/economia/balanza' },
         ]
     },
     {
         id: 'macro',
-        label: '4.3 Importancia Macroeconómica',
+        label: 'Importancia Macroeconómica',
         icon: PieChart,
         subItems: [
-            { id: 'oferta', label: '4.3.1 Oferta Forestal', icon: TreePine, path: '/economia/oferta' },
-            { id: 'consumo_intermedio', label: '4.3.2 Consumo Intermedio', icon: Factory, path: '/economia/consumo-intermedio' },
-            { id: 'utilizacion', label: '4.3.3 Utilización Total', icon: BarChart3, path: '/economia/utilizacion' },
-            { id: 'intensidad', label: '4.3.4 Consumo e Intensidad', icon: TrendingUp, path: '/economia/intensidad' },
+            { id: 'oferta', label: 'Oferta Forestal', icon: TreePine, path: '/economia/oferta' },
+            { id: 'consumo_intermedio', label: 'Consumo Intermedio', icon: Factory, path: '/economia/consumo-intermedio' },
+            { id: 'utilizacion', label: 'Utilización Total', icon: BarChart3, path: '/economia/utilizacion' },
+            { id: 'intensidad', label: 'Consumo e Intensidad', icon: TrendingUp, path: '/economia/intensidad' },
         ]
     },
     {
         id: 'financiero',
-        label: '4.4 Datos Financieros',
+        label: 'Datos Financieros',
         icon: DollarSign,
         subItems: [
-            { id: 'costos', label: '4.4.1 Costos Plantaciones', icon: DollarSign, path: '/economia/costos' },
-            { id: 'geovisor_costos', label: '4.4.2 Geovisor de Costos', icon: Smartphone, path: '/economia/geovisor-costos' },
+            { id: 'costos', label: 'Costos Plantaciones', icon: DollarSign, path: '/economia/costos' },
+            { id: 'geovisor_costos', label: 'Geovisor de Costos', icon: Smartphone, path: '/economia/geovisor-costos' },
         ]
     }
 ];
