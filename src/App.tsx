@@ -16,7 +16,7 @@ const Pending = ({ title }: { title: string }) => <div className="p-4"><h2 class
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Inicio />} />
