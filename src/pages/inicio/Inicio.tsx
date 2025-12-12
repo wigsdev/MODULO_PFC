@@ -118,7 +118,7 @@ export default function Inicio() {
                     </div>
                 </section>
 
-                <section id="objetivos">
+                <section id="objetivos" className="scroll-mt-6">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-orange-500 pl-4">Objetivos Estratégicos</h2>
                     <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
                         <p className="text-gray-700 mb-8 leading-relaxed text-lg">
