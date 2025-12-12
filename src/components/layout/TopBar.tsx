@@ -8,14 +8,7 @@ export default function TopBar() {
                     <img
                         src={`${import.meta.env.BASE_URL}images/midagri.jpg`}
                         alt="Minagri"
-                        className="h-8 md:h-10 object-contain"
-                    />
-                    <div className="h-8 w-px bg-gray-300 hidden md:block"></div>
-                    <img
-                        src="https://www.gob.pe/institucion/serfor/informes-publicaciones/anuario-forestal/assets/logo_serfor.png"
-                        alt="SERFOR"
-                        className="h-8 md:h-10 object-contain hidden md:block"
-                        onError={(e) => (e.currentTarget.style.display = 'none')}
+                        className="h-12 object-contain"
                     />
                 </div>
                 <div className="flex items-center gap-3">
