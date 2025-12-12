@@ -1,9 +1,19 @@
 import { Map, BarChart2, Activity, Layers, ArrowUp } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export default function Inicio() {
     const [showBackToTop, setShowBackToTop] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
 
     const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
         if (e.currentTarget.scrollTop > 300) {
