@@ -30,7 +30,7 @@ export default function Inicio() {
     return (
         <div id="inicio-container" onScroll={handleScroll} className="flex-1 overflow-y-auto bg-gray-50 scroll-smooth h-full relative">
             {/* Hero Section */}
-            <div id="presentacion" className="relative h-[450px] flex items-center justify-center text-center text-white">
+            <div className="relative h-[450px] flex items-center justify-center text-center text-white">
                 <div className="absolute inset-0 overflow-hidden">
                     <img
                         src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2000&auto=format&fit=crop"
@@ -66,7 +66,7 @@ export default function Inicio() {
 
             {/* Sections */}
             <div className="max-w-6xl mx-auto px-6 py-16 space-y-20">
-                <section className="grid md:grid-cols-2 gap-12 items-center">
+                <section id="presentacion" className="grid md:grid-cols-2 gap-12 items-center scroll-mt-24">
                     <div>
                         <h2 className="text-3xl font-bold text-serfor-dark mb-6 border-l-4 border-yellow-400 pl-4">¿Qué es el Observatorio?</h2>
                         <p className="text-gray-600 mb-4 leading-relaxed text-justify">
