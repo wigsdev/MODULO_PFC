@@ -24,9 +24,14 @@ export default function Inicio() {
                         Información estratégica, espacial y estadística para impulsar la competitividad del sector forestal en las regiones priorizadas.
                     </p>
                     <div className="flex gap-4 justify-center">
-                        <Link to="/espacial" className="bg-serfor-light hover:bg-[#43a047] text-white px-8 py-3 rounded font-bold shadow-lg transition-transform hover:scale-105 flex items-center gap-2">
+                        <a
+                            href="https://wigsdev.github.io/GEOVISOR/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-serfor-light hover:bg-[#43a047] text-white px-8 py-3 rounded font-bold shadow-lg transition-transform hover:scale-105 flex items-center gap-2"
+                        >
                             <Map size={18} /> Ver Geovisor
-                        </Link>
+                        </a>
                         <Link to="/economia" className="bg-white/10 hover:bg-white/20 backdrop-blur border border-white text-white px-8 py-3 rounded font-bold transition-all flex items-center gap-2">
                             <BarChart2 size={18} /> Ver Cifras 2024
                         </Link>

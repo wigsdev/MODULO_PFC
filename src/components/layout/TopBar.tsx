@@ -23,9 +23,14 @@ export default function TopBar() {
                         <span className="text-[10px] text-gray-500 font-bold tracking-widest">SISTEMA NACIONAL DE INFORMACIÓN</span>
                         <span className="text-[10px] text-serfor font-bold">SNIFFS</span>
                     </div>
-                    <button className="bg-serfor-light hover:bg-serfor text-white font-bold py-1.5 px-4 rounded shadow text-xs transition-transform transform hover:scale-105">
+                    <a
+                        href="https://sniffs.serfor.gob.pe/inicio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-serfor-light hover:bg-serfor text-white font-bold py-1.5 px-4 rounded shadow text-xs transition-transform transform hover:scale-105 no-underline"
+                    >
                         IR AL SNIFFS
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="bg-[#689f38] h-8 flex items-center justify-end px-4 md:px-10 text-white gap-4 shadow-sm text-xs">
