@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import NormativaLayout from './pages/normativa/NormativaLayout';
 import NormativaInicio from './pages/normativa/NormativaInicio';
 import Planificacion from './pages/normativa/Planificacion';
+import Lineamientos from './pages/normativa/Lineamientos';
 import Layout from '@/components/layout/Layout';
 import SectorLayout from '@/pages/sector/SectorLayout';
 import EconomiaLayout from '@/pages/economia/EconomiaLayout';
@@ -89,8 +90,8 @@ function App() {
             <Route index element={<Navigate to="/normativa/inicio" replace />} />
             <Route path="inicio" element={<NormativaInicio />} />
             {/* Pendientes de implementar */}
-             <Route path="planificacion" element={<Planificacion />} />
-            <Route path="lineamientos" element={<div className="p-6">Lineamientos (En construcción)</div>} />
+            <Route path="planificacion" element={<Planificacion />} />
+            <Route path="lineamientos" element={<Lineamientos />} />
             <Route path="manejo" element={<div className="p-6">Manejo (En construcción)</div>} />
             <Route path="incentivos" element={<div className="p-6">Incentivos (En construcción)</div>} />
           </Route>
