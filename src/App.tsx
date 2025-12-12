@@ -49,12 +49,22 @@ function App() {
 
           {/* Economia Routes */}
           <Route path="economia" element={<EconomiaLayout />}>
-            <Route index element={<Navigate to="especies" replace />} />
-            <Route path="especies" element={<Pending title="Especies Priorizadas" />} />
+            <Route index element={<Navigate to="inicio" replace />} />
+            <Route path="inicio" element={<EconomiaInicio />} />
+            <Route path="especies" element={<EspeciesAprovechadas />} />
             <Route path="precios" element={<Precios />} />
-            <Route path="industria" element={<Pending title="Transformación Industrial" />} />
-            <Route path="comercio" element={<Pending title="Balanza Comercial" />} />
-            <Route path="costos" element={<Pending title="Costos Referenciales" />} />
+            <Route path="industria" element={<TransformacionIndustrial />} />
+            <Route path="movilizado" element={<VolumenMovilizado />} />
+            <Route path="concesiones" element={<Concesiones />} />
+            <Route path="exportaciones" element={<Exportaciones />} />
+            <Route path="importaciones" element={<Importaciones />} />
+            <Route path="balanza" element={<BalanzaComercial />} />
+            <Route path="oferta" element={<OfertaForestal />} />
+            <Route path="consumo-intermedio" element={<ConsumoIntermedio />} />
+            <Route path="utilizacion" element={<UtilizacionTotal />} />
+            <Route path="intensidad" element={<ConsumoIntensidad />} />
+            <Route path="costos" element={<CostosPlantaciones />} />
+            <Route path="geovisor-costos" element={<GeovisorCostos />} />
           </Route>
 
           <Route path="normativa" element={<Normativa />} />
