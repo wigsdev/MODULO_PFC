@@ -30,7 +30,7 @@ export default function Inicio() {
     return (
         <div id="inicio-container" onScroll={handleScroll} className="flex-1 overflow-y-auto bg-gray-50 scroll-smooth h-full relative">
             {/* Hero Section */}
-            <div className="relative h-[450px] flex items-center justify-center text-center text-white">
+            <div className="relative min-h-full flex items-center justify-center text-center text-white">
                 <div className="absolute inset-0 overflow-hidden">
                     <img
                         src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2000&auto=format&fit=crop"
