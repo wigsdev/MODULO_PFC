@@ -7,7 +7,9 @@ export default function Inicio() {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.hash) {
+        if (location.hash === '#top') {
+            document.getElementById('inicio-container')?.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (location.hash) {
             const element = document.getElementById(location.hash.substring(1));
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });

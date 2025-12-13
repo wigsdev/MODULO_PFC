@@ -64,7 +64,7 @@ export default function Navigation() {
         <nav className="bg-white shadow-md z-40 relative px-4">
             <div className="container mx-auto flex justify-between h-16 items-center">
                 {/* Logo Text */}
-                <Link to="/" className="flex flex-col cursor-pointer">
+                <Link to="/#top" className="flex flex-col cursor-pointer">
                     <span className="text-xl font-extrabold text-serfor-dark leading-none">SNIFFS</span>
                     <span className="text-[10px] text-gray-500 tracking-wide font-medium">MÓDULO PFC</span>
                 </Link>
