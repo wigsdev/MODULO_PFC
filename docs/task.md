@@ -1,0 +1,47 @@
+# Task List: PFC Module React Migration
+
+- [x] Project Initialization
+    - [x] Create Vite+React+TS Project <!-- id: 0 -->
+    - [x] Install dependencies (router, tailwind, lucide) <!-- id: 1 -->
+    - [x] Configure Tailwind CSS <!-- id: 2 -->
+- [x] Component Migration <!-- id: 3 -->
+    - [x] Create Layout Components (Navbar, Sidebar, Footer) <!-- id: 4 -->
+- [x] Restructure Home Section <!-- id: 7 -->
+    - [x] Create InicioLayout (Sidebar)
+    - [x] Create Estrategia Page (Mision, Vision, Objetivos)
+    - [x] Create GestionOrganizacional Page (5 sub-sections)
+    - [x] Migrate Landing to Presentacion
+    - [x] Update App.tsx Routing 
+- [/] Migrate remaining Sector pages (4.1, 4.2 sub-pages)
+- [x] Create Economy Dashboard
+- [ ] Migrate remaining Economy pages
+- [x] Create Normativa Dashboard
+  - [x] Implement NormativaLayout
+  - [x] Implement NormativaInicio
+  - [x] Implement Planificacion
+  - [x] Implement Lineamientos
+  - [x] Implement ManejoAprovechamiento
+  - [x] Implement Incentivos
+- [x] UI Polish & Responsiveness
+  - [x] Fix Minagri logo path
+  - [x] Update SNIFFS button to external link
+  - [x] Restore "Ver Geovisor" button style but keep link behavior
+  - [x] Standardize logo heights in TopBar
+  - [x] Relocate SNIFFS button to Navigation bar
+  - [x] Consolidate images in public/images foldering)
+    - [x] Implement "Sitio" Dashboard Structure (Sector) <!-- id: 8 -->
+    - [x] Implement "Economia" Dashboard Structure <!-- id: 9 -->
+- [ ] Final Polish <!-- id: 10 -->
+    - [x] Fix SPA Routing (404 on refresh)
+    - [ ] Check Responsiveness <!-- id: 11 -->
+    - [ ] Verify Build <!-- id: 12 -->
+- [x] Implement "Espacial" Dashboard Structure <!-- id: 13 -->
+    - [x] Create Directory Structure and Pages
+    - [x] Update EspacialLayout with Sidebar
+    - [x] Configure Nested Routing in App.tsx
+- [x] Refine "Espacial" Documentation Section <!-- id: 14 -->
+    - [x] Create Docs Directory and Pages
+    - [x] Update EspacialLayout Sidebar
+    - [x] Update App.tsx Routing
+    - [x] Implement View/Download PDF Features
+    - [x] Migrate PDF Files to Public Directory
