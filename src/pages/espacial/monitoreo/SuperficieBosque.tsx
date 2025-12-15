@@ -79,7 +79,7 @@ export default function SuperficieBosque() {
 
                 {/* Right Column: Charts (Full Width for single chart) */}
                 <div className="lg:col-span-3">
-                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[70vh] min-h-[400px]">
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[315px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Superficie de Bosque Natural por Región</h3>
                         <div className="flex-1 w-full">
                             <ResponsiveContainer width="100%" height="100%">
