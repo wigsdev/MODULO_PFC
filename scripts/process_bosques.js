@@ -19,10 +19,22 @@ try {
     const rawData = XLSX.utils.sheet_to_json(sheet);
 
     // Map and Clean Data
-    const cleanData = rawData.map(row => ({
-        region: row['REGION'],
-        superficie2024: row['SUPERFICIE BOSQUE 2024 (Ha)'] || 0
-    })).filter(r => r.region);
+    const cleanData = rawData.map((row, index) => {
+        let val = row['SUPERFICIE BOSQUE 2024 (Ha)'];
+
+        // Debug first row
+        if (index === 0) console.log("Raw Row 0 Surface Value:", val, "Type:", typeof val);
+
+        // Handle string numbers with commas or spaces if necessary
+        if (typeof val === 'string') {
+            val = parseFloat(val.replace(/,/g, '').replace(/\s/g, ''));
+        }
+
+        return {
+            region: row['REGION'],
+            superficie2024: Number(val) || 0
+        };
+    }).filter(r => r.region);
 
     // Calculate Totals
     const totalSuperficie = cleanData.reduce((acc, curr) => acc + curr.superficie2024, 0);

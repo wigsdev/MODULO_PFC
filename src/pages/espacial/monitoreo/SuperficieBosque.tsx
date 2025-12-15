@@ -27,7 +27,7 @@ export default function SuperficieBosque() {
 
     // Format helpers
     const formatHa = (val: number) => new Intl.NumberFormat('es-PE').format(val) + ' ha';
-    
+
     return (
         <div className="space-y-4">
             {/* Header */}
@@ -63,7 +63,7 @@ export default function SuperficieBosque() {
 
                 {/* Main Chart: Surface by Region (Full Width) */}
                 <div className="lg:col-span-3">
-                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[450px]">
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[65vh] min-h-[400px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Superficie de Bosque Natural por Región</h3>
                         <div className="flex-1 w-full">
                             <ResponsiveContainer width="100%" height="100%">
