@@ -150,7 +150,7 @@ export default function ZonificacionCultivos() {
                                         paddingAngle={5}
                                         dataKey="value"
                                     >
-                                        {charts.byStatus.map((entry: any, index: number) => (
+                                        {charts.byStatus.map((_: any, index: number) => (
                                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                         ))}
                                     </Pie>

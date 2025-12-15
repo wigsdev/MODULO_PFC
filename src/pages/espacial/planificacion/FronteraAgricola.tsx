@@ -142,7 +142,7 @@ export default function FronteraAgricola() {
                                     />
                                     <Tooltip content={<CustomTooltip />} cursor={{ fill: '#F9FAFB' }} />
                                     <Bar dataKey="value" radius={[0, 3, 3, 0]} barSize={20}>
-                                        {charts?.byDepartment?.map((entry: any, index: number) => (
+                                        {charts?.byDepartment?.map((_: any, index: number) => (
                                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                         ))}
                                     </Bar>

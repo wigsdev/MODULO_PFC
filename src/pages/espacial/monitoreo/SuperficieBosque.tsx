@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Legend } from 'recharts';
-import { Download, Trees, TrendingDown, AlertTriangle } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { Download, Trees } from 'lucide-react';
 
 export default function SuperficieBosque() {
     const [data, setData] = useState<any>(null);
@@ -26,10 +26,7 @@ export default function SuperficieBosque() {
     const { kpi, metadata, regions } = data;
 
     // Format helpers
-    const formatHa = (val: number) => new Intl.NumberFormat('es-PE').format(val) + ' ha';
-    const formatPerc = (val: number) => (val * 100).toFixed(2) + '%';
-
-    return (
+    const formatHa = (val: number) => new Intl.NumberFormat('es-PE').format(val) + ' ha'; return (
         <div className="space-y-4">
             {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-gray-100 pb-3">
