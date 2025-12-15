@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "title": "Indicadores de Bosque (INFFS)",
+    "source": "INFFS / MINAM (2025)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "avgCarbon": 64.23428571428572,
+    "avgBiomass": 136.67285714285714,
+    "avgVolume": 97.87857142857142,
+    "regionsCount": 7,
+    "ecozonesCount": 6
+  },
+  "ecozones": [
+    {
+      "name": "Selva Baja",
+      "volumen": 190.67,
+      "biomasa": 295.41,
+      "carbono": 138.84,
+      "fuente": "Informe Panel 1 (Cuadro 7 / Fig 41) "
+    },
+    {
+      "name": "Selva Alta Accesible",
+      "volumen": 116.99,
+      "biomasa": 145.39,
+      "carbono": 68.33,
+      "fuente": "Informe Panel 1 (Cuadro 5 / Fig 41) "
+    },
+    {
+      "name": "Selva Alta Difícil",
+      "volumen": 153.29,
+      "biomasa": 166.45,
+      "carbono": 78.23,
+      "fuente": "Informe Panel 1 (Cuadro 6 / Fig 41) "
+    },
+    {
+      "name": "Sierra",
+      "volumen": 13.26,
+      "biomasa": 39.87,
+      "carbono": 18.74,
+      "fuente": "Informe Panel 1 (Cuadro 4 / Fig 41)"
+    },
+    {
+      "name": "Costa",
+      "volumen": 17.73,
+      "biomasa": 16.08,
+      "carbono": 7.56,
+      "fuente": "Informe Panel 1 (Cuadro 3 / Fig 41) "
+    },
+    {
+      "name": "Hidromórfica",
+      "volumen": 108.32,
+      "biomasa": 188.57,
+      "carbono": 85.63,
+      "fuente": "Informe Panel 1 (Cuadro 8 / Fig 41) "
+    }
+  ],
+  "regions": [
+    {
+      "region": "MADRE DE DIOS",
+      "ecozona": "Selva Baja",
+      "volumen": 190.67,
+      "biomasa": 295.41,
+      "carbono": 138.84
+    },
+    {
+      "region": "SAN MARTIN",
+      "ecozona": "Selva Alta Accesible",
+      "volumen": 116.99,
+      "biomasa": 145.39,
+      "carbono": 68.33
+    },
+    {
+      "region": "HUANUCO",
+      "ecozona": "Selva Alta Accesible",
+      "volumen": 116.99,
+      "biomasa": 145.39,
+      "carbono": 68.33
+    },
+    {
+      "region": "JUNIN",
+      "ecozona": "Selva Alta Accesible",
+      "volumen": 116.99,
+      "biomasa": 145.39,
+      "carbono": 68.33
+    },
+    {
+      "region": "PASCO",
+      "ecozona": "Selva Alta Accesible",
+      "volumen": 116.99,
+      "biomasa": 145.39,
+      "carbono": 68.33
+    },
+    {
+      "region": "CAJAMARCA",
+      "ecozona": "Sierra",
+      "volumen": 13.26,
+      "biomasa": 39.87,
+      "carbono": 18.74
+    },
+    {
+      "region": "ANCASH",
+      "ecozona": "Sierra",
+      "volumen": 13.26,
+      "biomasa": 39.87,
+      "carbono": 18.74
+    }
+  ]
+}
