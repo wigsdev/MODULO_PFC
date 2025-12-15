@@ -1,127 +1,40 @@
 {
   "metadata": {
-    "title": "Monitoreo de Bosques y Carbono",
+    "title": "Superficie de Bosque Natural",
     "source": "GEOBOSQUES / MINAM (2025)",
     "lastUpdated": "2025-12-15"
   },
   "kpi": {
-    "totalSuperficie": null,
-    "totalPerdida2024": null,
-    "totalPerdida2023": null,
-    "variacionNacional": 0
+    "totalSuperficie": null
   },
   "regions": [
     {
       "region": "MADRE DE DIOS",
-      "superficie2024": 7763535.54,
-      "perdida2023": 18778.59,
-      "perdida2024": 31382.01,
-      "variacion": 0.6711590167312881,
-      "tendencia": "🔴 Aumento Crítico"
+      "superficie2024": 7763535.54
     },
     {
       "region": "SAN MARTÍN",
-      "superficie2024": 3248576.91,
-      "perdida2023": 16824.6,
-      "perdida2024": 17183.25,
-      "variacion": 0.021317000106986287,
-      "tendencia": "🟠 Ligero Aumento"
+      "superficie2024": 3248576.91
     },
     {
       "region": "JUNÍN",
-      "superficie2024": 1772923.41,
-      "perdida2023": 11826.36,
-      "perdida2024": 7909.83,
-      "variacion": -0.3311695229977779,
-      "tendencia": "🟢 Reducción Notable"
+      "superficie2024": 1772923.41
     },
     {
       "region": "HUÁNUCO",
-      "superficie2024": 1451891.34,
-      "perdida2023": 17225.1,
-      "perdida2024": 13362.93,
-      "variacion": -0.22421756622603053,
-      "tendencia": "🟢 Reducción Notable"
+      "superficie2024": 1451891.34
     },
     {
       "region": "PASCO",
-      "superficie2024": 1354764.06,
-      "perdida2023": 4560.39,
-      "perdida2024": 3657.06,
-      "variacion": -0.19808174300882167,
-      "tendencia": "🟢 Reducción"
+      "superficie2024": 1354764.06
     },
     {
       "region": "CAJAMARCA",
-      "superficie2024": 339512.58,
-      "perdida2023": 840.96,
-      "perdida2024": 3378.42,
-      "variacion": 3.0173373287671232,
-      "tendencia": "🔴 Aumento Severo"
+      "superficie2024": 339512.58
     },
     {
       "region": "ÁNCASH",
-      "superficie2024": "No Aplica",
-      "perdida2023": "No Aplica",
-      "perdida2024": "No Aplica",
-      "variacion": "-",
-      "tendencia": "(Bosque no amazónico)"
-    },
-    {
-      "region": "Fuente:",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
-    },
-    {
-      "region": "Limites Politicos, INEI - 2024",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
-    },
-    {
-      "region": "Mapa de Bosque/No Bosque año 2000 y Mapa de pérdida de los Bosques Húmedos Amazónicos del Perú 2001 – 2024, MINAM (PROGRAMA BOSQUES) - MIDAGRI (SERFOR)",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
-    },
-    {
-      "region": "Información generada de manera conjunta, por el MINAM a través del PNCBMCC, el MIDAGRI a través de SERFOR",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
-    },
-    {
-      "region": "1. Alerta en Madre de Dios: La deforestación se ha disparado un 67% en el último año. Esto es un indicador de riesgo altísimo para nuevas inversiones (posible minería ilegal o invasiones).",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
-    },
-    {
-      "region": "2. Éxito en la Selva Central: Junín, Pasco y Huánuco han logrado reducciones significativas (-20% a -33%). Esto las posiciona como regiones más estables y seguras para la inversión forestal formal en este momento.",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
-    },
-    {
-      "region": "3. Cajamarca: Aunque el volumen es bajo (3,300 ha), el salto porcentual (+300%) indica un foco de deforestación emergente que debe vigilarse.",
-      "superficie2024": 0,
-      "perdida2023": 0,
-      "perdida2024": 0,
-      "variacion": 0,
-      "tendencia": "Sin Datos"
+      "superficie2024": "No Aplica"
     }
   ]
 }

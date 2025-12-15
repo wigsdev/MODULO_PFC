@@ -26,7 +26,9 @@ export default function SuperficieBosque() {
     const { kpi, metadata, regions } = data;
 
     // Format helpers
-    const formatHa = (val: number) => new Intl.NumberFormat('es-PE').format(val) + ' ha'; return (
+    const formatHa = (val: number) => new Intl.NumberFormat('es-PE').format(val) + ' ha';
+    
+    return (
         <div className="space-y-4">
             {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-gray-100 pb-3">
