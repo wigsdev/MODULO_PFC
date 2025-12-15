@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Frontera Agrícola Nacional",
+    "source": "Interpretación de imágenes Planet y Google Earth. DGESEP - MIDAGRI (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalAreaHa": 4774555.32,
+    "departmentCount": 7,
+    "provinceCount": 69,
+    "districtCount": 617
+  },
+  "charts": {
+    "byDepartment": [
+      {
+        "name": "SAN MARTIN",
+        "value": 1454487.99
+      },
+      {
+        "name": "CAJAMARCA",
+        "value": 1164286.52
+      },
+      {
+        "name": "HUANUCO",
+        "value": 893613.71
+      },
+      {
+        "name": "JUNIN",
+        "value": 599397.06
+      },
+      {
+        "name": "ANCASH",
+        "value": 358029.85
+      },
+      {
+        "name": "PASCO",
+        "value": 216606.48
+      },
+      {
+        "name": "MADRE DE DIOS",
+        "value": 88133.71
+      }
+    ],
+    "topProvinces": [
+      {
+        "name": "PUERTO INCA",
+        "value": 378661.42
+      },
+      {
+        "name": "SATIPO",
+        "value": 228894.04
+      },
+      {
+        "name": "LAMAS",
+        "value": 194083.07
+      },
+      {
+        "name": "BELLAVISTA",
+        "value": 190071.7
+      },
+      {
+        "name": "MOYOBAMBA",
+        "value": 187394.73
+      },
+      {
+        "name": "OXAPAMPA",
+        "value": 180006.97
+      },
+      {
+        "name": "TOCACHE",
+        "value": 178375.31
+      },
+      {
+        "name": "MARISCAL CACERES",
+        "value": 165550.99
+      },
+      {
+        "name": "JAEN",
+        "value": 162149.95
+      },
+      {
+        "name": "SAN IGNACIO",
+        "value": 159440.87
+      }
+    ]
+  }
+}
