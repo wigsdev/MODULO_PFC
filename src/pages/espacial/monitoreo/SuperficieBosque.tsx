@@ -52,7 +52,7 @@ export default function SuperficieBosque() {
                 <div className="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-2 content-start">
                     <div className="px-4 py-3 bg-white rounded-lg shadow-sm border-l-4 border-emerald-500">
                         <div className="flex items-center justify-between mb-1">
-                            <h3 className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Superficie Bosque (2024)</h3>
+                            <h3 className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Total Bosque en 7 Regiones</h3>
                             <Trees size={14} className="text-emerald-600" />
                         </div>
                         <p className="text-lg font-bold text-gray-800 leading-tight">
@@ -63,7 +63,7 @@ export default function SuperficieBosque() {
 
                 {/* Main Chart: Surface by Region (Full Width) */}
                 <div className="lg:col-span-3">
-                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[600px]">
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[450px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Superficie de Bosque Natural por Región</h3>
                         <div className="flex-1 w-full">
                             <ResponsiveContainer width="100%" height="100%">
