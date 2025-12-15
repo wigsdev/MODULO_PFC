@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "title": "Superficie Cubierta por Bosque",
+    "source": "GeoBosques (2025)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalBosque": 15931201,
+    "totalSuperficie": 31215191,
+    "avgCobertura": 0.42514285714285716,
+    "topRegionName": "MADRE DE DIOS",
+    "topRegionValue": 7763535
+  },
+  "regions": [
+    {
+      "region": "MADRE DE DIOS",
+      "total": 8530054,
+      "bosque": 7763535,
+      "noBosque": 766519,
+      "cobertura": 0.91,
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "total": 5125331,
+      "bosque": 3248576,
+      "noBosque": 1876755,
+      "cobertura": 0.634,
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "JUNÍN",
+      "total": 3684885,
+      "bosque": 1772923,
+      "noBosque": 1911962,
+      "cobertura": 0.39399999999999996,
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "HUÁNUCO",
+      "total": 4419723,
+      "bosque": 1451891,
+      "noBosque": 2967832,
+      "cobertura": 0.401,
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "PASCO",
+      "total": 2531963,
+      "bosque": 1354764,
+      "noBosque": 1177199,
+      "cobertura": 0.535,
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "CAJAMARCA",
+      "total": 3331754,
+      "bosque": 339512,
+      "noBosque": 2992242,
+      "cobertura": 0.102,
+      "observacion": "Dato Parcial. Solo incluye ámbito amazónico; excluye bosques secos/andinos."
+    },
+    {
+      "region": "ÁNCASH",
+      "total": 3591481,
+      "bosque": 0,
+      "noBosque": 3591481,
+      "cobertura": 0,
+      "observacion": "No Aplica. Región fuera del ámbito de monitoreo de Bosque Húmedo Amazónico."
+    }
+  ]
+}
