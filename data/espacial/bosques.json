@@ -5,7 +5,7 @@
     "lastUpdated": "2025-12-15"
   },
   "kpi": {
-    "totalSuperficie": null
+    "totalSuperficie": 15931204
   },
   "regions": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "region": "ÁNCASH",
-      "superficie2024": "No Aplica"
+      "superficie2024": 0
     }
   ]
 }
