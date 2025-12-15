@@ -6,7 +6,10 @@ console.log("🚀 INICIANDO ACTUALIZACIÓN INTEGRAL DE DATOS...");
 const scripts = [
     'process_zonificacion.js',
     'process_frontera.js',
-    'process_bosques.js'
+    'process_bosques.js',
+    'process_cambio.js',
+    'process_indicadores.js',
+    'process_inventario.js'
 ];
 
 let hasError = false;

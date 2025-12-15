@@ -46,8 +46,8 @@ import ZonificacionCultivos from '@/pages/espacial/planificacion/ZonificacionCul
 import ZonasSusceptibles from '@/pages/espacial/planificacion/ZonasSusceptibles';
 import AreasFormalizacion from '@/pages/espacial/planificacion/AreasFormalizacion';
 import SuperficieBosque from '@/pages/espacial/monitoreo/SuperficieBosque';
-import CambioSuperficie from '@/pages/espacial/monitoreo/CambioSuperficie';
-import IndicadoresBosque from '@/pages/espacial/monitoreo/IndicadoresBosque';
+import CambioSuperficie from './pages/espacial/monitoreo/CambioSuperficie';
+import IndicadoresBosque from './pages/espacial/monitoreo/IndicadoresBosque';
 import InventarioForestal from '@/pages/espacial/monitoreo/InventarioForestal';
 import SuperficieCubierta from '@/pages/espacial/ambiental/SuperficieCubierta';
 import AutoridadesAmbientales from '@/pages/espacial/ambiental/AutoridadesAmbientales';
