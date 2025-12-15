@@ -9,7 +9,10 @@ const scripts = [
     'process_bosques.js',
     'process_cambio.js',
     'process_indicadores.js',
-    'process_inventario.js'
+    'process_inventario.js',
+    'process_m_superficie.js',
+    'process_autoridades.js',
+    'process_m_historico.js'
 ];
 
 let hasError = false;
