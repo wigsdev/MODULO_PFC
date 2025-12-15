@@ -45,3 +45,13 @@
     - [x] Update App.tsx Routing
     - [x] Implement View/Download PDF Features
     - [x] Migrate PDF Files to Public Directory
+- [x] Implement "Frontera Agrícola" Analytics <!-- id: 15 -->
+    - [x] Analyze Excel Data Structure
+    - [x] Create ETL Script (Excel -> JSON)
+    - [x] Implement React Component with Recharts
+    - [x] Implement Dynamic Data Fetching (public/data)
+    - [x] Refine Layout for Viewport Fit (Compact UI)
+- [x] Implement "Zonificación de Cultivos" Analytics <!-- id: 16 -->
+    - [x] Analyze Excel (BD_ZONIFICACION_APTITUD)
+    - [x] Create ETL Script
+    - [x] Create Component w/ Dynamic Fetch

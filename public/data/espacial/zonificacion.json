@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "title": "Estado de la Zonificación Forestal y de Cultivos",
+    "source": "SERFOR / MIDAGRI (2025)",
+    "lastUpdated": "2025-12-13"
+  },
+  "kpi": {
+    "totalRegiones": 7,
+    "completa": 1,
+    "parcial": 3,
+    "sinZonificacion": 3,
+    "avance": 14
+  },
+  "charts": {
+    "byStatus": [
+      {
+        "name": "✅ Completo (Todos los módulos)",
+        "value": 1
+      },
+      {
+        "name": "⚠️ Parcial (Módulo I)",
+        "value": 3
+      },
+      {
+        "name": "❌ Sin Zonificación",
+        "value": 3
+      }
+    ],
+    "byInstrument": [
+      {
+        "name": "Zonificación Forestal (ZF)",
+        "value": 4
+      },
+      {
+        "name": "Zonificación Ecológica (ZEE)",
+        "value": 1
+      },
+      {
+        "name": "CUM Nacional + BPP",
+        "value": 1
+      },
+      {
+        "name": "CUM Nacional",
+        "value": 1
+      }
+    ],
+    "byAptitud": [
+      {
+        "name": "ANCASH",
+        "AGRICOLA": 197796,
+        "FORESTAL PRODUCTIVO": 388537,
+        "OTROS": 138,
+        "PECUARIO": 81888,
+        "PROTECCION": 2920244
+      },
+      {
+        "name": "CAJAMARCA",
+        "AGRICOLA": 427327,
+        "FORESTAL PRODUCTIVO": 941170,
+        "OTROS": 1324,
+        "PECUARIO": 752847,
+        "PROTECCION": 1155608
+      },
+      {
+        "name": "HUANUCO",
+        "AGRICOLA": 662264,
+        "FORESTAL PRODUCTIVO": 1079367,
+        "OTROS": 23740,
+        "PECUARIO": 242072,
+        "PROTECCION": 878736
+      },
+      {
+        "name": "JUNIN",
+        "AGRICOLA": 318471,
+        "FORESTAL PRODUCTIVO": 199090,
+        "OTROS": 22689,
+        "PECUARIO": 760650,
+        "PROTECCION": 3102325
+      },
+      {
+        "name": "MADRE DE DIOS",
+        "AGRICOLA": 1244703,
+        "FORESTAL PRODUCTIVO": 3136041,
+        "OTROS": 0,
+        "PECUARIO": 9586,
+        "PROTECCION": 4098494
+      },
+      {
+        "name": "PASCO",
+        "AGRICOLA": 39764,
+        "FORESTAL PRODUCTIVO": 402547,
+        "OTROS": 255,
+        "PECUARIO": 212580,
+        "PROTECCION": 1736975
+      },
+      {
+        "name": "SAN MARTIN",
+        "AGRICOLA": 55741,
+        "FORESTAL PRODUCTIVO": 3098524,
+        "OTROS": 380,
+        "PECUARIO": 0,
+        "PROTECCION": 1935810
+      }
+    ]
+  },
+  "table": [
+    {
+      "region": "SAN MARTÍN",
+      "instrumento": "Zonificación Forestal (ZF)",
+      "estado": "✅ Completo (Todos los módulos)",
+      "fuente": "SERFOR (GeoSERFOR)",
+      "precision": "Alta (Zonas Producción y Protección definidas)"
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "instrumento": "Zonificación Forestal (ZF)",
+      "estado": "⚠️ Parcial (Módulo I)",
+      "fuente": "SERFOR + BPP",
+      "precision": "Alta (Protección) / Media (Producción BPP)"
+    },
+    {
+      "region": "JUNÍN",
+      "instrumento": "Zonificación Forestal (ZF)",
+      "estado": "⚠️ Parcial (Módulo I)",
+      "fuente": "SERFOR + BPP",
+      "precision": "Alta (Protección) / Media (Producción BPP)"
+    },
+    {
+      "region": "HUÁNUCO",
+      "instrumento": "Zonificación Forestal (ZF)",
+      "estado": "⚠️ Parcial (Módulo I)",
+      "fuente": "SERFOR + BPP",
+      "precision": "Alta (Protección) / Media (Producción BPP)"
+    },
+    {
+      "region": "CAJAMARCA",
+      "instrumento": "Zonificación Ecológica (ZEE)",
+      "estado": "❌ Sin Zonificación",
+      "fuente": "MINAM / GORE",
+      "precision": "Media (Capacidad de Uso Mayor Regional)"
+    },
+    {
+      "region": "PASCO",
+      "instrumento": "CUM Nacional + BPP",
+      "estado": "❌ Sin Zonificación",
+      "fuente": "MIDAGRI / SERFOR",
+      "precision": "Referencial (Supletorio Nacional)"
+    },
+    {
+      "region": "ÁNCASH",
+      "instrumento": "CUM Nacional",
+      "estado": "❌ Sin Zonificación",
+      "fuente": "MIDAGRI",
+      "precision": "Referencial (Supletorio Nacional)"
+    }
+  ]
+}
