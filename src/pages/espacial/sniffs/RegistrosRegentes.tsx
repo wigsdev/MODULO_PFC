@@ -13,7 +13,7 @@ export default function RegistrosRegentes() {
     const [deptFilter, setDeptFilter] = useState('TODOS');
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL} data / espacial / registros_regentes.json ? t = ${new Date().getTime()} `;
+        const url = `${import.meta.env.BASE_URL}data/espacial/registros_regentes.json?t=${new Date().getTime()}`;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {

@@ -9,7 +9,7 @@ export default function RegistrosViveros() {
     const [deptFilter, setDeptFilter] = useState('');
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL} data / espacial / registros_viveros.json ? t = ${new Date().getTime()} `;
+        const url = `${import.meta.env.BASE_URL}data/espacial/registros_viveros.json?t=${new Date().getTime()}`;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {

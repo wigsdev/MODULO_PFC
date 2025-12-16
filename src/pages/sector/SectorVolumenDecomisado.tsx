@@ -8,7 +8,7 @@ export default function SectorVolumenDecomisado() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL} data / sector / volumen_decomisado.json ? t = ${new Date().getTime()} `;
+        const url = `${import.meta.env.BASE_URL}data/sector/volumen_decomisado.json?t=${new Date().getTime()}`;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {

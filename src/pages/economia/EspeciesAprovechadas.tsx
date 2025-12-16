@@ -44,7 +44,7 @@ const EspeciesAprovechadas = () => {
     const [selectedType, setSelectedType] = useState('Todos');
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL} data / economia / especies_aprovechadas.json ? t = ${new Date().getTime()} `)
+        fetch(`${import.meta.env.BASE_URL}data/economia/especies_aprovechadas.json?t=${new Date().getTime()}`)
             .then(res => res.json())
             .then(setData)
             .catch(err => console.error('Error loading data:', err))

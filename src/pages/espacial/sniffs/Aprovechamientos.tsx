@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ComposedChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Axe, Ruler, Trello } from 'lucide-react';
+import { Hammer, Ruler, LayoutList } from 'lucide-react';
 
 export default function Aprovechamientos() {
     const [data, setData] = useState<any>(null);
@@ -30,7 +30,7 @@ export default function Aprovechamientos() {
         <div className="space-y-3 animate-fade-in p-2">
             <div className="flex items-center justify-between bg-white px-4 py-3 rounded-lg shadow-sm border border-gray-100">
                 <h1 className="text-lg font-bold text-gray-800 flex items-center gap-2">
-                    <Axe className="text-amber-700" size={20} /> {metadata.title}
+                    <Hammer className="text-amber-700" size={20} /> {metadata.title}
                 </h1>
                 <div className="flex items-center gap-2 text-xs text-gray-400">
                     <span>Actualizado: {metadata.lastUpdated}</span>
@@ -42,7 +42,7 @@ export default function Aprovechamientos() {
                     <div className="px-4 py-3 bg-white rounded-lg shadow-sm border-l-4 border-amber-600">
                         <div className="flex items-center justify-between mb-1">
                             <h3 className="text-[10px] uppercase font-bold text-gray-500">Volumen Total</h3>
-                            <Trello size={14} className="text-amber-600" />
+                            <LayoutList size={14} className="text-amber-600" />
                         </div>
                         <p className="text-lg font-bold text-gray-800">{formatInt(kpi.totalVolumen)} m³</p>
                     </div>
