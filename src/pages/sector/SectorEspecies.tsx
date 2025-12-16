@@ -72,7 +72,7 @@ export default function SectorEspecies() {
                     {/* Chart */}
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[280px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Distribución por Nivel de Riesgo</h3>
-                        <div className="flex-1 w-full text-xs">
+                        <div className="flex-1 w-full text-xs min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <PieChart>
                                     <Pie

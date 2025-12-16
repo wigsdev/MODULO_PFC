@@ -43,8 +43,28 @@ try {
         evolution[species][year].count += 1;
     });
 
+    // Check if current year (2025) has significantly fewer records than 2024
+    // If so, exclude it from the evolution chart to avoid misleading trends
+    const currentYear = new Date().getFullYear();
+    const yearCounts = {};
+    validData.forEach(r => {
+        const year = parseInt(r['AÑO']);
+        if (year) yearCounts[year] = (yearCounts[year] || 0) + 1;
+    });
+    
+    // Exclude current year if it has less than 30% of last complete year's records
+    const lastCompleteYear = currentYear - 1;
+    const excludeCurrentYear = yearCounts[currentYear] && yearCounts[lastCompleteYear] && 
+        (yearCounts[currentYear] < yearCounts[lastCompleteYear] * 0.3);
+    
+    if (excludeCurrentYear) {
+        console.log(`Note: Excluding ${currentYear} from evolution charts (only ${yearCounts[currentYear]} records vs ${yearCounts[lastCompleteYear]} in ${lastCompleteYear})`);
+    }
+
     const formattedEvolution = Object.keys(evolution).map(species => {
-        const years = Object.keys(evolution[species]).sort();
+        const years = Object.keys(evolution[species])
+            .filter(y => !excludeCurrentYear || parseInt(y) !== currentYear) // Exclude incomplete year
+            .sort();
         return {
             species,
             data: years.map(y => ({

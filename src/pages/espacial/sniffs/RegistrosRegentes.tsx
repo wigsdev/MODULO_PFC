@@ -101,7 +101,7 @@ export default function RegistrosRegentes() {
                 {/* Chart (Left Column - Smaller) */}
                 <div className="lg:col-span-1 bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[500px]">
                     <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Distribución Regional</h3>
-                    <div className="flex-1 w-full">
+                    <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart data={regions} margin={{ top: 10, right: 10, left: 10, bottom: 5 }} layout="vertical">
                                 <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#E5E7EB" />

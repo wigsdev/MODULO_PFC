@@ -138,7 +138,7 @@ export default function ZonificacionCultivos() {
                     {/* Status Pie Chart */}
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Estado de Implementación</h3>
-                        <div className="flex-1 w-full min-h-[200px]">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <PieChart>
                                     <Pie
@@ -164,7 +164,7 @@ export default function ZonificacionCultivos() {
                     {/* NEW: Status by Region Chart (Replaces Instrumento) */}
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[300px] overflow-y-auto">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Detalle por Región</h3>
-                        <div className="flex-1 w-full min-h-[200px]">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="99%" height={data.table.length * 30 + 50}>
                                 <BarChart
                                     data={data.table}
@@ -214,7 +214,7 @@ export default function ZonificacionCultivos() {
                     <div className="col-span-1 md:col-span-2 mt-2">
                         <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col">
                             <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Distribución de Aptitud Productiva</h3>
-                            <div className="w-full h-[320px]">
+                            <div className="w-full h-[320px] min-h-0 relative overflow-hidden">
                                 <ResponsiveContainer width="99%" height="100%">
                                     <BarChart
                                         data={charts?.byAptitud || []}

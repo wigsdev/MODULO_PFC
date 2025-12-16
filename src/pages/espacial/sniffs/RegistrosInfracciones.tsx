@@ -68,7 +68,7 @@ export default function RegistrosInfracciones() {
                 <div className="lg:col-span-3">
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[315px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Infractores por Entidad Sancionadora</h3>
-                        <div className="flex-1 w-full">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart data={entities} margin={{ top: 10, right: 30, left: 100, bottom: 5 }} layout="vertical">
                                     <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#F3F4F6" />

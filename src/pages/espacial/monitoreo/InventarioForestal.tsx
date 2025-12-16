@@ -112,7 +112,7 @@ export default function InventarioForestal() {
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[315px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Riqueza de Especies de Flora por Departamento</h3>
 
-                        <div className="flex-1 w-full">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart
                                     data={regions}

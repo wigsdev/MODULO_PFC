@@ -81,7 +81,7 @@ export default function SectorDeforestacion() {
                 {/* 1. Bar Chart: 2023 vs 2024 */}
                 <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[350px]">
                     <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Comparativo 2023 vs 2024 por Región</h3>
-                    <div className="flex-1 w-full text-xs">
+                    <div className="flex-1 w-full text-xs min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart data={regionalData} margin={{ top: 10, right: 30, left: 0, bottom: 5 }}>
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
@@ -99,7 +99,7 @@ export default function SectorDeforestacion() {
                 {/* 2. Line Chart: Historical Trend */}
                 <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[350px]">
                     <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Evolución Histórica (2001 - 2024)</h3>
-                    <div className="flex-1 w-full text-xs">
+                    <div className="flex-1 w-full text-xs min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart data={historyData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />

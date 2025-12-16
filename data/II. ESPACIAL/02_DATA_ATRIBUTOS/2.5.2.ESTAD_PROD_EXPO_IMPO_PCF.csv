@@ -1,0 +1,14 @@
+﻿FASE,PRODUCTO / ESPECIE,DETALLE,UNIDAD,CANTIDAD / VALOR
+1. PRODUCCIÓN,Madera Rolliza,Bolaina (Guazuma crinita),m³,"69,756.86"
+Producción,Madera Rolliza,Pino (Variedades),m³,"1,304.33"
+Producción,Madera Rolliza,Eucalipto,m³,322.87
+Producción,Madera Rolliza,Teca,m³,17.87
+Producción,Madera Aserrada,Bolaina (Transformada),m³,"58,860.71"
+,,,,
+2. IMPORTACIÓN,Insumos Industriales,Papel y Cartón (Pulpa PFC),US$ CIF,"641,314,200.00"
+Importación,Tableros,Tableros de Madera,US$ CIF,"47,525,690.00"
+Importación,Madera Aserrada,Pino / Coníferas (Chile),US$ CIF,"30,354,980.00"
+,,,,
+3. EXPORTACIÓN,Productos Derivados,Papel y Cartón,US$ FOB,"24,239,620.00"
+Exportación,Madera Perfilada,Coníferas / Pino,US$ FOB,"4,435,607.00"
+Exportación,Madera,Eucalipto (Troza/Chips),US$ FOB,"30,517.70"

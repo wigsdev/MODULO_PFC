@@ -122,9 +122,9 @@ export default function FronteraAgricola() {
                 {/* Right Column: Charts Side-by-Side */}
                 <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-3 h-full">
                     {/* Superficie por Departamento */}
-                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col">
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[300px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Superficie por Región (Top 7)</h3>
-                        <div className="flex-1 w-full min-h-[260px]">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart
                                     data={charts?.byDepartment || []}
@@ -152,9 +152,9 @@ export default function FronteraAgricola() {
                     </div>
 
                     {/* Top 10 Provincias */}
-                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col">
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[300px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Top 10 Provincias</h3>
-                        <div className="flex-1 w-full min-h-[260px]">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart
                                     data={charts?.topProvinces || []}

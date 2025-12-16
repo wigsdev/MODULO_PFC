@@ -67,7 +67,7 @@ export default function SectorCarbono() {
                 {/* Chart Left */}
                 <div className="lg:col-span-2 bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[450px]">
                     <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Stock de Carbono por Región (tC/ha)</h3>
-                    <div className="flex-1 w-full text-xs">
+                    <div className="flex-1 w-full text-xs min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart data={list} margin={{ top: 20, right: 30, left: 10, bottom: 5 }}>
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />

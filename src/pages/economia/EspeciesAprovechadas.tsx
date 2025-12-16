@@ -116,7 +116,7 @@ const EspeciesAprovechadas = () => {
                 {/* Chart */}
                 <div className="bg-white p-6 rounded-lg shadow lg:col-span-1">
                     <h3 className="text-lg font-semibold mb-4">Distribución por Tipo</h3>
-                    <div className="h-64">
+                    <div className="h-64 min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <PieChart>
                                 <Pie

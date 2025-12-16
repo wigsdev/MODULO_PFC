@@ -1,0 +1,15 @@
+﻿REGIÓN (PI1),(A) LÍNEA BASE NO BOSQUE 2000 (Ha),(B) PÉRDIDA ACUMULADA 2001-2024 (Ha),(C) BOSQUE REMANENTE 2024 (Ha),(D) CUERPOS DE AGUA (Ha),ÁREA POTENCIAL ELEGIBLE (A + B) (Ha)
+SAN MARTÍN,"1,015,734.96","532,522.71","3,248,576.91","71,566.47","1,548,257.67"
+HUÁNUCO,"472,745.34","413,044.47","1,451,891.34","51,321.78","885,789.81"
+JUNÍN,"471,146.49","225,656.01","1,772,923.41","49,326.84","696,802.50"
+MADRE DE DIOS,"180,062.64","351,941.40","7,763,535.54","205,263.99","532,004.04"
+CAJAMARCA (*),"405,743.22","27,575.37","339,512.58","3,478.77","433,318.59"
+PASCO,"219,002.13","142,873.29","1,354,764.06","24,049.35","361,875.42"
+ÁNCASH (**),Sin datos,Sin datos,Sin datos,Sin datos,N/A (Bosque Andino)
+TOTAL,"2,764,434.78","1,693,613.25","15,931,203.84","404,957.20","4,458,048.03"
+,,,,,
+"Área Potencial Elegible: Suma de lo que ya no era bosque en el 2000 más lo que se deforestó hasta 2024. Es la ""tierra disponible"" teórica.",,,,,
+,,,,,
+Cajamarca (*): Los datos corresponden solo a las provincias de la vertiente amazónica (Jaén/San Ignacio) monitoreadas por GeoBosques.,,,,,
+,,,,,
+"Áncash ():** No cuenta con reporte en la base de datos de ""Bosques Húmedos Amazónicos"". Se requiere utilizar la capa de ""Cobertura Vegetal Nacional (MINAM)"" para determinar su elegibilidad.",,,,,

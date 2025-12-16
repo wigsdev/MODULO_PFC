@@ -109,7 +109,7 @@ export default function CambioSuperficie() {
                             </div>
                         </div>
 
-                        <div className="flex-1 w-full min-h-0">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart
                                     data={chartData}

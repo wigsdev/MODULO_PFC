@@ -1,0 +1,11 @@
+﻿NOMBRE DEL SISTEMA,SIGLAS,INSTITUCIÓN TITULAR,UTILIDAD ESPECÍFICA PARA EL INVERSIONISTA (PFC),TIPO DE DATO,NIVEL DE ACCESO,DIRECCIÓN WEB (ENLACE DIRECTO)
+Sistema Nacional de Información Forestal,SNIFFS,SERFOR,"Registro de Plantaciones, Estadísticas de Producción, Guías de Transporte. Es el ""Reniec"" de la madera.",Administrativo / Estadístico,Público,https://sniffs.serfor.gob.pe
+Geoportal Forestal y de Fauna Silvestre,GEOSERFOR,SERFOR,"Visor de Catastro Forestal, Zonificación, Ecosistemas Frágiles. Vital para ubicar el predio.",Espacial (Mapas),Público,https://geo.serfor.gob.pe/geoserfor
+Plataforma de Monitoreo de Bosques,GEOBOSQUES,MINAM,Alertas tempranas de deforestación y reportes de pérdida de bosque. Clave para certificación ambiental (EUDR).,Espacial / Satelital,Público,https://geobosques.minam.gob.pe/geobosque/view/index.php
+Sistema de Información Gerencial,SIGO,OSINFOR,"""Semáforo de Comportamiento"". Verifica si una concesión tiene multas (Rojo) o buenas prácticas (Verde).",Legal / Fiscalización,Público,https://observatorio.osinfor.gob.pe
+Sistema de Información de Comercio Exterior,SIICEX,PROMPERÚ,"Inteligencia de mercados, aranceles, requisitos de acceso a mercados internacionales.",Comercial,Público,https://www.siicex.gob.pe
+Plataforma de Inversión Pública,INVIERTE.PE,MEF,Banco de Inversiones. Permite ver si hay carreteras o proyectos públicos planificados cerca del predio.,Proyectos,Público,https://www.mef.gob.pe/es/inversion-publica
+Infraestructura de Datos Espaciales,IDEP,PCM,"Cartografía base oficial, límites distritales, vías nacionales y catastro minero referencial.",Base Cartográfica,Público,https://www.idep.gob.pe
+Ventanilla Única de Comercio Exterior,VUCE,MINCETUR,"Trámites de exportación, certificados fitosanitarios (SENASA) y permisos CITES.",Trámites,Restringido (Clave Sol),https://www.vuce.gob.pe
+Sistema de Información Agraria,SIEA,MIDAGRI,"Precios de cultivos asociados (café, cacao) para sistemas agroforestales.",Agrícola,Público,https://siea.midagri.gob.pe
+Consulta RUC,SUNAT,SUNAT,Validación de la actividad económica y condición de habido/activo de socios o proveedores locales.,Tributario,Público,https://e-consultaruc.sunat.gob.pe

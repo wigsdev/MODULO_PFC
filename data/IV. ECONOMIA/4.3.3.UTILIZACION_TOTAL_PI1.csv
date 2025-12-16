@@ -1,0 +1,14 @@
+﻿COMPONENTE / INDICADOR,UNIDAD,VALOR 2024,INTERPRETACIÓN
+1. OFERTA INTERNA (Producción Nacional),,,Capacidad productiva actual
+🪵 Madera Rolliza (Materia Prima),m³,"3,205,735.86",Insumo base extraído del bosque.
+🪚 Madera Aserrada (Producto Transformado),m³,"1,542,599.89",Oferta real de madera para construcción/muebles.
+,,,
+2. DEMANDA EXTERNA (Exportaciones),US$ FOB,"466,920,326.34",Salida de productos
+- Productos Maderables,US$,"217,810,671.54","Pisos, molduras, madera aserrada dura."
+- Productos No Maderables,US$,"249,109,654.80","Castaña, Tara, Cochinilla (Supera a la madera)."
+,,,
+3. OFERTA EXTERNA (Importaciones),US$ CIF,"1,195,375,609.24",Dependencia del mercado
+- Productos Maderables,US$,"1,144,289,774.03","Papel, cartón, tableros y muebles (Demanda insatisfecha)."
+- Productos No Maderables,US$,"51,085,835.21","Insumos químicos, resinas."
+,,,
+4. BRECHA COMERCIAL (Balanza),US$,"-728,455,282.90",Déficit Estructural (Oportunidad PI1)

@@ -144,7 +144,7 @@ const TransformacionIndustrial = () => {
                 {/* Department Chart */}
                 <div className="bg-white p-6 rounded-lg shadow">
                     <h3 className="text-lg font-semibold mb-4">Distribución Regional (Top 10)</h3>
-                    <div className="h-80">
+                    <div className="h-80 min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart data={data.byDept.slice(0, 10)} layout="vertical" margin={{ left: 50 }}>
                                 <CartesianGrid strokeDasharray="3 3" />
@@ -160,7 +160,7 @@ const TransformacionIndustrial = () => {
                 {/* Giro Chart - CHANGED TO BAR CHART */}
                 <div className="bg-white p-6 rounded-lg shadow">
                     <h3 className="text-lg font-semibold mb-4">Distribución por Giro</h3>
-                    <div className="h-80">
+                    <div className="h-80 min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart data={data.byGiro} layout="vertical" margin={{ left: 10 }}>
                                 <CartesianGrid strokeDasharray="3 3" />
@@ -177,7 +177,7 @@ const TransformacionIndustrial = () => {
             {/* Annual Evolution */}
             <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="text-lg font-semibold mb-4">Evolución de Registros por Año</h3>
-                <div className="h-64">
+                <div className="h-64 min-h-0 relative overflow-hidden">
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={data.byYear}>
                             <CartesianGrid strokeDasharray="3 3" />

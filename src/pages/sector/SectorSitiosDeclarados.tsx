@@ -69,7 +69,7 @@ export default function SectorSitiosDeclarados() {
                 {/* Chart */}
                 <div className="lg:col-span-1 bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[400px]">
                     <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Por Categoría</h3>
-                    <div className="flex-1 w-full text-xs">
+                    <div className="flex-1 w-full text-xs min-h-0 relative overflow-hidden">
                         <ResponsiveContainer width="100%" height="100%">
                             <PieChart>
                                 <Pie

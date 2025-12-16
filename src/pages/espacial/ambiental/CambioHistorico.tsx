@@ -100,7 +100,7 @@ export default function CambioHistorico() {
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[315px]">
                         <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Evolución de Pérdida por Departamento (2001-2024)</h3>
 
-                        <div className="flex-1 w-full">
+                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
                                 <LineChart
                                     data={timeline}
