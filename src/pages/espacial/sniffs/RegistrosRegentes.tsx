@@ -1,6 +1,7 @@
+
 import { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { ShieldCheck, UserCheck, AlertCircle, HelpCircle, Search, Filter, ExternalLink, Download } from 'lucide-react';
+import { ShieldCheck, UserCheck, AlertCircle, HelpCircle, Search, ExternalLink } from 'lucide-react';
 
 export default function RegistrosRegentes() {
     const [data, setData] = useState<any>(null);
@@ -12,7 +13,7 @@ export default function RegistrosRegentes() {
     const [deptFilter, setDeptFilter] = useState('TODOS');
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL}data/espacial/registros_regentes.json?t=${new Date().getTime()}`;
+        const url = `${import.meta.env.BASE_URL} data / espacial / registros_regentes.json ? t = ${new Date().getTime()} `;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {
@@ -167,8 +168,8 @@ export default function RegistrosRegentes() {
                                         <td className="px-4 py-2 font-mono text-[10px]">{item.licencia}</td>
                                         <td className="px-4 py-2 text-center">
                                             <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-semibold ${item.estadoLicencia === 'VIGENTE' ? 'bg-emerald-100 text-emerald-700' :
-                                                    item.estadoLicencia === 'NO VIGENTE' ? 'bg-red-100 text-red-700' :
-                                                        'bg-amber-100 text-amber-700'
+                                                item.estadoLicencia === 'NO VIGENTE' ? 'bg-red-100 text-red-700' :
+                                                    'bg-amber-100 text-amber-700'
                                                 }`}>
                                                 {item.estadoLicencia}
                                             </span>

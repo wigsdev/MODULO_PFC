@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
     Users,
     MapPin,
     Briefcase,
-    Search,
-    Filter,
-    ExternalLink,
-    Truck,
-    Hammer
+    Search
 } from 'lucide-react';
 
 interface ProveedorData {

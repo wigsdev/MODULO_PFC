@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
-    DollarSign,
     TrendingUp,
-    Calendar,
     Search,
-    Filter,
-    ExternalLink
+    ExternalLink,
+    DollarSign,
+    Calendar
 } from 'lucide-react';
 import {
     LineChart,
@@ -61,7 +60,7 @@ const Precios = () => {
     const [selectedProduct, setSelectedProduct] = useState('Todos');
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}data/economia/precios_madera.json?t=${new Date().getTime()}`)
+        fetch(`${import.meta.env.BASE_URL} data / economia / precios_madera.json ? t = ${new Date().getTime()} `)
             .then(res => res.json())
             .then(d => {
                 setData(d);
@@ -173,7 +172,7 @@ const Precios = () => {
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis dataKey="year" />
                                 <YAxis />
-                                <Tooltip formatter={(value: number) => [`S/. ${value}`, 'Precio']} />
+                                <Tooltip formatter={(value: number) => [`S /.${value} `, 'Precio']} />
                                 <Legend />
                                 <Line type="monotone" dataKey="price" stroke="#10B981" strokeWidth={2} name="Precio Promedio" />
                             </LineChart>
@@ -190,7 +189,7 @@ const Precios = () => {
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis type="number" />
                                 <YAxis type="category" dataKey="name" width={120} style={{ fontSize: '12px' }} />
-                                <Tooltip formatter={(value: number) => [`S/. ${value}`, 'Precio Promedio']} />
+                                <Tooltip formatter={(value: number) => [`S /.${value} `, 'Precio Promedio']} />
                                 <Bar dataKey="value" fill="#3B82F6" radius={[0, 4, 4, 0]} name="Precio Promedio" />
                             </BarChart>
                         </ResponsiveContainer>

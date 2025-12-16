@@ -82,7 +82,7 @@ export default function SectorSitiosDeclarados() {
                                     paddingAngle={5}
                                     dataKey="value"
                                 >
-                                    {categoryDistribution.map((entry: any, index: number) => (
+                                    {categoryDistribution.map((_, index) => (
                                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                     ))}
                                 </Pie>

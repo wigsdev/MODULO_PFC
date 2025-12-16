@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Leaf, AlertTriangle, Search, Filter, ShieldAlert } from 'lucide-react';
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
+import { Search, AlertTriangle, ShieldAlert } from 'lucide-react';
 
 export default function SectorEspecies() {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
-    const [riskFilter, setRiskFilter] = useState('TODOS');
+    // The setRiskFilter function is unused because the corresponding select element is commented out.
+    // Removing the setRiskFilter function as per instruction.
+    const [riskFilter] = useState('TODOS');
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL}data/sector/especies.json?t=${new Date().getTime()}`;
+        const url = `${import.meta.env.BASE_URL} data / sector / especies.json ? t = ${new Date().getTime()} `;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {
@@ -37,8 +39,6 @@ export default function SectorEspecies() {
         const matchesRisk = riskFilter === 'TODOS' || item.risk.includes(riskFilter);
         return matchesSearch && matchesRisk;
     });
-
-    const uniqueRisks = ['TODOS', ...Array.from(new Set(list.map((i: any) => i.risk.replace(/🔴|🟠|🟡/g, '').trim())))];
 
     return (
         <div className="space-y-4 animate-fade-in p-2">
@@ -85,7 +85,7 @@ export default function SectorEspecies() {
                                         paddingAngle={5}
                                         dataKey="value"
                                     >
-                                        {riskDistribution.map((entry: any, index: number) => (
+                                        {riskDistribution.map((_: any, index: number) => (
                                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                         ))}
                                     </Pie>
@@ -142,8 +142,8 @@ export default function SectorEspecies() {
                                         <td className="px-4 py-2 text-[10px]">{item.regions}</td>
                                         <td className="px-4 py-2">
                                             <span className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-semibold border ${item.risk.includes('Muy Alto') ? 'bg-red-50 text-red-700 border-red-100' :
-                                                    item.risk.includes('Alto') ? 'bg-orange-50 text-orange-700 border-orange-100' :
-                                                        'bg-yellow-50 text-yellow-700 border-yellow-100'
+                                                item.risk.includes('Alto') ? 'bg-orange-50 text-orange-700 border-orange-100' :
+                                                    'bg-yellow-50 text-yellow-700 border-yellow-100'
                                                 }`}>
                                                 {item.risk.includes('🔴') && <AlertTriangle size={10} />}
                                                 {item.risk.replace(/🔴|🟠|🟡/g, '').trim()}

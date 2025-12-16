@@ -1,5 +1,6 @@
+
 import { useState, useEffect } from 'react';
-import { Download, Share2, Sprout, Search, MapPin, Building2 } from 'lucide-react';
+import { Download, Sprout, Search, MapPin, Building2 } from 'lucide-react';
 
 export default function RegistrosViveros() {
     const [data, setData] = useState<any>(null);
@@ -8,7 +9,7 @@ export default function RegistrosViveros() {
     const [deptFilter, setDeptFilter] = useState('');
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL}data/espacial/registros_viveros.json?t=${new Date().getTime()}`;
+        const url = `${import.meta.env.BASE_URL} data / espacial / registros_viveros.json ? t = ${new Date().getTime()} `;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {
@@ -118,8 +119,8 @@ export default function RegistrosViveros() {
                                     </td>
                                     <td className="px-6 py-4 text-center">
                                         <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${item.estado === 'Activo'
-                                                ? 'bg-green-50 text-green-700'
-                                                : 'bg-red-50 text-red-700'
+                                            ? 'bg-green-50 text-green-700'
+                                            : 'bg-red-50 text-red-700'
                                             }`}>
                                             {item.estado}
                                         </span>

@@ -1,13 +1,14 @@
+
 import { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Box, Flame, Trees, AlertTriangle } from 'lucide-react';
+import { Truck, Scale, Search, Info } from 'lucide-react';
 
 export default function SectorVolumenDecomisado() {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL}data/sector/volumen_decomisado.json?t=${new Date().getTime()}`;
+        const url = `${ import.meta.env.BASE_URL } data / sector / volumen_decomisado.json ? t = ${ new Date().getTime() } `;
         fetch(url)
             .then(res => res.json())
             .then(jsonData => {

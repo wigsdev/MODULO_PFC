@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
     TreeDeciduous,
-    Sprout,
+    Trees,
+    Info,
     Globe,
-    Search,
-    Filter,
-    Download
+    Search
 } from 'lucide-react';
 import {
-    BarChart,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
     ResponsiveContainer,
     PieChart,
     Pie,
-    Cell
+    Cell,
+    Tooltip,
+    Legend
 } from 'recharts';
 
 interface SpeciesData {
@@ -51,7 +45,7 @@ const EspeciesAprovechadas = () => {
     const [selectedType, setSelectedType] = useState('Todos');
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}data/economia/especies_aprovechadas.json?t=${new Date().getTime()}`)
+        fetch(`${import.meta.env.BASE_URL} data / economia / especies_aprovechadas.json ? t = ${new Date().getTime()} `)
             .then(res => res.json())
             .then(setData)
             .catch(err => console.error('Error loading data:', err))
@@ -136,8 +130,8 @@ const EspeciesAprovechadas = () => {
                                     paddingAngle={5}
                                     dataKey="value"
                                 >
-                                    {data.typeDistribution.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                    {data.typeDistribution.map((_, index) => (
+                                        <Cell key={`cell - ${index} `} fill={COLORS[index % COLORS.length]} />
                                     ))}
                                 </Pie>
                                 <Tooltip />
@@ -191,9 +185,9 @@ const EspeciesAprovechadas = () => {
                                         <td className="px-4 py-3 font-medium text-gray-900">{item.commonName}</td>
                                         <td className="px-4 py-3 italic text-gray-600">{item.scientificName}</td>
                                         <td className="px-4 py-3">
-                                            <span className={`px-2 py-1 rounded-full text-xs font-semibold
+                                            <span className={`px - 2 py - 1 rounded - full text - xs font - semibold
                                                 ${item.type === 'Nativa' ? 'bg-green-100 text-green-800' : 'bg-orange-100 text-orange-800'}
-                                            `}>
+`}>
                                                 {item.type}
                                             </span>
                                         </td>

@@ -1,8 +1,9 @@
+
 import { useState, useEffect } from 'react';
 import {
     BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts';
-import { Trees, TrendingDown, TrendingUp, AlertTriangle, ArrowRight } from 'lucide-react';
+import { Trees, TrendingDown, TrendingUp, AlertTriangle } from 'lucide-react';
 
 export default function SectorDeforestacion() {
     const [data, setData] = useState<any>(null);

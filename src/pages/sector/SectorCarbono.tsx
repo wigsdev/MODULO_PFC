@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { CloudRain, Sprout, TrendingUp, DollarSign, Leaf } from 'lucide-react';
+import { CloudRain, Sprout, TrendingUp, Leaf } from 'lucide-react';
 
 export default function SectorCarbono() {
     const [data, setData] = useState<any>(null);

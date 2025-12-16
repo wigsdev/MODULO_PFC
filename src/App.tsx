@@ -58,7 +58,6 @@ import Aprovechamientos from '@/pages/espacial/sniffs/Aprovechamientos';
 import Movilizaciones from '@/pages/espacial/sniffs/Movilizaciones';
 import DecomisosEspacial from '@/pages/espacial/sniffs/Decomisos';
 import Plantaciones from '@/pages/espacial/sniffs/Plantaciones';
-import Registros from '@/pages/espacial/sniffs/Registros';
 import RegistrosViveros from '@/pages/espacial/sniffs/RegistrosViveros';
 import RegistrosPlantaciones from '@/pages/espacial/sniffs/RegistrosPlantaciones';
 import RegistrosInfracciones from '@/pages/espacial/sniffs/RegistrosInfracciones';

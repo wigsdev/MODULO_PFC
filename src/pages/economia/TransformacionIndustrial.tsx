@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
     Factory,
     MapPin,
-    Calendar,
     Search,
-    CheckCircle,
-    Building2,
-    Filter,
+    Activity,
+    Info,
     ExternalLink
 } from 'lucide-react';
 import {
@@ -16,11 +14,7 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    Legend,
-    ResponsiveContainer,
-    PieChart,
-    Pie,
-    Cell
+    ResponsiveContainer
 } from 'recharts';
 
 interface IndustryData {
@@ -49,8 +43,6 @@ interface IndustryData {
         state: string;
     }>;
 }
-
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
 
 const TransformacionIndustrial = () => {
     const [data, setData] = useState<IndustryData | null>(null);
