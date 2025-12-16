@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Download, TrendingDown, TrendingUp, AlertTriangle, Share2, ArrowRight } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { Download, TrendingDown, TrendingUp, AlertTriangle, Share2 } from 'lucide-react';
 
 export default function CambioSuperficie() {
     const [data, setData] = useState<any>(null);

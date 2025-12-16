@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, Share2, Building2, ExternalLink, Globe } from 'lucide-react';
+import { Download, Share2, Building2, ExternalLink } from 'lucide-react';
 
 export default function AutoridadesAmbientales() {
     const [data, setData] = useState<any>(null);
@@ -72,8 +72,8 @@ export default function AutoridadesAmbientales() {
                                     </td>
                                     <td className="px-6 py-4">
                                         <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${item.nivel === 'NACIONAL'
-                                                ? 'bg-blue-50 text-blue-700'
-                                                : 'bg-emerald-50 text-emerald-700'
+                                            ? 'bg-blue-50 text-blue-700'
+                                            : 'bg-emerald-50 text-emerald-700'
                                             }`}>
                                             {item.ambito}
                                         </span>
