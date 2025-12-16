@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Axe, Ruler, Trello, Info, TrendingUp, TrendingDown, Scale } from 'lucide-react';
+import { ComposedChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { Axe, Ruler, Trello } from 'lucide-react';
 
 export default function Aprovechamientos() {
     const [data, setData] = useState<any>(null);
