@@ -1,40 +1,48 @@
-const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
-const inputFile = path.join(__dirname, '../data/II. ESPACIAL/02_DATA_ATRIBUTOS/2.2.1.BD_SUPERFICIE_CUBIERTA_POR_BOSQUE_NATURAL_20251119.xlsx');
+const inputFile = path.join(__dirname, '../data/II. ESPACIAL/02_DATA_ATRIBUTOS/2.2.1.BD_SUPERFICIE_CUBIERTA_POR_BOSQUE_NATURAL_20251119.csv');
 const outputFile = path.join(__dirname, '../public/data/espacial/bosques.json');
 
 try {
     console.log(`Processing file: ${inputFile}`);
     if (!fs.existsSync(inputFile)) {
-        throw new Error(`Input file not found: ${inputFile}`);
+        console.warn(`⚠️ Input file not found, skipping: ${inputFile}`);
+        process.exit(0);
     }
 
-    const workbook = XLSX.readFile(inputFile, { dense: true });
-    const sheetName = workbook.SheetNames[0]; // 'SUPERFICIE_BOSQUE_NATURAL'
-    console.log(`Reading sheet: ${sheetName}`);
+    // Read CSV file
+    const csvContent = fs.readFileSync(inputFile, 'utf-8');
+    const lines = csvContent.trim().split('\n');
 
-    const sheet = workbook.Sheets[sheetName];
-    const rawData = XLSX.utils.sheet_to_json(sheet);
+    // Parse header and data
+    const header = lines[0].split(',');
+    const rawData = lines.slice(1).map(line => {
+        // Handle quoted values with commas
+        const values = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || [];
+        return {
+            region: values[0]?.replace(/"/g, '').trim(),
+            superficie: values[1]?.replace(/"/g, '').replace(/,/g, '').trim()
+        };
+    });
 
     // Map and Clean Data
     const cleanData = rawData.map((row, index) => {
-        let val = row['SUPERFICIE BOSQUE 2024 (Ha)'];
+        let val = row.superficie;
+
+        // Skip "No Aplica" or invalid values
+        if (!val || val === 'No Aplica') {
+            return null;
+        }
 
         // Debug first row
         if (index === 0) console.log("Raw Row 0 Surface Value:", val, "Type:", typeof val);
 
-        // Handle string numbers with commas or spaces if necessary
-        if (typeof val === 'string') {
-            val = parseFloat(val.replace(/,/g, '').replace(/\s/g, ''));
-        }
-
         return {
-            region: row['REGION'],
-            superficie2024: Number(val) || 0
+            region: row.region,
+            superficie2024: parseFloat(val) || 0
         };
-    }).filter(r => r.region);
+    }).filter(r => r && r.region && r.superficie2024 > 0);
 
     // Calculate Totals
     const totalSuperficie = cleanData.reduce((acc, curr) => acc + curr.superficie2024, 0);
@@ -62,7 +70,7 @@ try {
 
     fs.writeFileSync(outputFile, JSON.stringify(dashboardData, null, 2));
     console.log(`Success! Data written to ${outputFile}`);
-    console.log(`Process: ${cleanData.length} regions.`);
+    console.log(`Processed: ${cleanData.length} regions.`);
 
 } catch (error) {
     console.error("Error processing Bosques data:", error);
