@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "source": "MNSA / SICAR",
+    "lastUpdated": "2025-12-16",
+    "departamento": "HUANUCO"
+  },
+  "kpi": {
+    "superficieTotal": 383426.68823221495,
+    "prediosTotal": 76685,
+    "superficieMuyAlta": 330353.60555367905,
+    "superficieAlta": 53073.082678536,
+    "provinciaLider": "PUERTO INCA"
+  },
+  "prioridad": [
+    {
+      "tipo": "Muy Alta (Corredor Económico)",
+      "superficie": 330353.60555367905,
+      "predios": 66071,
+      "distritos": 83,
+      "porcentaje": "86.16"
+    },
+    {
+      "tipo": "Alta (Zona Expansión)",
+      "superficie": 53073.082678536,
+      "predios": 10615,
+      "distritos": 28,
+      "porcentaje": "13.84"
+    }
+  ],
+  "provincias": [
+    {
+      "nombre": "PUERTO INCA",
+      "superficie": 140729.99559200002,
+      "predios": 28146,
+      "distritos": 10
+    },
+    {
+      "nombre": "HUANUCO",
+      "superficie": 53413.2268721,
+      "predios": 10683,
+      "distritos": 16
+    },
+    {
+      "nombre": "PACHITEA",
+      "superficie": 51373.864779,
+      "predios": 10275,
+      "distritos": 6
+    },
+    {
+      "nombre": "LEONCIO PRADO",
+      "superficie": 41720.247149542,
+      "predios": 8344,
+      "distritos": 13
+    },
+    {
+      "nombre": "HUAMALIES",
+      "superficie": 22466.319730649,
+      "predios": 4493,
+      "distritos": 15
+    },
+    {
+      "nombre": "MARAÑON",
+      "superficie": 18082.311995509997,
+      "predios": 3616,
+      "distritos": 8
+    },
+    {
+      "nombre": "AMBO",
+      "superficie": 17225.356686608,
+      "predios": 3445,
+      "distritos": 9
+    },
+    {
+      "nombre": "HUACAYBAMBA",
+      "superficie": 13063.32423975,
+      "predios": 2613,
+      "distritos": 8
+    },
+    {
+      "nombre": "LAURICOCHA",
+      "superficie": 12737.660913249,
+      "predios": 2548,
+      "distritos": 7
+    },
+    {
+      "nombre": "YAROWILCA",
+      "superficie": 7171.294867449999,
+      "predios": 1434,
+      "distritos": 8
+    },
+    {
+      "nombre": "DOS DE MAYO",
+      "superficie": 5443.085406357,
+      "predios": 1089,
+      "distritos": 11
+    }
+  ],
+  "topDistritos": [
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PUERTO INCA",
+      "distrito": "PUERTO INCA",
+      "superficie": 27499.0976,
+      "predios": 5500,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PUERTO INCA",
+      "distrito": "YUYAPICHIS",
+      "superficie": 27131.62883,
+      "predios": 5426,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PUERTO INCA",
+      "distrito": "TOURNAVISTA",
+      "superficie": 25317.32316,
+      "predios": 5063,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PACHITEA",
+      "distrito": "PANAO",
+      "superficie": 23383.61817,
+      "predios": 4677,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "ALTA (Zona de Expansión)",
+      "provincia": "PUERTO INCA",
+      "distrito": "YUYAPICHIS",
+      "superficie": 14028.45998,
+      "predios": 2806,
+      "prioridadCorta": "Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PUERTO INCA",
+      "distrito": "CODO DEL POZUZO",
+      "superficie": 13734.71856,
+      "predios": 2747,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "HUANUCO",
+      "distrito": "SAN PABLO DE PILLAO",
+      "superficie": 11681.83268,
+      "predios": 2336,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "ALTA (Zona de Expansión)",
+      "provincia": "PUERTO INCA",
+      "distrito": "TOURNAVISTA",
+      "superficie": 11679.08924,
+      "predios": 2336,
+      "prioridadCorta": "Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PUERTO INCA",
+      "distrito": "HONORIA",
+      "superficie": 11084.05357,
+      "predios": 2217,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "HUANUCO",
+      "distrito": "CHINCHAO",
+      "superficie": 10626.04613,
+      "predios": 2125,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "LEONCIO PRADO",
+      "distrito": "MARIANO DAMASO BERAUN",
+      "superficie": 8960.745499,
+      "predios": 1792,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "LEONCIO PRADO",
+      "distrito": "JOSE CRESPO Y CASTILLO",
+      "superficie": 7975.432163,
+      "predios": 1595,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "HUAMALIES",
+      "distrito": "MONZON",
+      "superficie": 7814.165016,
+      "predios": 1563,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "ALTA (Zona de Expansión)",
+      "provincia": "PUERTO INCA",
+      "distrito": "CODO DEL POZUZO",
+      "superficie": 7403.479797,
+      "predios": 1481,
+      "prioridadCorta": "Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PACHITEA",
+      "distrito": "UMARI",
+      "superficie": 7121.583993,
+      "predios": 1424,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "AMBO",
+      "distrito": "SAN RAFAEL",
+      "superficie": 6804.427685,
+      "predios": 1361,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "ALTA (Zona de Expansión)",
+      "provincia": "PACHITEA",
+      "distrito": "CHAGLLA",
+      "superficie": 6457.456229,
+      "predios": 1291,
+      "prioridadCorta": "Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "PACHITEA",
+      "distrito": "MOLINO",
+      "superficie": 6403.616907,
+      "predios": 1281,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "HUANUCO",
+      "distrito": "QUISQUI (KICHKI)",
+      "superficie": 5616.890096,
+      "predios": 1123,
+      "prioridadCorta": "Muy Alta"
+    },
+    {
+      "prioridad": "MUY ALTA (Corredor Económico)",
+      "provincia": "LAURICOCHA",
+      "distrito": "JESUS",
+      "superficie": 5571.52432,
+      "predios": 1114,
+      "prioridadCorta": "Muy Alta"
+    }
+  ]
+}

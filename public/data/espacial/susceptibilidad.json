@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "source": "SERFOR - Análisis de Susceptibilidad",
+    "lastUpdated": "2025-12-16",
+    "departamento": "HUANUCO"
+  },
+  "kpi": {
+    "superficieTotal": 772524.6899999937,
+    "totalRegistros": 48945,
+    "superficieAlta": 670266.129999996,
+    "superficieMedia": 102258.56000000008,
+    "provinciaLider": "PUERTO INCA"
+  },
+  "gradoMercado": [
+    {
+      "grado": "OPTIMA",
+      "superficie": 339912.43000000046,
+      "porcentaje": "44.00"
+    },
+    {
+      "grado": "ALTO POTENCIAL",
+      "superficie": 330353.69999999995,
+      "porcentaje": "42.76"
+    },
+    {
+      "grado": "RIESGO / BAJA",
+      "superficie": 53073.37,
+      "porcentaje": "6.87"
+    },
+    {
+      "grado": "MODERADA",
+      "superficie": 49185.19000000012,
+      "porcentaje": "6.37"
+    }
+  ],
+  "nivelAcceso": [
+    {
+      "nivel": "ALTA",
+      "superficie": 670266.129999996,
+      "porcentaje": "86.76"
+    },
+    {
+      "nivel": "MEDIA",
+      "superficie": 102258.56000000008,
+      "porcentaje": "13.24"
+    }
+  ],
+  "provincias": [
+    {
+      "nombre": "PUERTO INCA",
+      "superficie": 385589.6999999993,
+      "registros": 10207
+    },
+    {
+      "nombre": "LEONCIO PRADO",
+      "superficie": 111480.24000000012,
+      "registros": 15627
+    },
+    {
+      "nombre": "PACHITEA",
+      "superficie": 65250.21000000002,
+      "registros": 4871
+    },
+    {
+      "nombre": "MARAÑON",
+      "superficie": 64916.43000000014,
+      "registros": 10438
+    },
+    {
+      "nombre": "HUANUCO",
+      "superficie": 53568.71000000001,
+      "registros": 74
+    },
+    {
+      "nombre": "HUAMALIES",
+      "superficie": 30310.96999999999,
+      "registros": 4735
+    },
+    {
+      "nombre": "AMBO",
+      "superficie": 20609.910000000007,
+      "registros": 223
+    },
+    {
+      "nombre": "HUACAYBAMBA",
+      "superficie": 15154.020000000019,
+      "registros": 2596
+    },
+    {
+      "nombre": "LAURICOCHA",
+      "superficie": 12982.51,
+      "registros": 151
+    },
+    {
+      "nombre": "YAROWILCA",
+      "superficie": 7171.3,
+      "registros": 8
+    },
+    {
+      "nombre": "DOS DE MAYO",
+      "superficie": 5490.69,
+      "registros": 15
+    }
+  ],
+  "topDistritos": [
+    {
+      "provincia": "PUERTO INCA",
+      "distrito": "CODO DEL POZUZO",
+      "superficie": 99390.95999999985
+    },
+    {
+      "provincia": "PUERTO INCA",
+      "distrito": "PUERTO INCA",
+      "superficie": 96512.61000000004
+    },
+    {
+      "provincia": "PUERTO INCA",
+      "distrito": "YUYAPICHIS",
+      "superficie": 77813.97999999997
+    },
+    {
+      "provincia": "PUERTO INCA",
+      "distrito": "HONORIA",
+      "superficie": 64569.39999999995
+    },
+    {
+      "provincia": "PUERTO INCA",
+      "distrito": "TOURNAVISTA",
+      "superficie": 47302.749999999985
+    },
+    {
+      "provincia": "PACHITEA",
+      "distrito": "PANAO",
+      "superficie": 36705.19
+    },
+    {
+      "provincia": "LEONCIO PRADO",
+      "distrito": "JOSE CRESPO Y CASTILLO",
+      "superficie": 33232.26000000004
+    },
+    {
+      "provincia": "MARAÑON",
+      "distrito": "CHOLON",
+      "superficie": 29110.029999999977
+    },
+    {
+      "provincia": "MARAÑON",
+      "distrito": "LA MORADA",
+      "superficie": 17825.630000000005
+    },
+    {
+      "provincia": "HUAMALIES",
+      "distrito": "MONZON",
+      "superficie": 14925.810000000009
+    },
+    {
+      "provincia": "LEONCIO PRADO",
+      "distrito": "MARIANO DAMASO BERAUN",
+      "superficie": 14001.369999999999
+    },
+    {
+      "provincia": "HUANUCO",
+      "distrito": "SAN PABLO DE PILLAO",
+      "superficie": 13992.83
+    },
+    {
+      "provincia": "PACHITEA",
+      "distrito": "CHAGLLA",
+      "superficie": 13795.21
+    },
+    {
+      "provincia": "LEONCIO PRADO",
+      "distrito": "PUEBLO NUEVO",
+      "superficie": 13603.290000000012
+    },
+    {
+      "provincia": "LEONCIO PRADO",
+      "distrito": "RUPA-RUPA",
+      "superficie": 10855.219999999998
+    }
+  ]
+}
