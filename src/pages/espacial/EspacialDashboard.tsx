@@ -1,49 +1,113 @@
-import { Database, FileSpreadsheet, Layers } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import {
+    Map,
+    TreePine,
+    Leaf,
+    Info,
+    DollarSign,
+    Globe,
+    Database
+} from 'lucide-react';
 
-const DATASETS = [
-    { title: "Frontera Agrícola", file: "BD_MNSA_FRONTERA_AGRICOLA_PI1.xlsx", size: "53 KB", desc: "Superficie agrícola nacional para diferenciar zonas de expansión forestal." },
-    { title: "Zonificación de Aptitud", file: "BD_ZONIFICACION_APTITUD_20251121.xlsx", size: "131 KB", desc: "Clasificación de tierras forestales y de protección." },
-    { title: "Susceptibilidad Física", file: "DB_SUSCEPTIBILIDAD_FINAL_HCO.xlsx", size: "1.9 MB", desc: "Análisis de riesgos físicos y biológicos en Huánuco." },
-    { title: "Inventario Forestal", file: "BD_SERIE_HISTORICA_BOSQUES_20251121.xlsx", size: "10 KB", desc: "Serie histórica de cobertura de bosques 2001-2024." },
-    { title: "Plantaciones RNPF", file: "BD_PLANTACIONES_RNPF_20251121.xlsx", size: "11 KB", desc: "Registro Nacional de Plantaciones Forestales." },
-    { title: "Viveros y Semilleros", file: "BD_VIVEROS_SEMILLEROS_20251119.xlsx", size: "11 KB", desc: "Directorio de fuentes semilleras y viveros acreditados." },
-];
+const EspacialDashboard = () => {
+    const sections = [
+        {
+            title: 'Planificación Rural',
+            description: 'Frontera agrícola, zonificación de cultivos y áreas para formalización.',
+            icon: Map,
+            link: '/espacial/planificacion/frontera-agricola',
+            color: 'bg-blue-600'
+        },
+        {
+            title: 'Monitoreo de Bosques',
+            description: 'Superficie de bosque natural, cambios y carbono.',
+            icon: TreePine,
+            link: '/espacial/monitoreo/superficie-bosque',
+            color: 'bg-green-600'
+        },
+        {
+            title: 'Información Ambiental',
+            description: 'Autoridades ambientales y superficies cubiertas.',
+            icon: Leaf,
+            link: '/espacial/ambiental/superficie-cubierta',
+            color: 'bg-emerald-600'
+        },
+        {
+            title: 'Sistema SNIFFS',
+            description: 'Aprovechamientos, movilizaciones, decomisos y registros.',
+            icon: Info,
+            link: '/espacial/sniffs/aprovechamientos',
+            color: 'bg-purple-600'
+        },
+        {
+            title: 'Información Comercial',
+            description: 'Estudios de mercado y estadísticas de producción.',
+            icon: DollarSign,
+            link: '/espacial/comercial/estudios-mercado',
+            color: 'bg-amber-600'
+        },
+        {
+            title: 'Otros Datos',
+            description: 'Plantaciones registradas, tierras PFC y sistemas de inversión.',
+            icon: Globe,
+            link: '/espacial/otros/plantaciones-registradas',
+            color: 'bg-slate-600'
+        },
+    ];
 
-export default function EspacialDashboard() {
     return (
-        <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-8">
-                <div className="p-3 bg-green-100 rounded-lg text-green-700">
-                    <Database size={24} />
+        <div className="space-y-6 animate-fade-in">
+            {/* Header */}
+            <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row justify-between items-start gap-4">
+                <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-2">
+                        <div className="p-2 bg-blue-100 rounded-lg text-blue-700">
+                            <Database size={24} />
+                        </div>
+                        <h1 className="text-2xl font-bold text-gray-800">Dashboard de Atributos Espaciales</h1>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-3xl">
+                        En esta sección encontrará los geoportales oficiales para realizar la consulta o descarga de capas espaciales.
+                        Adicionalmente, podrá acceder al geovisor diseñados para el observatorio, en los cuales podrá realizar consultas y descargar datos fuente.
+                    </p>
                 </div>
-                <div>
-                    <h1 className="text-2xl font-bold text-gray-800">Dashboard de Atributos Espaciales</h1>
-                    <p className="text-gray-500 text-sm">Repositorio de datos tabulares vinculados al Geovisor (DOCS/II. ESPACIAL/02_DATA_ATRIBUTOS)</p>
+                <div className="flex-shrink-0">
+                    <a
+                        href="https://wigsdev.github.io/GEOVISOR/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-serfor-light hover:bg-[#43a047] text-white px-8 py-3 rounded font-bold shadow-lg transition-transform hover:scale-105 flex items-center gap-2"
+                    >
+                        <Map size={18} />
+                        ACCEDER AL GEOVISOR
+                    </a>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {DATASETS.map((data, idx) => (
-                    <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                        <div className="flex justify-between items-start mb-4">
-                            <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
-                                <Layers size={20} />
-                            </div>
-                            <span className="text-[10px] font-bold bg-gray-100 text-gray-500 px-2 py-1 rounded">{data.size}</span>
+            {/* Navigation Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {sections.map((section) => (
+                    <Link
+                        key={section.title}
+                        to={section.link}
+                        className="group bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-all border border-transparent hover:border-blue-100 flex items-start gap-4"
+                    >
+                        <div className={`p-3 rounded-lg ${section.color} text-white shadow-sm group-hover:scale-110 transition-transform flex-shrink-0`}>
+                            <section.icon size={24} />
                         </div>
-                        <h3 className="font-bold text-gray-800 mb-2">{data.title}</h3>
-                        <p className="text-sm text-gray-500 mb-6 h-12 overflow-hidden">{data.desc}</p>
-
-                        <button className="w-full flex items-center justify-center gap-2 py-2 border border-green-200 text-green-700 rounded-lg hover:bg-green-50 text-sm font-medium transition-colors">
-                            <FileSpreadsheet size={16} />
-                            Ver Tabla de Datos
-                        </button>
-                        <div className="mt-3 text-[10px] text-gray-400 text-center truncate">
-                            Fuente: {data.file}
+                        <div>
+                            <h3 className="text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors">
+                                {section.title}
+                            </h3>
+                            <p className="text-xs text-gray-500 leading-tight">
+                                {section.description}
+                            </p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
     );
-}
+};
+
+export default EspacialDashboard;
