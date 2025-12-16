@@ -1,0 +1,25 @@
+{
+    "metadata": {
+        "title": "Importaciones Forestales",
+        "source": "SERFOR - Comercio Exterior (4.2.4)",
+        "lastUpdated": "2024"
+    },
+    "kpi": {
+        "total2024": 1195375609,
+        "variacionTotal": 0.10
+    },
+    "categories": [
+        {
+            "categoria": "Productos Maderables",
+            "valor2023": 1148187695,
+            "valor2024": 1144289774,
+            "variacion": -0.34
+        },
+        {
+            "categoria": "Productos No Maderables",
+            "valor2023": 45979744,
+            "valor2024": 51085835,
+            "variacion": 11.11
+        }
+    ]
+}

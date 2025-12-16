@@ -1,0 +1,28 @@
+{
+    "metadata": {
+        "title": "Balanza Comercial Forestal",
+        "source": "SERFOR - Comercio Exterior (4.2.5)",
+        "lastUpdated": "2024"
+    },
+    "kpi": {
+        "exportaciones2024": 466920326,
+        "importaciones2024": 1195375609,
+        "deficit2024": -728455283,
+        "variacionExportaciones": 8.62,
+        "variacionImportaciones": 0.10
+    },
+    "comparativo": [
+        {
+            "indicador": "Exportaciones",
+            "valor2023": 429846455,
+            "valor2024": 466920326,
+            "variacion": 8.62
+        },
+        {
+            "indicador": "Importaciones",
+            "valor2023": 1194167440,
+            "valor2024": 1195375609,
+            "variacion": 0.10
+        }
+    ]
+}

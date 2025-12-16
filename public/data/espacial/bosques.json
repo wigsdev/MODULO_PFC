@@ -9,11 +9,11 @@
   },
   "regions": [
     {
-      "region": "MADRE DE DIOS",
+      "region": "DIOS",
       "superficie2024": 7763535.54
     },
     {
-      "region": "SAN MARTÍN",
+      "region": "MARTÍN",
       "superficie2024": 3248576.91
     },
     {
@@ -31,10 +31,6 @@
     {
       "region": "CAJAMARCA",
       "superficie2024": 339512.58
-    },
-    {
-      "region": "ÁNCASH",
-      "superficie2024": 0
     }
   ]
 }

@@ -1,0 +1,70 @@
+{
+    "metadata": {
+        "title": "Volumen Movilizado de Madera",
+        "source": "SERFOR - Datos de Mercado (4.2.1)",
+        "lastUpdated": "2024"
+    },
+    "kpi": {
+        "totalVolumen": 700488.26,
+        "numRegiones": 7,
+        "topRegion": "Cajamarca"
+    },
+    "regions": [
+        {
+            "region": "Cajamarca",
+            "volumen": 238260,
+            "especie": "Cedro huasca",
+            "tipo": "Concesionada",
+            "tendencia": "baja",
+            "tendenciaTexto": "Registro bajo (Informalidad/Autoconsumo)"
+        },
+        {
+            "region": "Madre de Dios",
+            "volumen": 168385.91,
+            "especie": "Ishpingo",
+            "tipo": "Comunitaria",
+            "tendencia": "muy_alta",
+            "tendenciaTexto": "Muy Alta (Bosque Natural)"
+        },
+        {
+            "region": "Junín",
+            "volumen": 121088.89,
+            "especie": "Cedro huasca",
+            "tipo": "Concesionada",
+            "tendencia": "alta",
+            "tendenciaTexto": "Alta (Hub logístico)"
+        },
+        {
+            "region": "Huánuco",
+            "volumen": 69293.15,
+            "especie": "Achihua",
+            "tipo": "Privada",
+            "tendencia": "alta",
+            "tendenciaTexto": "Alta (Plantaciones)"
+        },
+        {
+            "region": "Ancash",
+            "volumen": 55780,
+            "especie": "Cedro huasca",
+            "tipo": "Concesionada",
+            "tendencia": "baja",
+            "tendenciaTexto": "Baja"
+        },
+        {
+            "region": "Pasco",
+            "volumen": 30857.3,
+            "especie": "Achotillo",
+            "tipo": "Comunitaria",
+            "tendencia": "media",
+            "tendenciaTexto": "Media"
+        },
+        {
+            "region": "San Martín",
+            "volumen": 16823.01,
+            "especie": "Lupuna",
+            "tipo": "Privada",
+            "tendencia": "media",
+            "tendenciaTexto": "Media (Transición a PFC)"
+        }
+    ]
+}

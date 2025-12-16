@@ -1,0 +1,25 @@
+{
+    "metadata": {
+        "title": "Exportaciones Forestales",
+        "source": "SERFOR - Comercio Exterior (4.2.3)",
+        "lastUpdated": "2024"
+    },
+    "kpi": {
+        "total2024": 466920326,
+        "variacionTotal": 8.62
+    },
+    "categories": [
+        {
+            "categoria": "Productos Maderables",
+            "valor2023": 212856620,
+            "valor2024": 217810672,
+            "variacion": 2.33
+        },
+        {
+            "categoria": "Productos No Maderables",
+            "valor2023": 216989835,
+            "valor2024": 249109655,
+            "variacion": 14.80
+        }
+    ]
+}
