@@ -9,6 +9,7 @@ export interface SidebarItem {
     icon: LucideIcon;
     path?: string;
     external?: boolean;
+    highlight?: boolean;
     subItems?: SidebarItem[];
 }
 
@@ -48,7 +49,9 @@ export default function Sidebar({ title, items }: SidebarProps) {
             "w-full flex items-center gap-3 py-3 text-xs text-left transition-all border-l-4 cursor-pointer",
             isActive && !hasSubItems
                 ? "bg-serfor border-yellow-400 text-white font-bold shadow-inner"
-                : "border-transparent text-green-100 hover:bg-[#206b24] hover:text-white"
+                : item.highlight
+                    ? "border-yellow-400 bg-green-900/50 text-yellow-100 font-bold"
+                    : "border-transparent text-green-100 hover:bg-[#206b24] hover:text-white"
         );
 
         if (hasSubItems) {
@@ -108,7 +111,7 @@ export default function Sidebar({ title, items }: SidebarProps) {
                     }
                 }}
             >
-                <item.icon size={16} className={isActive ? 'text-yellow-400' : 'text-green-300'} />
+                <item.icon size={16} className={isActive ? 'text-yellow-400' : (item.highlight ? 'text-yellow-300' : 'text-green-300')} />
                 <span>{item.label}</span>
                 {!hasSubItems && isActive && <ChevronRight size={14} className="ml-auto text-yellow-400" />}
             </Link>

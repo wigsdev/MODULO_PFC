@@ -27,7 +27,11 @@ const scripts = [
     'process_sector_reservas.js',
     'process_sector_bpp.js',
     'process_sector_sitios.js',
-    'process_sector_carbono.js'
+    'process_sector_carbono.js',
+    'process_economia_especies.js',
+    'process_economia_precios.js',
+    'process_economia_industria.js',
+    'process_economia_proveedores.js'
 ];
 
 let hasError = false;

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Principales Especies Aprovechadas en PFC",
+    "source": "RNPF / Anuarios Forestales",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "totalSpecies": 9,
+    "nativeCount": 6,
+    "exoticCount": 3
+  },
+  "typeDistribution": [
+    {
+      "name": "Nativa",
+      "value": 6
+    },
+    {
+      "name": "Exótica",
+      "value": 3
+    }
+  ],
+  "list": [
+    {
+      "commonName": "Bolaina Blanca",
+      "scientificName": "Guazuma crinita",
+      "type": "Nativa",
+      "region": "Huánuco, Ucayali, San Martín",
+      "use": "Madera ligera, Tableros, Embalaje",
+      "source": "RNPF / Anuario"
+    },
+    {
+      "commonName": "Capirona",
+      "scientificName": "Calycophyllum spruceanum",
+      "type": "Nativa",
+      "region": "San Martín, Ucayali",
+      "use": "Pisos, Construcción, Postes",
+      "source": "RNPF / Anuario"
+    },
+    {
+      "commonName": "Pino",
+      "scientificName": "Pinus tecunumanii / patula",
+      "type": "Exótica",
+      "region": "Pasco, Cajamarca, Junín",
+      "use": "Aserrío, Pulpa, Resina",
+      "source": "RNPF / Anuario"
+    },
+    {
+      "commonName": "Eucalipto",
+      "scientificName": "Eucalyptus globulus / saligna",
+      "type": "Exótica",
+      "region": "Áncash, Cajamarca, Junín",
+      "use": "Postes, Minería, Construcción",
+      "source": "RNPF / Anuario"
+    },
+    {
+      "commonName": "Teca",
+      "scientificName": "Tectona grandis",
+      "type": "Exótica",
+      "region": "San Martín",
+      "use": "Exportación (Pisos, Muebles)",
+      "source": "RNPF"
+    },
+    {
+      "commonName": "Tornillo",
+      "scientificName": "Cedrelinga cateniformis",
+      "type": "Nativa",
+      "region": "Huánuco, Pasco (Selva)",
+      "use": "Construcción, Muebles",
+      "source": "RNPF (Restauración)"
+    },
+    {
+      "commonName": "Caoba",
+      "scientificName": "Swietenia macrophylla",
+      "type": "Nativa",
+      "region": "Madre de Dios",
+      "use": "Muebles finos (Alto valor/Riesgo)",
+      "source": "RNPF (Conservación)"
+    },
+    {
+      "commonName": "Pashaco",
+      "scientificName": "Schizolobium amazonicum",
+      "type": "Nativa",
+      "region": "Huánuco, San Martín",
+      "use": "Laminados, Triplay",
+      "source": "Anuario 2024"
+    },
+    {
+      "commonName": "Marupa",
+      "scientificName": "Simarouba amara",
+      "type": "Nativa",
+      "region": "Ucayali, San Martín",
+      "use": "Interiores, Molduras",
+      "source": "CITEforestal"
+    }
+  ]
+}

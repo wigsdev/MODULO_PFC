@@ -30,6 +30,7 @@ import GestionOrganizacional from '@/pages/inicio/GestionOrganizacional';
 import SectorInicio from './pages/sector/SectorInicio';
 import EconomiaInicio from './pages/economia/EconomiaInicio';
 import EspeciesAprovechadas from './pages/economia/EspeciesAprovechadas';
+import Proveedores from './pages/economia/Proveedores';
 import TransformacionIndustrial from './pages/economia/TransformacionIndustrial';
 import VolumenMovilizado from './pages/economia/VolumenMovilizado';
 import Concesiones from './pages/economia/Concesiones';
@@ -159,6 +160,7 @@ function App() {
           <Route path="economia" element={<EconomiaLayout />}>
             <Route index element={<Navigate to="inicio" replace />} />
             <Route path="inicio" element={<EconomiaInicio />} />
+            <Route path="proveedores" element={<Proveedores />} />
             <Route path="especies" element={<EspeciesAprovechadas />} />
             <Route path="precios" element={<Precios />} />
             <Route path="industria" element={<TransformacionIndustrial />} />
