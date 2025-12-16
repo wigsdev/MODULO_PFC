@@ -106,7 +106,6 @@ const Precios = () => {
         filtered.forEach(item => {
             const year = String(item.year);
             const price = parseFloat(item.price);
-            const yearNum = typeof item.year === 'number' ? item.year : parseInt(String(item.year));
             if (!isNaN(price)) { // Include all years including 2025
                 if (!yearPrices[year]) yearPrices[year] = { sum: 0, count: 0 };
                 yearPrices[year].sum += price;
