@@ -3,9 +3,9 @@ import {
     Factory,
     MapPin,
     Search,
-    Activity,
-    Info,
-    ExternalLink
+    ExternalLink,
+    Building2,
+    CheckCircle
 } from 'lucide-react';
 import {
     BarChart,

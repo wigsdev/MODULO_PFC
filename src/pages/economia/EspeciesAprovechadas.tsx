@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import {
     TreeDeciduous,
-    Trees,
-    Info,
     Globe,
-    Search
+    Search,
+    Sprout
 } from 'lucide-react';
 import {
     ResponsiveContainer,
