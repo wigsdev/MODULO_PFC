@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "title": "Sitios Declarados y Ecosistemas Frágiles",
+    "source": "SERFOR / Gob. Regionales",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "totalSites": 11,
+    "totalArea": 172950,
+    "highRestriction": 7
+  },
+  "categoryDistribution": [
+    {
+      "name": "Ecosistema Frágil",
+      "value": 8
+    },
+    {
+      "name": "Sitio Prioritario (ZEE)",
+      "value": 1
+    },
+    {
+      "name": "Sitio RAMSAR",
+      "value": 1
+    },
+    {
+      "name": "Sitio Prioritario",
+      "value": 1
+    }
+  ],
+  "list": [
+    {
+      "region": "HUÁNUCO",
+      "name": "Bosque Montano de Carpish",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 271-2018-SERFOR",
+      "surface": 120000,
+      "surfaceRaw": "~120,000",
+      "restriction": "Alta. Zona de endemismo. Prohibido cambio de uso. Solo reforestación con nativas."
+    },
+    {
+      "region": "HUÁNUCO",
+      "name": "Monte Potrero",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 060-2019-SERFOR",
+      "surface": 3500,
+      "surfaceRaw": "~3,500",
+      "restriction": "Media. Requiere Plan de Manejo Ambiental detallado."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "name": "Humedal Indoche",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 123-2019-SERFOR",
+      "surface": 650,
+      "surfaceRaw": "~650",
+      "restriction": "Absoluta. Prohibido drenaje o plantación comercial (Aguajal)."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "name": "Bosques Secos del Huallaga",
+      "category": "Sitio Prioritario (ZEE)",
+      "legal": "Ordenanza Regional",
+      "surface": 0,
+      "surfaceRaw": "Variable",
+      "restriction": "Media. Apto para restauración productiva, no monocultivo intensivo."
+    },
+    {
+      "region": "PASCO",
+      "name": "Bosques de Sho'llet",
+      "category": "Ecosistema Frágil / ACR",
+      "legal": "R.M. N° 092-2005-AG",
+      "surface": 8900,
+      "surfaceRaw": "~8,900",
+      "restriction": "Alta. Bosque de neblina. Zona de captación hídrica."
+    },
+    {
+      "region": "JUNÍN",
+      "name": "Tarmatambo",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 088-2018-SERFOR",
+      "surface": 2100,
+      "surfaceRaw": "~2,100",
+      "restriction": "Media. Zona andina. Prioridad para sistemas silvopastoriles, no forestal puro."
+    },
+    {
+      "region": "JUNÍN",
+      "name": "Humedales de Chinchaycocha",
+      "category": "Sitio RAMSAR / EF",
+      "legal": "D.S. N° 002-2009-MINAM",
+      "surface": 0,
+      "surfaceRaw": "Variable",
+      "restriction": "Absoluta. Zona de protección estricta de avifauna."
+    },
+    {
+      "region": "CAJAMARCA",
+      "name": "Bosques Secos del Marañón",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 153-2018-SERFOR",
+      "surface": 25000,
+      "surfaceRaw": "~25,000",
+      "restriction": "Alta. Alta biodiversidad endémica. PFC viable solo con especies nativas xerofíticas."
+    },
+    {
+      "region": "ANCASH",
+      "name": "Lomas de Mongón",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 072-2018-SERFOR",
+      "surface": 11000,
+      "surfaceRaw": "~11,000",
+      "restriction": "Absoluta. Ecosistema costero efímero. No apto para plantaciones maderables."
+    },
+    {
+      "region": "ANCASH",
+      "name": "Laguna Conococha",
+      "category": "Ecosistema Frágil",
+      "legal": "RDE N° 120-2019-SERFOR",
+      "surface": 1800,
+      "surfaceRaw": "~1,800",
+      "restriction": "Alta. Cabecera de cuenca (Río Santa). Protección hídrica."
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "name": "Bosques de Terrazas Bajas",
+      "category": "Sitio Prioritario",
+      "legal": "ZEE Regional",
+      "surface": 0,
+      "surfaceRaw": "N/D",
+      "restriction": "Media. Zonas de castañales (Bertholletia excelsa). La \"Ley de Castaña\" prohíbe tala."
+    }
+  ]
+}

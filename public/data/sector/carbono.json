@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "Mapa de Carbono y Vocación de Negocio",
+    "source": "MINAM / Proyectos REDD+",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "avgStockC": 84.65714285714286,
+    "maxStockRegion": "MADRE DE DIOS",
+    "totalPotentialRegions": 7
+  },
+  "list": [
+    {
+      "region": "MADRE DE DIOS",
+      "ecozone": "Selva Baja / Castañales",
+      "stockC": 128.5,
+      "stockCO2": 471.6,
+      "vocation": "REDD+ (Conservación): El negocio es mantener el bosque en pie. Alto valor por hectárea protegida."
+    },
+    {
+      "region": "PASCO",
+      "ecozone": "Selva Alta Accesible",
+      "stockC": 109.2,
+      "stockCO2": 400.7,
+      "vocation": "REDD+ / Manejo: Gestión sostenible en zonas de Oxapampa."
+    },
+    {
+      "region": "JUNÍN",
+      "ecozone": "Selva Alta / Bosque de Colina",
+      "stockC": 105.8,
+      "stockCO2": 388.3,
+      "vocation": "Mixto: Conservación en Satipo y Plantaciones en valles deforestados."
+    },
+    {
+      "region": "HUÁNUCO",
+      "ecozone": "Selva Alta Accesible",
+      "stockC": 96.4,
+      "stockCO2": 353.8,
+      "vocation": "Restauración: Al tener bosques degradados, hay oportunidad de mejorar stocks."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "ecozone": "Selva Alta / Bosque Seco",
+      "stockC": 85,
+      "stockCO2": 311.9,
+      "vocation": "Agroforestería: El carbono se captura en sistemas Café/Cacao + Árboles."
+    },
+    {
+      "region": "CAJAMARCA",
+      "ecozone": "Bosque Seco / Andino",
+      "stockC": 42.1,
+      "stockCO2": 154.5,
+      "vocation": "ARR (Reforestación): El stock natural es bajo, por lo que una plantación (Pino/Eucalipto) genera mucha \"Adicionalidad\" (Captura nueva)."
+    },
+    {
+      "region": "ÁNCASH",
+      "ecozone": "Matorral / Relictos",
+      "stockC": 25.6,
+      "stockCO2": 93.9,
+      "vocation": "ARR (Reforestación): Máximo potencial de captura. Transformar suelo desnudo en bosque genera la mayor cantidad de certificados vendibles."
+    }
+  ]
+}

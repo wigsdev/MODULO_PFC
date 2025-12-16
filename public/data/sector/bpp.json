@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Bosques de Producción Permanente (BPP): Áreas Sustraídas",
+    "source": "SERFOR - Autoridad Forestal",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "totalOriginal": 5365760,
+    "totalCurrent": 3161367.0399999996,
+    "totalSustracted": 2204392.9600000004,
+    "mostCriticalRegion": "MADRE DE DIOS",
+    "percentSustracted": 41.082585877862606
+  },
+  "list": [
+    {
+      "region": "MADRE DE DIOS",
+      "name": "BPP Madre de Dios",
+      "legal": "R.M. Nº 017-2002-AG",
+      "originalArea": 2560000,
+      "currentArea": 1481375.22,
+      "sustractedArea": 1078624.78,
+      "status": "ALTA RESTRICCIÓN",
+      "observation": "Se sustrajo más de 1 millón de ha (Zona La Pampa y eje interoceánico) debido a minería y agricultura. Reorganizado en 2024."
+    },
+    {
+      "region": "HUÁNUCO",
+      "name": "BPP Huánuco",
+      "legal": "R.M. Nº 0549-2002-AG",
+      "originalArea": 880846,
+      "currentArea": 152207.18,
+      "sustractedArea": 728638.82,
+      "status": "CRÍTICO",
+      "observation": "El 82% del bosque estatal fue sustraído. La Zona 2A (Puerto Inca) fue desafectada casi totalmente para titular posesionarios."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "name": "BPP San Martín",
+      "legal": "R.M. Nº 0549-2002-AG",
+      "originalArea": 1501291,
+      "currentArea": 1122131.54,
+      "sustractedArea": 379159.46,
+      "status": "FRAGMENTADO",
+      "observation": "Las sustracciones se concentran en el eje del Huallaga Central y Alto Mayo, validando la ocupación agrícola histórica."
+    },
+    {
+      "region": "PASCO",
+      "name": "BPP Pasco",
+      "legal": "R.M. Nº 0549-2002-AG",
+      "originalArea": 173068,
+      "currentArea": 160542.8,
+      "sustractedArea": 12525.2,
+      "status": "VIGENTE",
+      "observation": "Mantiene su integridad en la zona de Oxapampa y Puerto Bermúdez."
+    },
+    {
+      "region": "JUNÍN",
+      "name": "BPP Junín",
+      "legal": "R.M. Nº 0549-2002-AG",
+      "originalArea": 250555,
+      "currentArea": 245110.3,
+      "sustractedArea": 5444.7,
+      "status": "ESTABLE",
+      "observation": "Reducción mínima (2%). Ubicado en la cuenca del Río Tambo/Ene (Satipo), con menor presión de titulación individual."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "title": "Reservas de Biosfera del Perú",
+    "source": "SERNANP / UNESCO",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "totalReserves": 8,
+    "totalRegions": 11,
+    "latestReserve": "Bicentenario - Ayacucho"
+  },
+  "list": [
+    {
+      "year": 2023,
+      "name": "Bicentenario - Ayacucho",
+      "regions": "Ayacucho"
+    },
+    {
+      "year": 2021,
+      "name": "Avireri-Vraem",
+      "regions": "Junín, Cusco"
+    },
+    {
+      "year": 2020,
+      "name": "Bosques de Neblina - Selva Central",
+      "regions": "Junín"
+    },
+    {
+      "year": 2016,
+      "name": "Gran Pajatén",
+      "regions": "San Martín, La Libertad, Amazonas"
+    },
+    {
+      "year": 2010,
+      "name": "Oxapampa-Asháninka-Yánesha (BIOAY)",
+      "regions": "Pasco"
+    },
+    {
+      "year": 1977,
+      "name": "Huascarán",
+      "regions": "Áncash"
+    },
+    {
+      "year": 1977,
+      "name": "Manu",
+      "regions": "Cusco, Madre de Dios"
+    },
+    {
+      "year": 1977,
+      "name": "Noroeste Amotapes-Manglares",
+      "regions": "Tumbes, Piura"
+    }
+  ]
+}

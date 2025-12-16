@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Decomisos Forestales (2024)",
+    "source": "SNIFFS - SERFOR (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalAserrada": 715.8,
+    "totalRolliza": 260.8,
+    "totalCarbon": 13900,
+    "topRegion": "SAN MARTÍN"
+  },
+  "regions": [
+    {
+      "region": "SAN MARTÍN",
+      "aserrada": 480.25,
+      "rolliza": 12.5,
+      "carbon": 8500
+    },
+    {
+      "region": "JUNÍN",
+      "aserrada": 165.3,
+      "rolliza": 98.2,
+      "carbon": 0
+    },
+    {
+      "region": "PASCO",
+      "aserrada": 68.15,
+      "rolliza": 145.8,
+      "carbon": 0
+    },
+    {
+      "region": "ÁNCASH",
+      "aserrada": 2.1,
+      "rolliza": 1.5,
+      "carbon": 1200
+    },
+    {
+      "region": "CAJAMARCA",
+      "aserrada": 0,
+      "rolliza": 2.8,
+      "carbon": 0
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "aserrada": 0,
+      "rolliza": 0,
+      "carbon": 4200
+    }
+  ]
+}

@@ -16,16 +16,17 @@ import DocsInicio from '@/pages/espacial/docs/DocsInicio';
 import ManualesTecnicos from '@/pages/espacial/docs/ManualesTecnicos';
 import ProtocolosInteroperabilidad from '@/pages/espacial/docs/ProtocolosInteroperabilidad';
 import OtrosDocs from '@/pages/espacial/docs/OtrosDocs';
-import Deforestacion from '@/pages/sector/Deforestacion';
+import SectorDeforestacion from '@/pages/sector/SectorDeforestacion';
+import SectorEspecies from '@/pages/sector/SectorEspecies';
+import SectorVolumenDecomisado from '@/pages/sector/SectorVolumenDecomisado';
+import SectorReservas from '@/pages/sector/SectorReservas';
+import SectorAreasSustraidas from '@/pages/sector/SectorAreasSustraidas';
+import SectorSitiosDeclarados from '@/pages/sector/SectorSitiosDeclarados';
+import SectorCarbono from '@/pages/sector/SectorCarbono';
 import Precios from '@/pages/economia/Precios';
 import Inicio from '@/pages/inicio/Inicio';
 import GestionOrganizacional from '@/pages/inicio/GestionOrganizacional';
-import Decomisos from '@/pages/sector/Decomisos';
-import EspeciesDecomisadas from '@/pages/sector/EspeciesDecomisadas';
-import ReservasBiosfera from '@/pages/sector/ReservasBiosfera';
-import AreasDeclaradas from '@/pages/sector/AreasDeclaradas';
-import SitiosDeclarados from '@/pages/sector/SitiosDeclarados';
-import Carbono from '@/pages/sector/Carbono';
+
 import SectorInicio from './pages/sector/SectorInicio';
 import EconomiaInicio from './pages/economia/EconomiaInicio';
 import EspeciesAprovechadas from './pages/economia/EspeciesAprovechadas';
@@ -57,6 +58,10 @@ import Movilizaciones from '@/pages/espacial/sniffs/Movilizaciones';
 import DecomisosEspacial from '@/pages/espacial/sniffs/Decomisos';
 import Plantaciones from '@/pages/espacial/sniffs/Plantaciones';
 import Registros from '@/pages/espacial/sniffs/Registros';
+import RegistrosViveros from '@/pages/espacial/sniffs/RegistrosViveros';
+import RegistrosPlantaciones from '@/pages/espacial/sniffs/RegistrosPlantaciones';
+import RegistrosInfracciones from '@/pages/espacial/sniffs/RegistrosInfracciones';
+import RegistrosRegentes from '@/pages/espacial/sniffs/RegistrosRegentes';
 import EstudiosMercado from '@/pages/espacial/comercial/EstudiosMercado';
 import Estadisticas from '@/pages/espacial/comercial/Estadisticas';
 import Boletines from '@/pages/espacial/comercial/Boletines';
@@ -106,7 +111,10 @@ function App() {
             <Route path="sniffs/movilizaciones" element={<Movilizaciones />} />
             <Route path="sniffs/decomisos" element={<DecomisosEspacial />} />
             <Route path="sniffs/plantaciones" element={<Plantaciones />} />
-            <Route path="sniffs/registros" element={<Registros />} />
+            <Route path="sniffs/registros/viveros" element={<RegistrosViveros />} />
+            <Route path="sniffs/registros/plantaciones" element={<RegistrosPlantaciones />} />
+            <Route path="sniffs/registros/infracciones" element={<RegistrosInfracciones />} />
+            <Route path="sniffs/registros/regentes" element={<RegistrosRegentes />} />
 
             {/* Comercial */}
             <Route path="comercial/estudios-mercado" element={<EstudiosMercado />} />
@@ -135,13 +143,16 @@ function App() {
           <Route path="sector" element={<SectorLayout />}>
             <Route index element={<Navigate to="inicio" replace />} />
             <Route path="inicio" element={<SectorInicio />} />
-            <Route path="deforestacion" element={<Deforestacion />} />
-            <Route path="decomisos" element={<Decomisos />} />
-            <Route path="especies" element={<EspeciesDecomisadas />} />
-            <Route path="reservas" element={<ReservasBiosfera />} />
-            <Route path="areas" element={<AreasDeclaradas />} />
-            <Route path="sitios" element={<SitiosDeclarados />} />
-            <Route path="carbono" element={<Carbono />} />
+            <Route path="deforestacion" element={<SectorDeforestacion />} />
+            <Route path="decomisos" element={<SectorVolumenDecomisado />} />
+            <Route path="especies" element={<SectorEspecies />} />
+            <Route path="especies" element={<SectorEspecies />} />
+            <Route path="reservas" element={<SectorReservas />} />
+            <Route path="reservas" element={<SectorReservas />} />
+            <Route path="areas" element={<SectorAreasSustraidas />} />
+            <Route path="areas" element={<SectorAreasSustraidas />} />
+            <Route path="sitios" element={<SectorSitiosDeclarados />} />
+            <Route path="carbono" element={<SectorCarbono />} />
           </Route>
 
           {/* Economia Routes */}

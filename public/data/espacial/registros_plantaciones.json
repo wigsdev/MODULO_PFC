@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Registro Nacional de Plantaciones (2024)",
+    "source": "RNPF - SERFOR (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalArea": 63233.259999999995,
+    "totalCertificados": 138.745,
+    "topRegion": "HUÁNUCO"
+  },
+  "regions": [
+    {
+      "region": "HUÁNUCO",
+      "certificados": 2.125,
+      "area": 22201.5,
+      "dinamica": "Alta Inversión: Predios medianos con proyección industrial."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "certificados": 4.01,
+      "area": 12041.38,
+      "dinamica": "Social/Agroforestal: Masificación en sistemas con café/cacao."
+    },
+    {
+      "region": "PASCO",
+      "certificados": 1.467,
+      "area": 10791.02,
+      "dinamica": "Mixto: Transición entre pequeños y medianos reforestadores."
+    },
+    {
+      "region": "CAJAMARCA",
+      "certificados": 1.113,
+      "area": 6804.59,
+      "dinamica": "Comunal/Macizo: Pinos en áreas de comunidades campesinas."
+    },
+    {
+      "region": "JUNÍN",
+      "certificados": 1.769,
+      "area": 5942.01,
+      "dinamica": "Pequeño Productor: Atomización en Valle del Mantaro y Selva Central."
+    },
+    {
+      "region": "ÁNCASH",
+      "certificados": 1.261,
+      "area": 4175.84,
+      "dinamica": "Subsistencia Agremiada: Alto registro de Comunidades (Pers. Jurídica)."
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "certificados": 127,
+      "area": 1276.92,
+      "dinamica": "Incipiente/Industrial: Pocos actores, pero con superficies relevantes."
+    }
+  ]
+}

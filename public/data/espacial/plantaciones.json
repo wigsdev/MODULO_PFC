@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "Plantaciones Forestales (RNPF 2024)",
+    "source": "SNIFFS - SERFOR (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalArea": 3898.1200000000003,
+    "totalCertificados": 917,
+    "topRegion": "SAN MARTÍN"
+  },
+  "regions": [
+    {
+      "region": "SAN MARTÍN",
+      "certificados": 558,
+      "produccion": 1796.85,
+      "proteccion": 105.92,
+      "restauracion": 0,
+      "total": 1902.77
+    },
+    {
+      "region": "HUÁNUCO",
+      "certificados": 106,
+      "produccion": 896.2,
+      "proteccion": 0,
+      "restauracion": 0,
+      "total": 896.2
+    },
+    {
+      "region": "PASCO",
+      "certificados": 87,
+      "produccion": 399.51,
+      "proteccion": 0,
+      "restauracion": 0,
+      "total": 399.51
+    },
+    {
+      "region": "CAJAMARCA",
+      "certificados": 63,
+      "produccion": 268.16,
+      "proteccion": 0,
+      "restauracion": 0,
+      "total": 268.16
+    },
+    {
+      "region": "JUNÍN",
+      "certificados": 83,
+      "produccion": 230.98,
+      "proteccion": 0,
+      "restauracion": 0,
+      "total": 230.98
+    },
+    {
+      "region": "ÁNCASH",
+      "certificados": 20,
+      "produccion": 200.5,
+      "proteccion": 0,
+      "restauracion": 0,
+      "total": 200.5
+    }
+  ]
+}

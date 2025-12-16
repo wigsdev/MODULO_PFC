@@ -1,0 +1,15 @@
+﻿ID_INTERNO,FUENTE_DATO,RUC_ENTIDAD,NOMBRE_ESTABLECIMIENTO,TIPO_INSTALACION,TITULAR_ADMINISTRADOR,DEPARTAMENTO,PROVINCIA,DISTRITO,ESPECIES_PRINCIPALES,CAPACIDAD_ANUAL,ESTADO_OPERATIVO,COORD_X_REF,COORD_Y_REF,OBSERVACIONES
+VIV-001,INIA,20131366028,EEA Baños del Inca,Semillero,INIA,CAJAMARCA,Cajamarca,Baños del Inca,"Pino patula, Eucalipto, Quinual",50000,Activo,-78.465,-7.163,Semilla Certificada
+VIV-002,PRIVADO,20453922186,Granja Porcón,Vivero Forestal,Coop. Atahualpa Jerusalén,CAJAMARCA,Cajamarca,Cajamarca,"Pinus patula, Pinus radiata",200000,Activo,-78.617,-7.033,Modelo exitoso sierra
+VIV-003,INIA,20131366028,EEA Canchán,Semillero,INIA,HUANUCO,Huánuco,Amarilis,"Especies nativas de sierra, Aliso",30000,Activo,-76.225,-9.918,Investigación
+VIV-004,PRIVADO,S/D,Vivero Forestal Puerto Inca,Vivero Comercial,Privado,HUANUCO,Puerto Inca,Puerto Inca,"Bolaina, Capirona, Marupa",100000,Activo,-74.965,-9.315,Zona de alta producción
+VIV-005,INIA,20131366028,EEA Santa Ana,Semillero,INIA,JUNIN,Huancayo,El Tambo,"Eucalipto globulus, Pino, Colle",60000,Activo,-75.221,-12.053,Referente Sierra Central
+VIV-006,INIA,20131366028,EEA Pichanaki,Banco Germoplasma,INIA,JUNIN,Chanchamayo,Pichanaki,"Café, Forestales tropicales",45000,Activo,-74.883,-10.933,Selva Central
+VIV-007,INIA,20131366028,EEA El Porvenir,Semillero,INIA,SAN MARTIN,San Martín,Juan Guerra,"Tornillo, Cedro, Caoba, Teca",80000,Activo,-76.321,-6.567,Sede principal Amazonía
+VIV-008,IIAP,20135853501,Centro Inv. Quistococha,Vivero Investigación,IIAP,LORETO,Maynas,San Juan,"Frutales amazónicos, Camu Camu",15000,Activo,-73.319,-3.829,Ref. Investigación
+VIV-009,GORE,20449296686,Vivero Calzada (ARA),Vivero Institucional,GORE San Martín,SAN MARTIN,Moyobamba,Calzada,"Teca, Eucalipto tropical, Nativas",150000,Activo,-77.063,-6.031,Gestión Regional
+VIV-010,INIA,20131366028,EEA San Bernardo,Semillero,INIA,MADRE DE DIOS,Tambopata,Tambopata,"Castaña, Shiringa, Caoba, Cedro",20000,Activo,-69.255,-12.554,Especies alto valor
+VIV-011,ITP,20505406696,Vivero CITE Productivo,Vivero Demostrativo,CITE / ITP,MADRE DE DIOS,Tambopata,Tambopata,"Copoazú, Castaña",5000,Activo,-69.183,-12.593,Fines educativos
+VIV-012,AGRORURAL,20504752809,Vivero Huaraz,Vivero Institucional,AGRORURAL,ANCASH,Huaraz,Huaraz,"Pino, Eucalipto (Sierra)",50000,Activo,-77.528,-9.527,Campañas de siembra
+VIV-013,PRIVADO,S/D,Vivero Forestal Chimbote,Vivero Comercial,SIDERPERU,ANCASH,Santa,Chimbote,"Ornamentales, Forestales costa",100000,Activo,-78.583,-9.083,RSE
+VIV-014,PRIVADO,S/D,Viveros Villa Rica,Viveros Privados,Asoc. Productores,PASCO,Oxapampa,Villa Rica,"Pino tecunumanii, Eucalipto",80000,Activo,-75.267,-10.733,Clúster de viveros

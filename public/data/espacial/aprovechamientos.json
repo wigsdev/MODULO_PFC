@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "title": "Aprovechamientos Forestales (2024)",
+    "source": "SNIFFS - SERFOR (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalVolumen": 544261.31,
+    "totalSuperficie": 3414886.9399999995,
+    "topRegion": "MADRE DE DIOS"
+  },
+  "regions": [
+    {
+      "region": "MADRE DE DIOS",
+      "volumen": 252654.67,
+      "superficie": 2301316
+    },
+    {
+      "region": "HUÁNUCO",
+      "volumen": 156066.82,
+      "superficie": 162278.82
+    },
+    {
+      "region": "JUNÍN",
+      "volumen": 94625.35,
+      "superficie": 62995.45
+    },
+    {
+      "region": "PASCO",
+      "volumen": 23172.93,
+      "superficie": 16526.78
+    },
+    {
+      "region": "SAN MARTÍN",
+      "volumen": 17552.79,
+      "superficie": 871560.36
+    },
+    {
+      "region": "CAJAMARCA",
+      "volumen": 188.75,
+      "superficie": 76.94
+    },
+    {
+      "region": "ÁNCASH",
+      "volumen": 0,
+      "superficie": 132.59
+    }
+  ]
+}

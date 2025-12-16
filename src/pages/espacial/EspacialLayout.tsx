@@ -59,7 +59,17 @@ const ESPACIAL_ITEMS = [
             { id: 'movilizaciones', label: 'Movilizaciones', path: '/espacial/sniffs/movilizaciones', icon: Map },
             { id: 'decomisos', label: 'Decomisos', path: '/espacial/sniffs/decomisos', icon: Scale },
             { id: 'plantaciones', label: 'Plantaciones', path: '/espacial/sniffs/plantaciones', icon: Sprout },
-            { id: 'registros', label: 'Registros (Viveros/Regentes)', path: '/espacial/sniffs/registros', icon: ClipboardList },
+            {
+                id: 'registros',
+                label: 'Registros (Viveros/Regentes)',
+                icon: ClipboardList,
+                subItems: [
+                    { id: 'viveros', label: 'Viveros y Semilleros', path: '/espacial/sniffs/registros/viveros', icon: Sprout },
+                    { id: 'plantaciones-pf', label: 'Plantaciones (Reg)', path: '/espacial/sniffs/registros/plantaciones', icon: TreePine },
+                    { id: 'infracciones', label: 'Infracciones', path: '/espacial/sniffs/registros/infracciones', icon: Scale },
+                    { id: 'regentes', label: 'Regentes Forestales', path: '/espacial/sniffs/registros/regentes', icon: ShieldCheck },
+                ]
+            },
         ]
     },
     {

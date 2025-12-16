@@ -12,7 +12,22 @@ const scripts = [
     'process_inventario.js',
     'process_m_superficie.js',
     'process_autoridades.js',
-    'process_m_historico.js'
+    'process_m_historico.js',
+    'process_aprovechamientos.js',
+    'process_movilizaciones.js',
+    'process_decomisos.js',
+    'process_plantaciones.js',
+    'process_viveros.js',
+    'process_plantaciones_pf.js',
+    'process_regentes.js',
+    'process_infracciones.js',
+    'process_sector_deforestacion.js',
+    'process_sector_volumen.js',
+    'process_sector_especies.js',
+    'process_sector_reservas.js',
+    'process_sector_bpp.js',
+    'process_sector_sitios.js',
+    'process_sector_carbono.js'
 ];
 
 let hasError = false;

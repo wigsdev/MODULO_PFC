@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "title": "Especies de Flora Silvestre Decomisadas",
+    "source": "SNIFFS - Reportes de Decomisos",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "totalSpecies": 8,
+    "highRisk": 2,
+    "mediumRisk": 5
+  },
+  "riskDistribution": [
+    {
+      "name": "Muy Alto",
+      "value": 2
+    },
+    {
+      "name": "Alto",
+      "value": 2
+    },
+    {
+      "name": "Alto (CITES)",
+      "value": 1
+    },
+    {
+      "name": "Medio",
+      "value": 3
+    }
+  ],
+  "list": [
+    {
+      "commonName": "Algarrobo",
+      "scientificName": "Prosopis pallida",
+      "product": "Carbón Vegetal",
+      "regions": "Piura / Lambayeque / Norte",
+      "risk": "🔴 Muy Alto"
+    },
+    {
+      "commonName": "Shihuahuaco",
+      "scientificName": "Dipteryx micrantha",
+      "product": "Madera Aserrada / Parquet",
+      "regions": "Madre de Dios / Ucayali",
+      "risk": "🔴 Muy Alto"
+    },
+    {
+      "commonName": "Tornillo",
+      "scientificName": "Cedrelinga cateniformis",
+      "product": "Madera Aserrada / Rolliza",
+      "regions": "Junín / Huánuco / Pasco",
+      "risk": "🟠 Alto"
+    },
+    {
+      "commonName": "Lupuna",
+      "scientificName": "Ceiba pentandra",
+      "product": "Madera Rolliza / Laminada",
+      "regions": "Loreto / Ucayali",
+      "risk": "🟠 Alto"
+    },
+    {
+      "commonName": "Cedro",
+      "scientificName": "Cedrela odorata",
+      "product": "Madera Aserrada",
+      "regions": "Loreto / Madre de Dios",
+      "risk": "🟠 Alto (CITES)"
+    },
+    {
+      "commonName": "Cumala",
+      "scientificName": "Virola sebifera",
+      "product": "Madera Rolliza",
+      "regions": "Ucayali / Loreto",
+      "risk": "🟡 Medio"
+    },
+    {
+      "commonName": "Bolaina",
+      "scientificName": "Guazuma crinita",
+      "product": "Madera Rolliza",
+      "regions": "Huánuco / Ucayali",
+      "risk": "🟡 Medio"
+    },
+    {
+      "commonName": "Cachimbo",
+      "scientificName": "Cariniana decandra",
+      "product": "Madera Aserrada",
+      "regions": "Ucayali",
+      "risk": "🟡 Medio"
+    }
+  ]
+}

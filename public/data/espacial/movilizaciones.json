@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "title": "Movilización Forestal (2024)",
+    "source": "SNIFFS - SERFOR (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalVolumen": 329367.63000000006,
+    "totalDepositos": 131,
+    "topRegion": "MADRE DE DIOS"
+  },
+  "regions": [
+    {
+      "region": "MADRE DE DIOS",
+      "volumen": 220115.42,
+      "depositos": 18
+    },
+    {
+      "region": "JUNÍN",
+      "volumen": 59380.01,
+      "depositos": 20
+    },
+    {
+      "region": "SAN MARTÍN",
+      "volumen": 18920.15,
+      "depositos": 42
+    },
+    {
+      "region": "HUÁNUCO",
+      "volumen": 16105.77,
+      "depositos": 6
+    },
+    {
+      "region": "PASCO",
+      "volumen": 14550.88,
+      "depositos": 12
+    },
+    {
+      "region": "CAJAMARCA",
+      "volumen": 295.4,
+      "depositos": 19
+    },
+    {
+      "region": "ÁNCASH",
+      "volumen": 0,
+      "depositos": 14
+    }
+  ]
+}

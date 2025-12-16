@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "title": "Viveros y Semilleros Forestales",
+    "source": "SERFOR / INIA (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "list": [
+    {
+      "id": "VIV-001",
+      "nombre": "EEA Baños del Inca",
+      "tipo": "Semillero",
+      "titular": "INIA",
+      "departamento": "CAJAMARCA",
+      "provincia": "Cajamarca",
+      "distrito": "Baños del Inca",
+      "especies": "Pino patula, Eucalipto, Quinual",
+      "capacidad": 50000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-002",
+      "nombre": "Granja Porcón",
+      "tipo": "Vivero Forestal",
+      "titular": "Coop. Atahualpa Jerusalén",
+      "departamento": "CAJAMARCA",
+      "provincia": "Cajamarca",
+      "distrito": "Cajamarca",
+      "especies": "Pinus patula, Pinus radiata",
+      "capacidad": 200000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-003",
+      "nombre": "EEA Canchán",
+      "tipo": "Semillero",
+      "titular": "INIA",
+      "departamento": "HUANUCO",
+      "provincia": "Huánuco",
+      "distrito": "Amarilis",
+      "especies": "Especies nativas de sierra, Aliso",
+      "capacidad": 30000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-004",
+      "nombre": "Vivero Forestal Puerto Inca",
+      "tipo": "Vivero Comercial",
+      "titular": "Privado",
+      "departamento": "HUANUCO",
+      "provincia": "Puerto Inca",
+      "distrito": "Puerto Inca",
+      "especies": "Bolaina, Capirona, Marupa",
+      "capacidad": 100000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-005",
+      "nombre": "EEA Santa Ana",
+      "tipo": "Semillero",
+      "titular": "INIA",
+      "departamento": "JUNIN",
+      "provincia": "Huancayo",
+      "distrito": "El Tambo",
+      "especies": "Eucalipto globulus, Pino, Colle",
+      "capacidad": 60000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-006",
+      "nombre": "EEA Pichanaki",
+      "tipo": "Banco Germoplasma",
+      "titular": "INIA",
+      "departamento": "JUNIN",
+      "provincia": "Chanchamayo",
+      "distrito": "Pichanaki",
+      "especies": "Café, Forestales tropicales",
+      "capacidad": 45000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-007",
+      "nombre": "EEA El Porvenir",
+      "tipo": "Semillero",
+      "titular": "INIA",
+      "departamento": "SAN MARTIN",
+      "provincia": "San Martín",
+      "distrito": "Juan Guerra",
+      "especies": "Tornillo, Cedro, Caoba, Teca",
+      "capacidad": 80000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-008",
+      "nombre": "Centro Inv. Quistococha",
+      "tipo": "Vivero Investigación",
+      "titular": "IIAP",
+      "departamento": "LORETO",
+      "provincia": "Maynas",
+      "distrito": "San Juan",
+      "especies": "Frutales amazónicos, Camu Camu",
+      "capacidad": 15000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-009",
+      "nombre": "Vivero Calzada (ARA)",
+      "tipo": "Vivero Institucional",
+      "titular": "GORE San Martín",
+      "departamento": "SAN MARTIN",
+      "provincia": "Moyobamba",
+      "distrito": "Calzada",
+      "especies": "Teca, Eucalipto tropical, Nativas",
+      "capacidad": 150000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-010",
+      "nombre": "EEA San Bernardo",
+      "tipo": "Semillero",
+      "titular": "INIA",
+      "departamento": "MADRE DE DIOS",
+      "provincia": "Tambopata",
+      "distrito": "Tambopata",
+      "especies": "Castaña, Shiringa, Caoba, Cedro",
+      "capacidad": 20000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-011",
+      "nombre": "Vivero CITE Productivo",
+      "tipo": "Vivero Demostrativo",
+      "titular": "CITE / ITP",
+      "departamento": "MADRE DE DIOS",
+      "provincia": "Tambopata",
+      "distrito": "Tambopata",
+      "especies": "Copoazú, Castaña",
+      "capacidad": 5000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-012",
+      "nombre": "Vivero Huaraz",
+      "tipo": "Vivero Institucional",
+      "titular": "AGRORURAL",
+      "departamento": "ANCASH",
+      "provincia": "Huaraz",
+      "distrito": "Huaraz",
+      "especies": "Pino, Eucalipto (Sierra)",
+      "capacidad": 50000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-013",
+      "nombre": "Vivero Forestal Chimbote",
+      "tipo": "Vivero Comercial",
+      "titular": "SIDERPERU",
+      "departamento": "ANCASH",
+      "provincia": "Santa",
+      "distrito": "Chimbote",
+      "especies": "Ornamentales, Forestales costa",
+      "capacidad": 100000,
+      "estado": "Activo"
+    },
+    {
+      "id": "VIV-014",
+      "nombre": "Viveros Villa Rica",
+      "tipo": "Viveros Privados",
+      "titular": "Asoc. Productores",
+      "departamento": "PASCO",
+      "provincia": "Oxapampa",
+      "distrito": "Villa Rica",
+      "especies": "Pino tecunumanii, Eucalipto",
+      "capacidad": 80000,
+      "estado": "Activo"
+    }
+  ]
+}

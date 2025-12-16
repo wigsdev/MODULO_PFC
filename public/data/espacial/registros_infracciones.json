@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "title": "Registro de Infractores (2024)",
+    "source": "RNI - SERFOR (2024)",
+    "lastUpdated": "2025-12-15"
+  },
+  "kpi": {
+    "totalInfractores": 1528,
+    "topEntidad": "ARFFS (Gobiernos Regionales)"
+  },
+  "entities": [
+    {
+      "entidad": "ARFFS (Gobiernos Regionales)",
+      "infractores": 650
+    },
+    {
+      "entidad": "OSINFOR",
+      "infractores": 551
+    },
+    {
+      "entidad": "SERNANP",
+      "infractores": 181
+    },
+    {
+      "entidad": "SERFOR (Nacional)",
+      "infractores": 146
+    }
+  ]
+}

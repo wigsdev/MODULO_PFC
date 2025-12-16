@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Volumen de Productos Forestales Decomisados",
+    "source": "SNIFFS - Reportes de Decomisos",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "totalAserrada": 1012.13,
+    "totalRolliza": 37.54,
+    "totalCarbon": 6193,
+    "topRegionWood": "SAN MARTIN"
+  },
+  "list": [
+    {
+      "region": "SAN MARTIN",
+      "aserrada": 266.14,
+      "rolliza": 2.36,
+      "carbon": 0,
+      "totalWood": 268.5
+    },
+    {
+      "region": "HUANUCO",
+      "aserrada": 252.1,
+      "rolliza": 0,
+      "carbon": 0,
+      "totalWood": 252.1
+    },
+    {
+      "region": "JUNIN",
+      "aserrada": 231.36,
+      "rolliza": 0,
+      "carbon": 0,
+      "totalWood": 231.36
+    },
+    {
+      "region": "PASCO",
+      "aserrada": 129.38,
+      "rolliza": 8.26,
+      "carbon": 0,
+      "totalWood": 137.64
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "aserrada": 125.62,
+      "rolliza": 0,
+      "carbon": 450,
+      "totalWood": 125.62
+    },
+    {
+      "region": "CAJAMARCA",
+      "aserrada": 7.53,
+      "rolliza": 26.92,
+      "carbon": 5743,
+      "totalWood": 34.45
+    },
+    {
+      "region": "ANCASH",
+      "aserrada": 0,
+      "rolliza": 0,
+      "carbon": 0,
+      "totalWood": 0
+    }
+  ]
+}
