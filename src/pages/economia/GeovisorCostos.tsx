@@ -260,6 +260,43 @@ const GeovisorCostos = () => {
                     </table>
                 </div>
             </div>
+
+            {/* Maintenance Table Years 2-5 */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+                <h3 className="text-sm font-bold text-gray-700 uppercase mb-3 flex items-center gap-2">
+                    <Calculator size={14} /> Mantenimiento de Plantaciones - Años 2 al 5 (S/ por hectárea/año)
+                </h3>
+                <div className="overflow-x-auto">
+                    <table className="w-full text-xs text-left">
+                        <thead className="bg-orange-50 text-gray-600 font-semibold uppercase">
+                            <tr>
+                                <th className="px-3 py-2">Región</th>
+                                <th className="px-3 py-2 text-center">Frecuencia Deshierbos/Año</th>
+                                <th className="px-3 py-2 text-right">Mano de Obra (S/)</th>
+                                <th className="px-3 py-2 text-right">Insumos (S/)</th>
+                                <th className="px-3 py-2 text-right font-bold">Costo Total Anual (S/)</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100">
+                            {data.mantenimiento.map((r, idx) => (
+                                <tr key={idx} className="hover:bg-gray-50">
+                                    <td className="px-3 py-2 font-medium">{r.region}</td>
+                                    <td className="px-3 py-2 text-center">
+                                        <span className="px-2 py-0.5 bg-blue-100 text-blue-700 rounded font-bold">
+                                            {r.frecuencia}x
+                                        </span>
+                                    </td>
+                                    <td className="px-3 py-2 text-right">S/ {r.manoObra.toLocaleString()}</td>
+                                    <td className="px-3 py-2 text-right">S/ {r.insumos.toLocaleString()}</td>
+                                    <td className="px-3 py-2 text-right font-bold text-orange-600">
+                                        S/ {r.costoAnual.toLocaleString()}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     );
 };
