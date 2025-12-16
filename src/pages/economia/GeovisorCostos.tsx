@@ -68,8 +68,17 @@ const GeovisorCostos = () => {
         ? data.costosBase.find(r => r.region === selectedRegion && r.especie === selectedEspecie)
         : null;
 
+    // Normalize region names to handle accents (Áncash vs ANCASH, Junín vs JUNIN)
+    const normalizeRegion = (name: string) => {
+        return name
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toUpperCase()
+            .trim();
+    };
+
     const mantenimientoRegion = selectedRegion
-        ? data.mantenimiento.find(m => m.region.toUpperCase() === selectedRegion.toUpperCase())
+        ? data.mantenimiento.find(m => normalizeRegion(m.region) === normalizeRegion(selectedRegion))
         : null;
 
     return (
