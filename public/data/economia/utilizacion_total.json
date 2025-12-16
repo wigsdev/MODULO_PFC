@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "source": "SERFOR - PI1",
+    "lastUpdated": "2025-12-16"
+  },
+  "indicadores": [
+    {
+      "componente": "1. OFERTA INTERNA (Producción Nacional)",
+      "unidad": "",
+      "valor": 0,
+      "interpretacion": "Capacidad productiva actual"
+    },
+    {
+      "componente": "Madera Rolliza (Materia Prima)",
+      "unidad": "m³",
+      "valor": 3205735.86,
+      "interpretacion": "Insumo base extraído del bosque."
+    },
+    {
+      "componente": "Madera Aserrada (Producto Transformado)",
+      "unidad": "m³",
+      "valor": 1542599.89,
+      "interpretacion": "Oferta real de madera para construcción/muebles."
+    },
+    {
+      "componente": "2. DEMANDA EXTERNA (Exportaciones)",
+      "unidad": "US$ FOB",
+      "valor": 466920326.34,
+      "interpretacion": "Salida de productos"
+    },
+    {
+      "componente": "- Productos Maderables",
+      "unidad": "US$",
+      "valor": 217810671.54,
+      "interpretacion": "Pisos, molduras, madera aserrada dura."
+    },
+    {
+      "componente": "- Productos No Maderables",
+      "unidad": "US$",
+      "valor": 249109654.8,
+      "interpretacion": "Castaña, Tara, Cochinilla (Supera a la madera)."
+    },
+    {
+      "componente": "3. OFERTA EXTERNA (Importaciones)",
+      "unidad": "US$ CIF",
+      "valor": 1195375609.24,
+      "interpretacion": "Dependencia del mercado"
+    },
+    {
+      "componente": "- Productos Maderables",
+      "unidad": "US$",
+      "valor": 1144289774.03,
+      "interpretacion": "Papel, cartón, tableros y muebles (Demanda insatisfecha)."
+    },
+    {
+      "componente": "- Productos No Maderables",
+      "unidad": "US$",
+      "valor": 51085835.21,
+      "interpretacion": "Insumos químicos, resinas."
+    },
+    {
+      "componente": "4. BRECHA COMERCIAL (Balanza)",
+      "unidad": "US$",
+      "valor": -728455282.9,
+      "interpretacion": "Déficit Estructural (Oportunidad PI1)"
+    }
+  ],
+  "kpi": {
+    "produccionNacional": 3205735.86,
+    "exportaciones": 466920326.34,
+    "importaciones": 1195375609.24,
+    "brechaComercial": -728455282.9
+  }
+}

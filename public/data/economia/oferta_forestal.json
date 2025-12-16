@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "source": "SERFOR - PI1",
+    "lastUpdated": "2025-12-16"
+  },
+  "kpi": {
+    "volumenTotal": 1849329,
+    "industrial": 406686,
+    "energetica": 1442643,
+    "regionLider": "CAJAMARCA"
+  },
+  "regiones": [
+    {
+      "region": "CAJAMARCA",
+      "industrial": 238,
+      "energetica": 952538,
+      "total": 952776,
+      "especies": "Eucalipto Globulus, Pino",
+      "vocacion": "Energética (Leña para Hogares/Industria)"
+    },
+    {
+      "region": "ÁNCASH",
+      "industrial": 0,
+      "energetica": 436470,
+      "total": 436470,
+      "especies": "Eucalipto Globulus",
+      "vocacion": "Energética (Leña)"
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "industrial": 168386,
+      "energetica": 1205,
+      "total": 169591,
+      "especies": "Shihuahuaco, Tornillo, Lupuna",
+      "vocacion": "Maderas Duras Tropicales (Bosque Natural)"
+    },
+    {
+      "region": "JUNÍN",
+      "industrial": 121089,
+      "energetica": 25430,
+      "total": 146519,
+      "especies": "Eucalipto, Pino, Tornillo",
+      "vocacion": "Mixta (Plantaciones + Bosque Nat.)"
+    },
+    {
+      "region": "HUÁNUCO",
+      "industrial": 69293,
+      "energetica": 5600,
+      "total": 74893,
+      "especies": "Bolaina, Tornillo, Eucalipto",
+      "vocacion": "Maderas Blandas (Plantaciones Rápidas)"
+    },
+    {
+      "region": "PASCO",
+      "industrial": 30857,
+      "energetica": 8900,
+      "total": 39757,
+      "especies": "Pino, Tornillo, Ulcumano",
+      "vocacion": "Coníferas y Maderas de Selva Alta"
+    },
+    {
+      "region": "SAN MARTÍN",
+      "industrial": 16823,
+      "energetica": 12500,
+      "total": 29323,
+      "especies": "Teca, Capirona, Bolaina",
+      "vocacion": "Plantaciones Tropicales de Valor"
+    }
+  ],
+  "valorPIB": [
+    {
+      "region": "MADRE DE DIOS",
+      "vbpMadera": 84.2,
+      "vbpLena": 0.1,
+      "valorTotal": 84.3,
+      "aportePBI": "~12.5%",
+      "observacion": "El sector forestal/castañero es el 2do motor económico después de la minería."
+    },
+    {
+      "region": "JUNÍN",
+      "vbpMadera": 42.4,
+      "vbpLena": 2.5,
+      "valorTotal": 44.9,
+      "aportePBI": "~1.2%",
+      "observacion": "Aporte diluido por la fuerte presencia de minería y agricultura intensiva."
+    },
+    {
+      "region": "HUÁNUCO",
+      "vbpMadera": 20.8,
+      "vbpLena": 0.6,
+      "valorTotal": 21.4,
+      "aportePBI": "~2.8%",
+      "observacion": "Sector clave en la provincia de Leoncio Prado y Puerto Inca."
+    },
+    {
+      "region": "PASCO",
+      "vbpMadera": 10.8,
+      "vbpLena": 0.9,
+      "valorTotal": 11.7,
+      "aportePBI": "~0.5%",
+      "observacion": "Marginal a nivel regional (dominado por minería), pero vital en Oxapampa."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "vbpMadera": 8.4,
+      "vbpLena": 1.2,
+      "valorTotal": 9.6,
+      "aportePBI": "~1.5%",
+      "observacion": "En crecimiento. La exportación de Teca eleva el valor unitario."
+    },
+    {
+      "region": "CAJAMARCA",
+      "vbpMadera": 0.1,
+      "vbpLena": 47.6,
+      "valorTotal": 47.7,
+      "aportePBI": "~0.4%",
+      "observacion": "Aporte invisible (Economía de subsistencia). Alto volumen, bajo valor monetario."
+    },
+    {
+      "region": "ÁNCASH",
+      "vbpMadera": 0,
+      "vbpLena": 21.8,
+      "valorTotal": 21.8,
+      "aportePBI": "<0.1%",
+      "observacion": "Irrelevante en el PBI regional (dominado por Antamina/Pesca), pero vital socialmente."
+    }
+  ]
+}

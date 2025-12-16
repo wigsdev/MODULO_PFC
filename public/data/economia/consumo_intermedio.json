@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "source": "SERFOR - PI1",
+    "lastUpdated": "2025-12-16"
+  },
+  "sectores": [
+    {
+      "region": "CAJAMARCA",
+      "producto": "Rolliza Delgada / Leña (Eucalipto)",
+      "sectorConsumidor": "Minería / Ladrilleras / Hornos",
+      "volumen": 450000,
+      "rendimiento": "95% (Energía)",
+      "productoFinal": "Calor / Sostenimiento (Puntales)",
+      "observacion": "El 50% de la oferta se va a consumo intermedio comercial (ladrillos, pollerías); el resto es consumo final (hogares)."
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "producto": "Madera Rolliza (Shihuahuaco, Tornillo)",
+      "sectorConsumidor": "Industria de Aserrío / Parqueteras",
+      "volumen": 165000,
+      "rendimiento": "50% - 55%",
+      "productoFinal": "~85,000 m³ de Parquet y Tablas",
+      "observacion": "Consumo orientado a la exportación y pisos finos en Lima."
+    },
+    {
+      "region": "ÁNCASH",
+      "producto": "Rolliza Delgada (Eucalipto)",
+      "sectorConsumidor": "Minería / Construcción",
+      "volumen": 150000,
+      "rendimiento": "100% (Uso directo)",
+      "productoFinal": "Puntales de Mina / Encofrados",
+      "observacion": "Consumo directo de la vara sin transformación industrial compleja."
+    },
+    {
+      "region": "JUNÍN",
+      "producto": "Madera Rolliza (Eucalipto, Pino, Nativas)",
+      "sectorConsumidor": "Industria de Aserrío / Envases",
+      "volumen": 118000,
+      "rendimiento": "56%",
+      "productoFinal": "~66,000 m³ de Madera Aserrada y Cajonería",
+      "observacion": "Abastece al sector agrícola (cajas de fruta) y construcción en Lima."
+    },
+    {
+      "region": "HUÁNUCO",
+      "producto": "Madera Rolliza (Bolaina)",
+      "sectorConsumidor": "Industria de Aserrío (Tablillas)",
+      "volumen": 67000,
+      "rendimiento": "60%",
+      "productoFinal": "~40,000 m³ de Tablillas para armado",
+      "observacion": "La Bolaina tiene mayor rendimiento por su forma cilíndrica. Insumo clave para revestimientos."
+    },
+    {
+      "region": "PASCO",
+      "producto": "Madera Rolliza (Pino, Ulcumano)",
+      "sectorConsumidor": "Industria de Aserrío",
+      "volumen": 30000,
+      "rendimiento": "54%",
+      "productoFinal": "~16,200 m³ de Madera Aserrada",
+      "observacion": "Consumo local y envío a Lima. Alto desperdicio por tecnología obsoleta."
+    },
+    {
+      "region": "SAN MARTÍN",
+      "producto": "Madera Rolliza (Teca, Capirona)",
+      "sectorConsumidor": "Aserrío / Exportación",
+      "volumen": 16000,
+      "rendimiento": "50%",
+      "productoFinal": "~8,000 m³ de Blocks/Tablas",
+      "observacion": "Consumo incipiente pero de alto valor unitario."
+    }
+  ],
+  "kpi": {
+    "volumenTotal": 996000,
+    "numSectores": 7,
+    "sectorPrincipal": "Minería / Ladrilleras / Hornos"
+  }
+}

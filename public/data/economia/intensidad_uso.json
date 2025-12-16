@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "source": "SERFOR - PI1",
+    "lastUpdated": "2025-12-16"
+  },
+  "serieHistorica": [
+    {
+      "year": 2020,
+      "produccionTotal": 8800000,
+      "produccionIndustrial": 1250000,
+      "importaciones": 380000,
+      "exportaciones": 190000,
+      "consumoTotal": 8990000,
+      "consumoIndustrial": 1440000,
+      "poblacion": 32970000,
+      "perCapitaTotal": 0.272,
+      "perCapitaIndustrial": 0.044
+    },
+    {
+      "year": 2021,
+      "produccionTotal": 9450000,
+      "produccionIndustrial": 1350000,
+      "importaciones": 450000,
+      "exportaciones": 280000,
+      "consumoTotal": 9620000,
+      "consumoIndustrial": 1520000,
+      "poblacion": 33350000,
+      "perCapitaTotal": 0.288,
+      "perCapitaIndustrial": 0.046
+    },
+    {
+      "year": 2022,
+      "produccionTotal": 9500000,
+      "produccionIndustrial": 1420000,
+      "importaciones": 480000,
+      "exportaciones": 290000,
+      "consumoTotal": 9690000,
+      "consumoIndustrial": 1610000,
+      "poblacion": 33720000,
+      "perCapitaTotal": 0.287,
+      "perCapitaIndustrial": 0.048
+    },
+    {
+      "year": 2023,
+      "produccionTotal": 9480000,
+      "produccionIndustrial": 1500000,
+      "importaciones": 450000,
+      "exportaciones": 210000,
+      "consumoTotal": 9720000,
+      "consumoIndustrial": 1740000,
+      "poblacion": 34090000,
+      "perCapitaTotal": 0.285,
+      "perCapitaIndustrial": 0.051
+    },
+    {
+      "year": 2024,
+      "produccionTotal": 9500000,
+      "produccionIndustrial": 1450000,
+      "importaciones": 460000,
+      "exportaciones": 125000,
+      "consumoTotal": 9835000,
+      "consumoIndustrial": 1785000,
+      "poblacion": 34460000,
+      "perCapitaTotal": 0.285,
+      "perCapitaIndustrial": 0.052
+    }
+  ],
+  "kpi": {
+    "consumoPerCapita": 0.285,
+    "consumoIndustrialPerCapita": 0.052,
+    "consumoTotal": 9835000,
+    "yearActual": 2024
+  },
+  "regiones": [
+    {
+      "region": "CAJAMARCA",
+      "consumoTotal": 952000,
+      "poblacion": 1453711,
+      "pbiRegional": 19320,
+      "perCapita": 0.655,
+      "intensidad": 49.27,
+      "tipoConsumo": "ENERGETICO"
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "consumoTotal": 85000,
+      "poblacion": 185496,
+      "pbiRegional": 3200,
+      "perCapita": 0.458,
+      "intensidad": 26.56,
+      "tipoConsumo": "INDUSTRIAL"
+    },
+    {
+      "region": "ANCASH",
+      "consumoTotal": 436000,
+      "poblacion": 1192409,
+      "pbiRegional": 29500,
+      "perCapita": 0.366,
+      "intensidad": 14.78,
+      "tipoConsumo": "ENERGETICO"
+    },
+    {
+      "region": "PASCO",
+      "consumoTotal": 35000,
+      "poblacion": 272365,
+      "pbiRegional": 6800,
+      "perCapita": 0.128,
+      "intensidad": 5.14,
+      "tipoConsumo": "MIXTO"
+    },
+    {
+      "region": "JUNIN",
+      "consumoTotal": 140000,
+      "poblacion": 1374642,
+      "pbiRegional": 26400,
+      "perCapita": 0.102,
+      "intensidad": 5.3,
+      "tipoConsumo": "INDUSTRIAL"
+    },
+    {
+      "region": "SAN MARTIN",
+      "consumoTotal": 80000,
+      "poblacion": 935508,
+      "pbiRegional": 9800,
+      "perCapita": 0.085,
+      "intensidad": 8.16,
+      "tipoConsumo": "MIXTO"
+    },
+    {
+      "region": "HUANUCO",
+      "consumoTotal": 73000,
+      "poblacion": 763567,
+      "pbiRegional": 8500,
+      "perCapita": 0.095,
+      "intensidad": 8.59,
+      "tipoConsumo": "INDUSTRIAL"
+    }
+  ]
+}
