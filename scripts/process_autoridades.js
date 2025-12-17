@@ -31,13 +31,26 @@ try {
         };
     }).filter(r => r.entidad);
 
+
+    // Calculate KPIs and Grouping
+    const nacional = autoridades.filter(a => a.nivel === 'NACIONAL');
+    const regional = autoridades.filter(a => a.nivel === 'REGIONAL');
+
     const output = {
         metadata: {
             title: "Autoridades Ambientales",
             source: "MINAM / GORES (2025)",
             lastUpdated: new Date().toISOString().split('T')[0]
         },
-        autoridades
+        kpi: {
+            totalEntidades: autoridades.length,
+            nacionales: nacional.length,
+            regionales: regional.length
+        },
+        byNivel: {
+            nacional,
+            regional
+        }
     };
 
     // Write Output
