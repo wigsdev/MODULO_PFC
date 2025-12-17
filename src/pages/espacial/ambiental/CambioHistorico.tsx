@@ -1,147 +1,192 @@
 import { useState, useEffect } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Download, Share2, TrendingUp, AlertTriangle, Calendar } from 'lucide-react';
+import { TrendingDown, Calendar, AlertTriangle } from 'lucide-react';
+import {
+    LineChart,
+    Line,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    ResponsiveContainer,
+    Legend,
+    BarChart,
+    Bar,
+    Cell
+} from 'recharts';
+
+interface SerieData {
+    year: number;
+    total: number;
+    [key: string]: number;
+}
+
+interface TotalRegion {
+    region: string;
+    total: number;
+}
+
+interface CambioData {
+    metadata: { source: string; lastUpdated: string; nota: string };
+    kpi: {
+        totalAcumulado: number;
+        añoPico: number;
+        deforestacionPico: number;
+        ultimoAño: number;
+        deforestacionUltimoAño: number;
+        tendencia: string;
+    };
+    regiones: string[];
+    serieHistorica: SerieData[];
+    totalesPorRegion: TotalRegion[];
+}
+
+const REGION_COLORS: Record<string, string> = {
+    'HUÁNUCO': '#EF4444',
+    'SAN MARTÍN': '#F59E0B',
+    'MADRE DE DIOS': '#10B981',
+    'JUNÍN': '#3B82F6',
+    'PASCO': '#8B5CF6',
+    'CAJAMARCA': '#EC4899'
+};
 
 export default function CambioHistorico() {
-    const [data, setData] = useState<any>(null);
+    const [data, setData] = useState<CambioData | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const url = `${import.meta.env.BASE_URL}data/espacial/cambio_historico.json?t=${new Date().getTime()}`;
-        fetch(url)
+        fetch(`${import.meta.env.BASE_URL}data/espacial/cambio_historico.json`)
             .then(res => res.json())
-            .then(jsonData => {
-                setData(jsonData);
-                setLoading(false);
-            })
-            .catch(err => {
-                console.error("Error loading historico data:", err);
-                setLoading(false);
-            });
+            .then(d => setData(d))
+            .catch(err => console.error('Error loading data:', err))
+            .finally(() => setLoading(false));
     }, []);
 
-    if (loading) return <div className="p-10 text-center text-gray-400 text-sm">Cargando histórico...</div>;
-    if (!data) return <div className="p-10 text-center text-red-500 text-sm">Error: No se pudo cargar cambio_historico.json</div>;
+    if (loading) return <div className="p-8 text-center">Cargando datos...</div>;
+    if (!data) return <div className="p-8 text-center text-red-500">Error al cargar datos</div>;
 
-    const { kpi, metadata, timeline, regionsList } = data;
-
-    // Formatting Helpers
-    const formatInt = (val: number) => new Intl.NumberFormat('es-PE').format(val);
-
-    // Color Palette for Lines
-    const colors = [
-        '#2563EB', '#16A34A', '#D97706', '#DC2626', '#9333EA', '#0891B2'
-    ];
+    const tendenciaNum = parseFloat(data.kpi.tendencia);
+    const activeRegions = data.regiones.filter(r => r !== 'ÁNCASH*');
 
     return (
-        <div className="space-y-3 animate-fade-in p-2">
+        <div className="space-y-4">
             {/* Header */}
-            <div className="flex items-center justify-between bg-white px-4 py-3 rounded-lg shadow-sm border border-gray-100">
-                <div>
-                    <h1 className="text-lg font-bold text-gray-800 flex items-center gap-2">
-                        <TrendingUp className="text-rose-600" size={20} />
-                        {metadata.title}
-                    </h1>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-gray-400">
-                    <span className="hidden md:inline">Actualizado: {metadata.lastUpdated}</span>
-                    <div className="h-4 w-px bg-gray-200 mx-1 hidden md:block"></div>
-                    <button className="flex items-center gap-1 hover:text-rose-600 transition-colors">
-                        <Share2 size={13} />
-                    </button>
-                    <button className="flex items-center gap-1 hover:text-rose-600 transition-colors">
-                        <Download size={13} />
-                    </button>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 px-4 h-[54px] flex items-center">
+                <div className="flex items-center gap-3">
+                    <TrendingDown className="text-red-600" size={24} />
+                    <div>
+                        <h1 className="text-xl font-bold text-gray-800">Cambio Histórico de Superficie de Bosque</h1>
+                        <p className="text-xs text-gray-500">Fuente: {data.metadata.source} | {data.metadata.nota}</p>
+                    </div>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
-                {/* Left Column: Stacked KPIs */}
-                <div className="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-2 lg:gap-3 content-start">
-
-                    {/* KPI 1: Total Acumulado */}
-                    <div className="px-4 py-3 bg-white rounded-lg shadow-sm border-l-4 border-rose-600">
-                        <div className="flex items-center justify-between mb-1">
-                            <h3 className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Pérdida Acumulada</h3>
-                            <TrendingUp size={14} className="text-rose-600" />
-                        </div>
-                        <p className="text-lg font-bold text-gray-800 leading-tight">
-                            {formatInt(kpi.totalAccumulated)} <span className="text-[10px] text-gray-400 font-normal">ha</span>
-                        </p>
-                        <p className="text-[10px] text-gray-400">Total 2001-2024</p>
-                    </div>
-
-                    {/* KPI 2: Promedio Anual */}
-                    <div className="px-4 py-3 bg-white rounded-lg shadow-sm border-l-4 border-amber-500">
-                        <div className="flex items-center justify-between mb-1">
-                            <h3 className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Promedio Anual</h3>
-                            <Calendar size={14} className="text-amber-500" />
-                        </div>
-                        <p className="text-lg font-bold text-gray-800 leading-tight truncate">
-                            {formatInt(kpi.avgYearly)} <span className="text-[10px] text-gray-400 font-normal">ha/año</span>
-                        </p>
-                    </div>
-
-                    {/* KPI 3: Año Crítico */}
-                    <div className="px-4 py-3 bg-white rounded-lg shadow-sm border-l-4 border-slate-500">
-                        <div className="flex items-center justify-between mb-1">
-                            <h3 className="text-[10px] uppercase font-bold text-gray-500 tracking-wider">Año Crítico</h3>
-                            <AlertTriangle size={14} className="text-slate-500" />
-                        </div>
-                        <p className="text-lg font-bold text-gray-800 leading-tight truncate">
-                            {kpi.maxLossYear}
-                        </p>
-                        <p className="text-xs text-gray-500">{formatInt(kpi.maxLossValue)} ha</p>
-                    </div>
+            {/* KPIs */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div className="bg-white rounded-lg shadow-sm border-l-4 border-red-500 p-4">
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Deforestación Acumulada</p>
+                    <h3 className="text-xl font-bold text-red-600">
+                        {(data.kpi.totalAcumulado / 1000000).toFixed(2)}M
+                        <span className="text-sm font-normal text-gray-400 ml-1">ha</span>
+                    </h3>
+                    <p className="text-xs text-gray-500">2001 - 2024</p>
                 </div>
+                <div className="bg-white rounded-lg shadow-sm border-l-4 border-orange-500 p-4">
+                    <p className="text-xs font-semibold text-gray-500 uppercase flex items-center gap-1">
+                        <AlertTriangle size={12} /> Año Pico
+                    </p>
+                    <h3 className="text-2xl font-bold text-gray-800">{data.kpi.añoPico}</h3>
+                    <p className="text-xs text-orange-600">{data.kpi.deforestacionPico.toLocaleString()} ha</p>
+                </div>
+                <div className="bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4">
+                    <p className="text-xs font-semibold text-gray-500 uppercase flex items-center gap-1">
+                        <Calendar size={12} /> Último Año ({data.kpi.ultimoAño})
+                    </p>
+                    <h3 className="text-xl font-bold text-gray-800">{data.kpi.deforestacionUltimoAño.toLocaleString()} ha</h3>
+                </div>
+                <div className="bg-white rounded-lg shadow-sm border-l-4 border-purple-500 p-4">
+                    <p className="text-xs font-semibold text-gray-500 uppercase">Tendencia Anual</p>
+                    <h3 className={`text-2xl font-bold ${tendenciaNum >= 0 ? 'text-red-600' : 'text-green-600'}`}>
+                        {tendenciaNum >= 0 ? '+' : ''}{data.kpi.tendencia}%
+                    </h3>
+                    <p className="text-xs text-gray-500">vs año anterior</p>
+                </div>
+            </div>
 
-                {/* Right Column: Multi-Line Chart */}
-                <div className="lg:col-span-3">
-                    <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex flex-col h-[315px]">
-                        <h3 className="text-xs font-bold text-gray-700 mb-2 uppercase border-b pb-1">Evolución de Pérdida por Departamento (2001-2024)</h3>
+            {/* Line Chart - Time Series */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[400px]">
+                <h3 className="text-sm font-bold text-gray-700 uppercase mb-2">Serie Histórica de Deforestación (2001-2024)</h3>
+                <ResponsiveContainer width="100%" height="90%">
+                    <LineChart data={data.serieHistorica} margin={{ left: 10, right: 10 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
+                        <XAxis dataKey="year" tick={{ fontSize: 10 }} />
+                        <YAxis tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 10 }} />
+                        <Tooltip
+                            formatter={(v: number) => `${v.toLocaleString()} ha`}
+                            labelFormatter={(label) => `Año ${label}`}
+                        />
+                        <Legend wrapperStyle={{ fontSize: '10px' }} />
+                        {activeRegions.map((region) => (
+                            <Line
+                                key={region}
+                                type="monotone"
+                                dataKey={region}
+                                name={region}
+                                stroke={REGION_COLORS[region] || '#94A3B8'}
+                                strokeWidth={2}
+                                dot={{ r: 2 }}
+                                activeDot={{ r: 4 }}
+                            />
+                        ))}
+                    </LineChart>
+                </ResponsiveContainer>
+            </div>
 
-                        <div className="flex-1 w-full min-h-0 relative overflow-hidden">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <LineChart
-                                    data={timeline}
-                                    margin={{ top: 10, right: 30, left: 20, bottom: 5 }}
-                                >
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#F3F4F6" />
-                                    <XAxis
-                                        dataKey="name"
-                                        tick={{ fontSize: 10, fill: '#6B7280' }}
-                                        interval={1}
-                                        angle={-45}
-                                        textAnchor="end"
-                                        height={40}
-                                    />
-                                    <YAxis
-                                        width={45}
-                                        tick={{ fill: '#4B5563', fontSize: 10 }}
-                                        tickFormatter={(val) => `${(val / 1000).toFixed(0)}k`}
-                                    />
-                                    <Tooltip
-                                        formatter={(value: number) => formatInt(value)}
-                                        contentStyle={{ fontSize: '12px' }}
-                                        labelStyle={{ fontWeight: 'bold', color: '#374151' }}
-                                    />
-                                    <Legend wrapperStyle={{ fontSize: '10px', paddingTop: '10px' }} />
+            {/* Bar Chart - Total by Region */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[300px]">
+                <h3 className="text-sm font-bold text-gray-700 uppercase mb-2">Deforestación Acumulada por Región (2001-2024)</h3>
+                <ResponsiveContainer width="100%" height="90%">
+                    <BarChart data={data.totalesPorRegion} layout="vertical" margin={{ left: 100, right: 30 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" horizontal={true} vertical={false} />
+                        <XAxis type="number" tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 10 }} />
+                        <YAxis type="category" dataKey="region" tick={{ fontSize: 11 }} width={95} />
+                        <Tooltip formatter={(v: number) => `${v.toLocaleString()} ha`} />
+                        <Bar dataKey="total" name="Total Acumulado" radius={[0, 4, 4, 0]}>
+                            {data.totalesPorRegion.map((entry, index) => (
+                                <Cell key={index} fill={REGION_COLORS[entry.region] || '#94A3B8'} />
+                            ))}
+                        </Bar>
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
 
-                                    {regionsList.map((region: string, i: number) => (
-                                        <Line
-                                            key={region}
-                                            type="monotone"
-                                            dataKey={region}
-                                            stroke={colors[i % colors.length]}
-                                            strokeWidth={2}
-                                            dot={false}
-                                            activeDot={{ r: 4 }}
-                                        />
+            {/* Table - Last 5 years */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+                <h3 className="text-sm font-bold text-gray-700 uppercase mb-3">Últimos 5 Años - Deforestación por Región (ha)</h3>
+                <div className="overflow-x-auto">
+                    <table className="w-full text-xs text-left">
+                        <thead className="bg-gray-50 text-gray-600 font-semibold uppercase">
+                            <tr>
+                                <th className="px-3 py-2">Año</th>
+                                {activeRegions.map(r => (
+                                    <th key={r} className="px-3 py-2 text-right">{r}</th>
+                                ))}
+                                <th className="px-3 py-2 text-right font-bold">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100">
+                            {data.serieHistorica.slice(-5).reverse().map((row, idx) => (
+                                <tr key={idx} className="hover:bg-gray-50">
+                                    <td className="px-3 py-2 font-bold text-gray-900">{row.year}</td>
+                                    {activeRegions.map(r => (
+                                        <td key={r} className="px-3 py-2 text-right" style={{ color: REGION_COLORS[r] }}>
+                                            {row[r]?.toLocaleString() || 0}
+                                        </td>
                                     ))}
-                                </LineChart>
-                            </ResponsiveContainer>
-                        </div>
-                    </div>
+                                    <td className="px-3 py-2 text-right font-bold text-red-600">{row.total.toLocaleString()}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
