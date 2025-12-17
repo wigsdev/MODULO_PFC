@@ -10,8 +10,7 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    ResponsiveContainer,
-    Legend
+    ResponsiveContainer
 } from 'recharts';
 
 interface Tierra {
@@ -119,41 +118,81 @@ export default function TierrasPFC() {
 
             {/* Charts Row */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                {/* Pie Chart - Por Aptitud */}
+                {/* Pie Chart - Por Aptitud (ordenado por porcentaje, sin superposición) */}
                 <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[300px]">
                     <h3 className="text-sm font-bold text-gray-700 uppercase mb-2">Distribución por Aptitud</h3>
-                    <ResponsiveContainer width="100%" height="90%">
-                        <PieChart>
-                            <Pie
-                                data={data.porAptitud}
-                                dataKey="superficie"
-                                nameKey="aptitud"
-                                cx="50%"
-                                cy="50%"
-                                outerRadius={90}
-                                label={({ aptitud, percent }) => `${aptitud.substring(0, 12)}... ${(percent * 100).toFixed(1)}%`}
-                                labelLine={false}
-                            >
-                                {data.porAptitud.map((entry, index) => (
-                                    <Cell key={index} fill={APTITUD_COLORS[entry.aptitud] || '#94A3B8'} />
-                                ))}
-                            </Pie>
-                            <Tooltip formatter={(v: number) => `${formatNumber(v)} ha`} />
-                            <Legend />
-                        </PieChart>
-                    </ResponsiveContainer>
+                    <div className="flex h-[calc(100%-24px)]">
+                        {/* Pie sin labels internos */}
+                        <div className="w-1/2">
+                            <ResponsiveContainer width="100%" height="100%">
+                                <PieChart>
+                                    <Pie
+                                        data={[...data.porAptitud].sort((a, b) => b.superficie - a.superficie)}
+                                        dataKey="superficie"
+                                        nameKey="aptitud"
+                                        cx="50%"
+                                        cy="50%"
+                                        outerRadius={80}
+                                        innerRadius={30}
+                                    >
+                                        {[...data.porAptitud].sort((a, b) => b.superficie - a.superficie).map((entry, index) => (
+                                            <Cell key={index} fill={APTITUD_COLORS[entry.aptitud] || '#94A3B8'} />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip formatter={(v: number) => `${formatNumber(v)} ha`} />
+                                </PieChart>
+                            </ResponsiveContainer>
+                        </div>
+                        {/* Leyenda externa ordenada */}
+                        <div className="w-1/2 flex flex-col justify-center space-y-2 pl-2">
+                            {[...data.porAptitud]
+                                .sort((a, b) => b.superficie - a.superficie)
+                                .map((apt, idx) => {
+                                    const percent = ((apt.superficie / data.kpi.superficieTotal) * 100).toFixed(1);
+                                    return (
+                                        <div key={idx} className="flex items-center gap-2 text-xs">
+                                            <div
+                                                className="w-3 h-3 rounded flex-shrink-0"
+                                                style={{ backgroundColor: APTITUD_COLORS[apt.aptitud] || '#94A3B8' }}
+                                            ></div>
+                                            <span className="truncate flex-1">{apt.aptitud}</span>
+                                            <span className="font-bold text-gray-700">{percent}%</span>
+                                        </div>
+                                    );
+                                })}
+                        </div>
+                    </div>
                 </div>
 
-                {/* Bar Chart - Top Departamentos */}
+                {/* Bar Chart - Top Departamentos por FORESTAL PRODUCTIVO */}
                 <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[300px]">
-                    <h3 className="text-sm font-bold text-gray-700 uppercase mb-2">Top 10 Departamentos (Superficie)</h3>
+                    <h3 className="text-sm font-bold text-gray-700 uppercase mb-2 flex items-center gap-2">
+                        <TreePine size={14} className="text-green-600" />
+                        Top 10 Departamentos - Forestal Productivo
+                    </h3>
                     <ResponsiveContainer width="100%" height="90%">
-                        <BarChart data={data.porDepartamento.slice(0, 10)} layout="vertical" margin={{ left: 80, right: 20 }}>
+                        <BarChart
+                            data={(() => {
+                                // Calcular top departamentos solo por FORESTAL PRODUCTIVO
+                                const depForestal: Record<string, number> = {};
+                                data.tierras.forEach(t => {
+                                    if (t.aptitud === 'FORESTAL PRODUCTIVO') {
+                                        depForestal[t.departamento] = (depForestal[t.departamento] || 0) + t.superficie;
+                                    }
+                                });
+                                return Object.entries(depForestal)
+                                    .map(([dep, sup]) => ({ departamento: dep, superficie: Math.round(sup * 100) / 100 }))
+                                    .sort((a, b) => b.superficie - a.superficie)
+                                    .slice(0, 10);
+                            })()}
+                            layout="vertical"
+                            margin={{ left: 80, right: 20 }}
+                        >
                             <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" horizontal={true} vertical={false} />
                             <XAxis type="number" tickFormatter={(v) => formatNumber(v)} tick={{ fontSize: 10 }} />
                             <YAxis type="category" dataKey="departamento" tick={{ fontSize: 10 }} width={75} />
                             <Tooltip formatter={(v: number) => `${formatNumber(v)} ha`} />
-                            <Bar dataKey="total" fill="#F59E0B" radius={[0, 4, 4, 0]} name="Superficie (ha)" />
+                            <Bar dataKey="superficie" fill="#10B981" radius={[0, 4, 4, 0]} name="Forestal Productivo (ha)" />
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
