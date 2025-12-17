@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "source": "SERFOR / SUNAT",
+    "lastUpdated": "2025-12-17"
+  },
+  "produccion": [
+    {
+      "producto": "Madera Rolliza",
+      "detalle": "Bolaina (Guazuma crinita)",
+      "unidad": "m³",
+      "cantidad": 69756.86
+    },
+    {
+      "producto": "Madera Rolliza",
+      "detalle": "Pino (Variedades)",
+      "unidad": "m³",
+      "cantidad": 1304.33
+    },
+    {
+      "producto": "Madera Rolliza",
+      "detalle": "Eucalipto",
+      "unidad": "m³",
+      "cantidad": 322.87
+    },
+    {
+      "producto": "Madera Rolliza",
+      "detalle": "Teca",
+      "unidad": "m³",
+      "cantidad": 17.87
+    },
+    {
+      "producto": "Madera Aserrada",
+      "detalle": "Bolaina (Transformada)",
+      "unidad": "m³",
+      "cantidad": 58860.71
+    }
+  ],
+  "importacion": [
+    {
+      "producto": "Insumos Industriales",
+      "detalle": "Papel y Cartón (Pulpa PFC)",
+      "unidad": "US$ CIF",
+      "cantidad": 641314200
+    },
+    {
+      "producto": "Tableros",
+      "detalle": "Tableros de Madera",
+      "unidad": "US$ CIF",
+      "cantidad": 47525690
+    },
+    {
+      "producto": "Madera Aserrada",
+      "detalle": "Pino / Coníferas (Chile)",
+      "unidad": "US$ CIF",
+      "cantidad": 30354980
+    }
+  ],
+  "exportacion": [
+    {
+      "producto": "Productos Derivados",
+      "detalle": "Papel y Cartón",
+      "unidad": "US$ FOB",
+      "cantidad": 24239620
+    },
+    {
+      "producto": "Madera Perfilada",
+      "detalle": "Coníferas / Pino",
+      "unidad": "US$ FOB",
+      "cantidad": 4435607
+    },
+    {
+      "producto": "Madera",
+      "detalle": "Eucalipto (Troza/Chips)",
+      "unidad": "US$ FOB",
+      "cantidad": 30517.7
+    }
+  ],
+  "kpi": {
+    "totalProduccion": 130262.63999999998,
+    "totalImportacion": 719194870,
+    "totalExportacion": 28705744.7,
+    "balanzaComercial": -690489125.3,
+    "deficitComercial": 690489125.3
+  }
+}

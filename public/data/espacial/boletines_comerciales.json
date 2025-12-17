@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "source": "Compilación SERFOR",
+    "lastUpdated": "2025-12-17"
+  },
+  "boletines": [
+    {
+      "nombre": "Conexión Forestal",
+      "institucion": "CITEforestal Pucallpa",
+      "frecuencia": "Trimestral",
+      "tematica": "Compras públicas, demanda global, tendencias",
+      "enlace": "https://gob.pe/citeforestal-pucallpa"
+    },
+    {
+      "nombre": "Cartilla de Precios (Lima/Selva)",
+      "institucion": "Cámara Nac. Forestal (CNF)",
+      "frecuencia": "Mensual",
+      "tematica": "Precios referenciales madera (rolliza/aserrada)",
+      "enlace": "https://cnf.org.pe"
+    },
+    {
+      "nombre": "Boletín ADEX Data Trade",
+      "institucion": "ADEX",
+      "frecuencia": "Mensual",
+      "tematica": "Estadísticas de exportación (FOB/Kg)",
+      "enlace": "https://adexperu.org.pe"
+    },
+    {
+      "nombre": "Noticias Forestales (News)",
+      "institucion": "PeruWoods",
+      "frecuencia": "Diaria",
+      "tematica": "Actualidad empresarial, eventos, normativa",
+      "enlace": "https://peruwoods.com"
+    },
+    {
+      "nombre": "Alerta de Mercado",
+      "institucion": "PROMPERÚ",
+      "frecuencia": "Variable",
+      "tematica": "Requisitos de acceso a mercados (China, UE)",
+      "enlace": "https://exportemos.pe"
+    },
+    {
+      "nombre": "Reporte de Precios (Anuario)",
+      "institucion": "SERFOR",
+      "frecuencia": "Anual",
+      "tematica": "Precios oficiales promedio por región",
+      "enlace": "https://sniffs.serfor.gob.pe"
+    }
+  ],
+  "frecuencias": [
+    "Trimestral",
+    "Mensual",
+    "Diaria",
+    "Variable",
+    "Anual"
+  ],
+  "kpi": {
+    "totalBoletines": 6
+  }
+}

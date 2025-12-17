@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "source": "Compilación SERFOR",
+    "lastUpdated": "2025-12-17"
+  },
+  "estudios": [
+    {
+      "region": "ANCASH",
+      "titulo": "La Riqueza Exportadora de Nuestra Sierra",
+      "institucion": "Sierra Exportadora",
+      "descripcion": "Compendio de planes de negocio y estrategias agroforestales en la sierra (incluye Áncash).",
+      "enlace": "https://www.sierraexportadora.gob.pe/descargas/biblioteca-virtual/libros/LA%20RIQUEZA%20EXPORTADORA%20DE%20NUESTRA%20SIERRA.pdf"
+    },
+    {
+      "region": "CAJAMARCA",
+      "titulo": "Mesa Temática Forestal: Estado de los Bosques",
+      "institucion": "GORE Cajamarca / Coop. Suiza",
+      "descripcion": "Datos financieros: Costos de instalación (S/ 4k-6k/ha) y valoración económica del pino y eucalipto.",
+      "enlace": "https://www.cooperacionsuiza.pe/wp-content/uploads/2017/09/gore-cajamarca-mesa-tematica-forestal-sepia.pdf"
+    },
+    {
+      "region": "CAJAMARCA",
+      "titulo": "Informe Final: Cadena de Valor Forestal Maderable",
+      "institucion": "Consultora Privada",
+      "descripcion": "Diagnóstico de cadena, actores y mercado local para pino y eucalipto en Cajamarca.",
+      "enlace": "https://es.scribd.com/document/519387864/Informe-Final-cadena-de-Valor-Forestal-Maderable-de-Cajamarca"
+    },
+    {
+      "region": "HUANUCO",
+      "titulo": "Informe Económico y Social Región Huánuco (2015)",
+      "institucion": "BCRP",
+      "descripcion": "Análisis del potencial de reforestación (660k ha) y actividad de empresas privadas (RAMSA, Plantar).",
+      "enlace": "https://www.bcrp.gob.pe/docs/Proyeccion-Institucional/Encuentros-Regionales/2015/huanuco/ies-huanuco-2015.pdf"
+    },
+    {
+      "region": "JUNIN",
+      "titulo": "Informe Económico y Social Región Junín",
+      "institucion": "BCRP",
+      "descripcion": "Producción de madera rolliza y aserrada (eucalipto, tornillo) y dinámica regional.",
+      "enlace": "https://www.bcrp.gob.pe/docs/Proyeccion-Institucional/Encuentros-Regionales/2013/junin/ies-junin-2013.pdf"
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "titulo": "Estudio de Mercado AFIMAD",
+      "institucion": "AFIMAD / Tesistas",
+      "descripcion": "Investigación de mercado para la comercialización de madera de comunidades indígenas.",
+      "enlace": "https://es.scribd.com/document/551808658/Estudio-de-Mercado-Afimad-final"
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "titulo": "Influencia de la tala selectiva sobre la producción de castaña",
+      "institucion": "CABI Digital Library",
+      "descripcion": "Estudio técnico-económico sobre la interacción de mercados (madera vs. castaña) en concesiones.",
+      "enlace": "https://www.cabidigitallibrary.org/doi/pdf/10.5555/20163009849"
+    },
+    {
+      "region": "NACIONAL",
+      "titulo": "Anuario Forestal y de Fauna Silvestre 2023",
+      "institucion": "SERFOR",
+      "descripcion": "Estadísticas oficiales de producción, precios de madera rolliza/aserrada y exportaciones.",
+      "enlace": "https://repositorio.serfor.gob.pe/bitstream/SERFOR/969/1/SERFOR%202024%20-%20Anuario%202023.pdf"
+    },
+    {
+      "region": "NACIONAL",
+      "titulo": "Línea Base Suministro de Madera 2019",
+      "institucion": "USAID Pro-Bosques",
+      "descripcion": "Estudio de oferta de madera en la Amazonía, flujos comerciales y riesgos de ilegalidad.",
+      "enlace": "https://es.scribd.com/document/474742761/Linea-Base-Suministro-de-Madera-2019-USAID-Pro-Bosques-pdf"
+    },
+    {
+      "region": "NACIONAL",
+      "titulo": "China’s Balsa Wood Consumption (Mercado de Balsa)",
+      "institucion": "Forest Trends",
+      "descripcion": "Reporte sobre el auge de la madera balsa, exportaciones y distorsiones de mercado.",
+      "enlace": "https://www.forest-trends.org/wp-content/uploads/2022/06/Forest-Trends-Peru-Balsa-Supply-Chain-FINAL.pdf"
+    },
+    {
+      "region": "NACIONAL",
+      "titulo": "Las plantaciones forestales en el Perú: Reflexiones",
+      "institucion": "SPDA",
+      "descripcion": "Barreras normativas y de mercado para inversiones en plantaciones (HCO, ANC, PAS, JUN).",
+      "enlace": "https://www.spda.org.pe/wp-content/uploads/2024/02/Las-plantaciones-forestales-en-Peru.pdf"
+    },
+    {
+      "region": "NACIONAL",
+      "titulo": "Tropical Timber Market Report (Precios Internacionales)",
+      "institucion": "ITTO",
+      "descripcion": "Reportes periódicos de precios y tendencias globales de maderas tropicales.",
+      "enlace": "https://www.atibt.org/files/upload/MIS_16-31_Oct2023.pdf"
+    },
+    {
+      "region": "NACIONAL",
+      "titulo": "Estudio del mercado nacional de madera para construcción",
+      "institucion": "FAO / SNV",
+      "descripcion": "Análisis de demanda de madera aserrada, pisos y encofrados en el sector construcción.",
+      "enlace": "https://openknowledge.fao.org/server/api/core/bitstreams/e500a79d-18c5-41c0-ae00-fbb2000ee2bf/content"
+    },
+    {
+      "region": "PASCO",
+      "titulo": "Reporte Regional Pasco: Análisis de Competitividad",
+      "institucion": "PRODUCEMPRESARIAL",
+      "descripcion": "Impacto de la infraestructura vial y costos logísticos en los productos regionales.",
+      "enlace": "https://www.producempresarial.pe/wp-content/uploads/2023/12/RepPasco.pdf"
+    },
+    {
+      "region": "SAN MARTIN",
+      "titulo": "Comercialización de madera legal de Bosques Locales (2015)",
+      "institucion": "Pierina Benites Alfaro",
+      "descripcion": "Estudio de mercado en Picota: demanda de carpinterías, precios de especies blancas y estrategias de venta.",
+      "enlace": "https://www.researchgate.net/publication/337113618_Comercializacion_de_madera_legal_de_Bosques_Locales_San_Martin_-_Peru"
+    },
+    {
+      "region": "SAN MARTIN",
+      "titulo": "Comercialización de madera de tres bosques locales en Picota",
+      "institucion": "Inghiver",
+      "descripcion": "Volúmenes disponibles y condiciones socioeconómicas para el aprovechamiento en Picota.",
+      "enlace": "https://es.scribd.com/document/306640179/Producto-3-Npba-280415-Final-Inghiver-Corregido"
+    }
+  ],
+  "regiones": [
+    "ANCASH",
+    "CAJAMARCA",
+    "HUANUCO",
+    "JUNIN",
+    "MADRE DE DIOS",
+    "NACIONAL",
+    "PASCO",
+    "SAN MARTIN"
+  ],
+  "instituciones": [
+    "AFIMAD / Tesistas",
+    "BCRP",
+    "CABI Digital Library",
+    "Consultora Privada",
+    "FAO / SNV",
+    "Forest Trends",
+    "GORE Cajamarca / Coop. Suiza",
+    "ITTO",
+    "Inghiver",
+    "PRODUCEMPRESARIAL",
+    "Pierina Benites Alfaro",
+    "SERFOR",
+    "SPDA",
+    "Sierra Exportadora",
+    "USAID Pro-Bosques"
+  ],
+  "kpi": {
+    "totalEstudios": 16,
+    "regionesConEstudios": 8
+  }
+}
