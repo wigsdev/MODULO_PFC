@@ -34,20 +34,40 @@ if (fs.existsSync(superficieFile)) {
     const content = fs.readFileSync(superficieFile, 'utf-8');
     const lines = content.split('\n').filter(l => l.trim());
 
+    // Helper to parse CSV with quoted fields (handles "8,530,054" format)
+    function parseCSVLine(line) {
+        const result = [];
+        let current = '';
+        let inQuotes = false;
+
+        for (const char of line) {
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                result.push(current.trim());
+                current = '';
+            } else {
+                current += char;
+            }
+        }
+        result.push(current.trim());
+        return result;
+    }
+
     superficieData.regiones = [];
     let totalBosque = 0;
     let totalSuperficie = 0;
 
     for (let i = 1; i < lines.length; i++) {
-        const values = lines[i].split(',');
+        const values = parseCSVLine(lines[i]);
         if (values.length < 6) continue;
 
-        const region = values[0]?.trim().replace(/"/g, '') || '';
+        const region = values[0] || '';
         const superficieTotal = parseNumber(values[1]);
         const supBosque = parseNumber(values[2]);
         const cobertura = parsePercent(values[3]);
-        const fuente = values[4]?.trim().replace(/"/g, '') || '';
-        const observacion = values[5]?.trim().replace(/"/g, '') || '';
+        const fuente = values[4] || '';
+        const observacion = values[5] || '';
 
         if (!region) continue;
 
@@ -64,8 +84,9 @@ if (fs.existsSync(superficieFile)) {
         });
     }
 
+    // Exclude Áncash (0 coverage, outside monitoring) from averages
     const regionesConBosque = superficieData.regiones.filter(r => r.supBosque > 0);
-    const regionLider = regionesConBosque.sort((a, b) => b.cobertura - a.cobertura)[0];
+    const regionLider = [...regionesConBosque].sort((a, b) => b.cobertura - a.cobertura)[0];
 
     superficieData.kpi = {
         totalBosque,
