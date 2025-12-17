@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "source": "GeoBosques / MINAM",
+    "lastUpdated": "2025-12-17"
+  },
+  "regiones": [
+    {
+      "region": "SAN MARTÍN",
+      "lineaBaseNoBosque": 1015734.96,
+      "perdidaAcumulada": 532522.71,
+      "bosqueRemanente": 3248576.91,
+      "cuerposAgua": 71566.47,
+      "areaPotencial": 1548257.67
+    },
+    {
+      "region": "HUÁNUCO",
+      "lineaBaseNoBosque": 472745.34,
+      "perdidaAcumulada": 413044.47,
+      "bosqueRemanente": 1451891.34,
+      "cuerposAgua": 51321.78,
+      "areaPotencial": 885789.81
+    },
+    {
+      "region": "JUNÍN",
+      "lineaBaseNoBosque": 471146.49,
+      "perdidaAcumulada": 225656.01,
+      "bosqueRemanente": 1772923.41,
+      "cuerposAgua": 49326.84,
+      "areaPotencial": 696802.5
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "lineaBaseNoBosque": 180062.64,
+      "perdidaAcumulada": 351941.4,
+      "bosqueRemanente": 7763535.54,
+      "cuerposAgua": 205263.99,
+      "areaPotencial": 532004.04
+    },
+    {
+      "region": "CAJAMARCA (*)",
+      "lineaBaseNoBosque": 405743.22,
+      "perdidaAcumulada": 27575.37,
+      "bosqueRemanente": 339512.58,
+      "cuerposAgua": 3478.77,
+      "areaPotencial": 433318.59
+    },
+    {
+      "region": "PASCO",
+      "lineaBaseNoBosque": 219002.13,
+      "perdidaAcumulada": 142873.29,
+      "bosqueRemanente": 1354764.06,
+      "cuerposAgua": 24049.35,
+      "areaPotencial": 361875.42
+    },
+    {
+      "region": "ÁNCASH (**)",
+      "lineaBaseNoBosque": 0,
+      "perdidaAcumulada": 0,
+      "bosqueRemanente": 0,
+      "cuerposAgua": 0,
+      "areaPotencial": 0
+    }
+  ],
+  "kpi": {
+    "areaPotencialTotal": 4458048.03,
+    "bosqueRemanenteTotal": 15931203.84,
+    "perdidaAcumuladaTotal": 1693613.25,
+    "regionMayorPotencial": "SAN MARTÍN",
+    "regionMayorBosque": "MADRE DE DIOS"
+  }
+}

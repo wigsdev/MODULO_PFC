@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "source": "Compilación SERFOR",
+    "lastUpdated": "2025-12-17"
+  },
+  "sistemas": [
+    {
+      "nombre": "Sistema Nacional de Información Forestal",
+      "siglas": "SNIFFS",
+      "institucion": "SERFOR",
+      "utilidad": "Registro de Plantaciones, Estadísticas de Producción, Guías de Transporte. Es el Reniec de la madera.",
+      "tipoDato": "Administrativo / Estadístico",
+      "nivelAcceso": "Público",
+      "enlace": "https://sniffs.serfor.gob.pe"
+    },
+    {
+      "nombre": "Geoportal Forestal y de Fauna Silvestre",
+      "siglas": "GEOSERFOR",
+      "institucion": "SERFOR",
+      "utilidad": "Visor de Catastro Forestal, Zonificación, Ecosistemas Frágiles. Vital para ubicar el predio.",
+      "tipoDato": "Espacial (Mapas)",
+      "nivelAcceso": "Público",
+      "enlace": "https://geo.serfor.gob.pe/geoserfor"
+    },
+    {
+      "nombre": "Plataforma de Monitoreo de Bosques",
+      "siglas": "GEOBOSQUES",
+      "institucion": "MINAM",
+      "utilidad": "Alertas tempranas de deforestación y reportes de pérdida de bosque. Clave para certificación ambiental (EUDR).",
+      "tipoDato": "Espacial / Satelital",
+      "nivelAcceso": "Público",
+      "enlace": "https://geobosques.minam.gob.pe/geobosque/view/index.php"
+    },
+    {
+      "nombre": "Sistema de Información Gerencial",
+      "siglas": "SIGO",
+      "institucion": "OSINFOR",
+      "utilidad": "Semáforo de Comportamiento. Verifica si una concesión tiene multas (Rojo) o buenas prácticas (Verde).",
+      "tipoDato": "Legal / Fiscalización",
+      "nivelAcceso": "Público",
+      "enlace": "https://observatorio.osinfor.gob.pe"
+    },
+    {
+      "nombre": "Sistema de Información de Comercio Exterior",
+      "siglas": "SIICEX",
+      "institucion": "PROMPERÚ",
+      "utilidad": "Inteligencia de mercados, aranceles, requisitos de acceso a mercados internacionales.",
+      "tipoDato": "Comercial",
+      "nivelAcceso": "Público",
+      "enlace": "https://www.siicex.gob.pe"
+    },
+    {
+      "nombre": "Plataforma de Inversión Pública",
+      "siglas": "INVIERTE.PE",
+      "institucion": "MEF",
+      "utilidad": "Banco de Inversiones. Permite ver si hay carreteras o proyectos públicos planificados cerca del predio.",
+      "tipoDato": "Proyectos",
+      "nivelAcceso": "Público",
+      "enlace": "https://www.mef.gob.pe/es/inversion-publica"
+    },
+    {
+      "nombre": "Infraestructura de Datos Espaciales",
+      "siglas": "IDEP",
+      "institucion": "PCM",
+      "utilidad": "Cartografía base oficial, límites distritales, vías nacionales y catastro minero referencial.",
+      "tipoDato": "Base Cartográfica",
+      "nivelAcceso": "Público",
+      "enlace": "https://www.idep.gob.pe"
+    },
+    {
+      "nombre": "Ventanilla Única de Comercio Exterior",
+      "siglas": "VUCE",
+      "institucion": "MINCETUR",
+      "utilidad": "Trámites de exportación, certificados fitosanitarios (SENASA) y permisos CITES.",
+      "tipoDato": "Trámites",
+      "nivelAcceso": "Restringido (Clave Sol)",
+      "enlace": "https://www.vuce.gob.pe"
+    },
+    {
+      "nombre": "Sistema de Información Agraria",
+      "siglas": "SIEA",
+      "institucion": "MIDAGRI",
+      "utilidad": "Precios de cultivos asociados (café, cacao) para sistemas agroforestales.",
+      "tipoDato": "Agrícola",
+      "nivelAcceso": "Público",
+      "enlace": "https://siea.midagri.gob.pe"
+    },
+    {
+      "nombre": "Consulta RUC",
+      "siglas": "SUNAT",
+      "institucion": "SUNAT",
+      "utilidad": "Validación de la actividad económica y condición de habido/activo de socios o proveedores locales.",
+      "tipoDato": "Tributario",
+      "nivelAcceso": "Público",
+      "enlace": "https://e-consultaruc.sunat.gob.pe"
+    }
+  ],
+  "tiposDato": [
+    "Administrativo / Estadístico",
+    "Espacial (Mapas)",
+    "Espacial / Satelital",
+    "Legal / Fiscalización",
+    "Comercial",
+    "Proyectos",
+    "Base Cartográfica",
+    "Trámites",
+    "Agrícola",
+    "Tributario"
+  ],
+  "kpi": {
+    "totalSistemas": 10,
+    "sistemasPublicos": 9
+  }
+}
