@@ -12,8 +12,7 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    ResponsiveContainer,
-    Legend
+    ResponsiveContainer
 } from 'recharts';
 
 interface Registro {
@@ -160,7 +159,7 @@ export default function PlantacionesRegistradas() {
                                 cx="50%"
                                 cy="50%"
                                 outerRadius={70}
-                                label={({ tipo, percent }) => `${tipo.substring(0, 10)}... ${(percent * 100).toFixed(0)}%`}
+                                label={({ name, percent }) => `${String(name || '').substring(0, 10)}... ${((percent || 0) * 100).toFixed(0)}%`}
                                 labelLine={false}
                             >
                                 {data.porTipoPersona.map((_, index) => (

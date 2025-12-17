@@ -117,13 +117,13 @@ export default function ZonasSusceptibles() {
                     <ResponsiveContainer width="100%" height="85%">
                         <PieChart>
                             <Pie
-                                data={data.gradoMercado}
+                                data={data.gradoMercado as any[]}
                                 cx="50%"
                                 cy="45%"
                                 outerRadius={80}
                                 dataKey="superficie"
                                 nameKey="grado"
-                                label={({ grado, porcentaje }) => `${grado.split(' ')[0]}: ${porcentaje}%`}
+                                label={({ name, percent }) => `${String(name || '').split(' ')[0]}: ${((percent || 0) * 100).toFixed(1)}%`}
                                 labelLine={false}
                             >
                                 {data.gradoMercado.map((entry, index) => (

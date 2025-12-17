@@ -117,7 +117,7 @@ export default function MapaBosque() {
                 <ResponsiveContainer width="100%" height="90%">
                     <BarChart data={chartData} margin={{ left: 20, right: 20, bottom: 40 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
-                        <XAxis dataKey="region" tick={{ fontSize: 10, angle: -20 }} interval={0} />
+                        <XAxis dataKey="region" tick={{ fontSize: 10 }} interval={0} />
                         <YAxis tickFormatter={(v) => formatNumber(v)} tick={{ fontSize: 10 }} />
                         <Tooltip formatter={(v: number) => `${formatNumber(v)} ha`} />
                         <Legend />

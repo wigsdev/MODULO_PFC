@@ -121,13 +121,13 @@ export default function AreasFormalizacion() {
                     <ResponsiveContainer width="100%" height="85%">
                         <PieChart>
                             <Pie
-                                data={data.prioridad}
+                                data={data.prioridad as any[]}
                                 cx="50%"
                                 cy="45%"
                                 outerRadius={80}
                                 dataKey="superficie"
                                 nameKey="tipo"
-                                label={({ tipo, porcentaje }) => `${tipo.split('(')[0].trim()}: ${porcentaje}%`}
+                                label={({ name, percent }) => `${String(name || '').split('(')[0].trim()}: ${((percent || 0) * 100).toFixed(1)}%`}
                                 labelLine={false}
                             >
                                 {data.prioridad.map((_, index) => (
@@ -181,8 +181,8 @@ export default function AreasFormalizacion() {
                                     <td className="px-3 py-2 text-gray-400">{idx + 1}</td>
                                     <td className="px-3 py-2">
                                         <span className={`px-2 py-0.5 rounded text-xs font-medium ${d.prioridadCorta === 'Muy Alta'
-                                                ? 'bg-red-100 text-red-700'
-                                                : 'bg-orange-100 text-orange-700'
+                                            ? 'bg-red-100 text-red-700'
+                                            : 'bg-orange-100 text-orange-700'
                                             }`}>
                                             {d.prioridadCorta}
                                         </span>

@@ -39,7 +39,7 @@ interface OfertaData {
     valorPIB?: ValorPIBData[];
 }
 
-const COLORS = ['#10B981', '#F59E0B', '#3B82F6', '#8B5CF6', '#EF4444', '#06B6D4', '#EC4899'];
+
 
 const OfertaForestal = () => {
     const [data, setData] = useState<OfertaData | null>(null);
@@ -138,7 +138,7 @@ const OfertaForestal = () => {
                                 cy="45%"
                                 outerRadius={70}
                                 dataKey="value"
-                                label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(1)}%`}
+                                label={({ name, percent }) => `${name}: ${((percent || 0) * 100).toFixed(1)}%`}
                                 labelLine={false}
                             >
                                 <Cell fill="#3B82F6" />

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { TrendingUp, TrendingDown, Package, DollarSign, AlertTriangle } from 'lucide-react';
+import { TrendingUp, TrendingDown, Package, AlertTriangle } from 'lucide-react';
 import {
     BarChart,
     Bar,
