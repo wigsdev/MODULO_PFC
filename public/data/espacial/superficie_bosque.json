@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "source": "GeoBosques (2024)",
+    "lastUpdated": "2025-12-17"
+  },
+  "regiones": [
+    {
+      "region": "JUNÍN",
+      "superficieTotal": 3,
+      "supBosque": 684,
+      "cobertura": 885,
+      "fuente": "1",
+      "observacion": "772"
+    },
+    {
+      "region": "ÁNCASH",
+      "superficieTotal": 3,
+      "supBosque": 591,
+      "cobertura": 481,
+      "fuente": "0",
+      "observacion": "0"
+    },
+    {
+      "region": "PASCO",
+      "superficieTotal": 2,
+      "supBosque": 531,
+      "cobertura": 963,
+      "fuente": "1",
+      "observacion": "354"
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "superficieTotal": 8,
+      "supBosque": 530,
+      "cobertura": 54,
+      "fuente": "7",
+      "observacion": "763"
+    },
+    {
+      "region": "HUÁNUCO",
+      "superficieTotal": 4,
+      "supBosque": 419,
+      "cobertura": 723,
+      "fuente": "1",
+      "observacion": "451"
+    },
+    {
+      "region": "CAJAMARCA",
+      "superficieTotal": 3,
+      "supBosque": 331,
+      "cobertura": 754,
+      "fuente": "339",
+      "observacion": "512"
+    },
+    {
+      "region": "SAN MARTÍN",
+      "superficieTotal": 5,
+      "supBosque": 125,
+      "cobertura": 331,
+      "fuente": "3",
+      "observacion": "248"
+    }
+  ],
+  "kpi": {
+    "totalBosque": 3211,
+    "totalSuperficie": 28,
+    "coberturaPromedio": "598.71",
+    "regionLider": "PASCO",
+    "regionLiderCobertura": 963
+  }
+}

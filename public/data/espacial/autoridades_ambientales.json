@@ -1,10 +1,9 @@
 {
   "metadata": {
-    "title": "Autoridades Ambientales",
-    "source": "MINAM / GORES (2025)",
-    "lastUpdated": "2025-12-16"
+    "source": "Compilación SERFOR",
+    "lastUpdated": "2025-12-17"
   },
-  "autoridades": [
+  "entidades": [
     {
       "nivel": "NACIONAL",
       "entidad": "Ministerio del Ambiente",
@@ -59,7 +58,7 @@
       "siglas": "ARA San Martín",
       "funcion": "Gestión ambiental regional y ordenamiento territorial.",
       "ambito": "San Martín",
-      "enlace": "https://regionsanmartin.gob.pe"
+      "enlace": "regionsanmartin.gob.pe"
     },
     {
       "nivel": "REGIONAL",
@@ -67,7 +66,7 @@
       "siglas": "GERFOR / ARA",
       "funcion": "Autoridad Forestal Regional y gestión de RR.NN.",
       "ambito": "Madre de Dios",
-      "enlace": "https://regionmadrededios.gob.pe"
+      "enlace": "regionmadrededios.gob.pe"
     },
     {
       "nivel": "REGIONAL",
@@ -75,7 +74,7 @@
       "siglas": "GRRNYGA",
       "funcion": "Gestión de recursos naturales y zonificación.",
       "ambito": "Huánuco",
-      "enlace": "https://regionhuanuco.gob.pe"
+      "enlace": "regionhuanuco.gob.pe"
     },
     {
       "nivel": "REGIONAL",
@@ -83,7 +82,7 @@
       "siglas": "GRRNYGMA",
       "funcion": "Gestión ambiental y territorial.",
       "ambito": "Junín",
-      "enlace": "https://regionjunin.gob.pe"
+      "enlace": "regionjunin.gob.pe"
     },
     {
       "nivel": "REGIONAL",
@@ -91,7 +90,7 @@
       "siglas": "GRRNYGMA",
       "funcion": "Gestión ambiental y territorial.",
       "ambito": "Pasco",
-      "enlace": "https://regionpasco.gob.pe"
+      "enlace": "regionpasco.gob.pe"
     },
     {
       "nivel": "REGIONAL",
@@ -99,7 +98,7 @@
       "siglas": "RENAMA",
       "funcion": "Gestión de la ZEE y conservación.",
       "ambito": "Cajamarca",
-      "enlace": "https://regioncajamarca.gob.pe"
+      "enlace": "regioncajamarca.gob.pe"
     },
     {
       "nivel": "REGIONAL",
@@ -107,7 +106,122 @@
       "siglas": "GRRNYGA",
       "funcion": "Gestión ambiental y territorial.",
       "ambito": "Áncash",
-      "enlace": "https://regionancash.gob.pe"
+      "enlace": "regionancash.gob.pe"
     }
-  ]
+  ],
+  "kpi": {
+    "totalEntidades": 13,
+    "nacionales": 6,
+    "regionales": 7
+  },
+  "byNivel": {
+    "nacional": [
+      {
+        "nivel": "NACIONAL",
+        "entidad": "Ministerio del Ambiente",
+        "siglas": "MINAM",
+        "funcion": "Rectoría ambiental, Zonificación (ZEE) y Monitoreo (GeoBosques).",
+        "ambito": "Nacional",
+        "enlace": "https://www.gob.pe/minam"
+      },
+      {
+        "nivel": "NACIONAL",
+        "entidad": "Servicio Nacional Forestal y de Fauna Silvestre",
+        "siglas": "SERFOR",
+        "funcion": "Autoridad Nacional Forestal. Normativa y Catastro.",
+        "ambito": "Nacional",
+        "enlace": "https://www.gob.pe/serfor"
+      },
+      {
+        "nivel": "NACIONAL",
+        "entidad": "Organismo de Evaluación y Fiscalización Ambiental",
+        "siglas": "OEFA",
+        "funcion": "Fiscalización de obligaciones ambientales en proyectos de inversión.",
+        "ambito": "Nacional",
+        "enlace": "https://www.gob.pe/oefa"
+      },
+      {
+        "nivel": "NACIONAL",
+        "entidad": "Organismo de Supervisión de los Recursos Forestales",
+        "siglas": "OSINFOR",
+        "funcion": "Supervisión de títulos habilitantes y concesiones.",
+        "ambito": "Nacional",
+        "enlace": "https://www.gob.pe/osinfor"
+      },
+      {
+        "nivel": "NACIONAL",
+        "entidad": "Servicio Nacional de Certificación Ambiental",
+        "siglas": "SENACE",
+        "funcion": "Evaluación de Estudios de Impacto Ambiental (EIA-d) complejos.",
+        "ambito": "Nacional",
+        "enlace": "https://www.gob.pe/senace"
+      },
+      {
+        "nivel": "NACIONAL",
+        "entidad": "Servicio Nacional de Áreas Naturales Protegidas",
+        "siglas": "SERNANP",
+        "funcion": "Gestión de ANP y emisión de compatibilidad.",
+        "ambito": "Nacional",
+        "enlace": "https://www.gob.pe/sernanp"
+      }
+    ],
+    "regional": [
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE San Martín - Autoridad Regional Ambiental",
+        "siglas": "ARA San Martín",
+        "funcion": "Gestión ambiental regional y ordenamiento territorial.",
+        "ambito": "San Martín",
+        "enlace": "regionsanmartin.gob.pe"
+      },
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE Madre de Dios - Gerencia Reg. Forestal y Fauna",
+        "siglas": "GERFOR / ARA",
+        "funcion": "Autoridad Forestal Regional y gestión de RR.NN.",
+        "ambito": "Madre de Dios",
+        "enlace": "regionmadrededios.gob.pe"
+      },
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE Huánuco - Gerencia de RR.NN. y Gestión Ambiental",
+        "siglas": "GRRNYGA",
+        "funcion": "Gestión de recursos naturales y zonificación.",
+        "ambito": "Huánuco",
+        "enlace": "regionhuanuco.gob.pe"
+      },
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE Junín - Gerencia de RR.NN. y Gestión del Medio Ambiente",
+        "siglas": "GRRNYGMA",
+        "funcion": "Gestión ambiental y territorial.",
+        "ambito": "Junín",
+        "enlace": "regionjunin.gob.pe"
+      },
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE Pasco - Gerencia de RR.NN. y Gestión del Medio Ambiente",
+        "siglas": "GRRNYGMA",
+        "funcion": "Gestión ambiental y territorial.",
+        "ambito": "Pasco",
+        "enlace": "regionpasco.gob.pe"
+      },
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE Cajamarca - Gerencia de RR.NN. y Medio Ambiente",
+        "siglas": "RENAMA",
+        "funcion": "Gestión de la ZEE y conservación.",
+        "ambito": "Cajamarca",
+        "enlace": "regioncajamarca.gob.pe"
+      },
+      {
+        "nivel": "REGIONAL",
+        "entidad": "GORE Áncash - Gerencia de RR.NN. y Gestión Ambiental",
+        "siglas": "GRRNYGA",
+        "funcion": "Gestión ambiental y territorial.",
+        "ambito": "Áncash",
+        "enlace": "regionancash.gob.pe"
+      }
+    ]
+  }
 }
