@@ -179,9 +179,29 @@ let cambioData = {
 if (fs.existsSync(cambioFile)) {
     const content = fs.readFileSync(cambioFile, 'utf-8');
     const lines = content.split('\n').filter(l => l.trim());
-    const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, '').replace('*', ''));
 
-    const regiones = headers.slice(1); // Skip AÑO
+    // Helper to parse CSV with quoted fields (handles "10,784" format)
+    function parseCSVLineCambio(line) {
+        const result = [];
+        let current = '';
+        let inQuotes = false;
+
+        for (const char of line) {
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                result.push(current.trim());
+                current = '';
+            } else {
+                current += char;
+            }
+        }
+        result.push(current.trim());
+        return result;
+    }
+
+    const headerValues = parseCSVLineCambio(lines[0]);
+    const regiones = headerValues.slice(1).map(h => h.replace('*', '')); // Skip AÑO, remove asterisks
     cambioData.regiones = regiones;
     cambioData.serieHistorica = [];
 
@@ -192,10 +212,10 @@ if (fs.existsSync(cambioFile)) {
     let añoPico = { year: 0, total: 0 };
 
     for (let i = 1; i < lines.length; i++) {
-        const values = lines[i].split(',');
+        const values = parseCSVLineCambio(lines[i]);
         if (values.length < 2) continue;
 
-        const year = parseInt(values[0]?.trim().replace(/"/g, ''));
+        const year = parseInt(values[0]);
         if (!year || isNaN(year)) continue;
 
         const record = { year };

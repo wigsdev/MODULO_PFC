@@ -16,305 +16,301 @@
   "serieHistorica": [
     {
       "year": 2001,
-      "HUÁNUCO": 10,
-      "SAN MARTÍN": 784,
-      "MADRE DE DIOS": 15,
-      "JUNÍN": 21,
-      "PASCO": 4,
-      "CAJAMARCA": 249,
-      "ÁNCASH": 10,
-      "total": 1093
+      "HUÁNUCO": 10784,
+      "SAN MARTÍN": 15021,
+      "MADRE DE DIOS": 4249,
+      "JUNÍN": 10016,
+      "PASCO": 6366,
+      "CAJAMARCA": 1440,
+      "ÁNCASH": 0,
+      "total": 47876
     },
     {
       "year": 2002,
-      "HUÁNUCO": 10,
-      "SAN MARTÍN": 642,
-      "MADRE DE DIOS": 16,
-      "JUNÍN": 367,
-      "PASCO": 4,
-      "CAJAMARCA": 496,
-      "ÁNCASH": 10,
-      "total": 1545
+      "HUÁNUCO": 10642,
+      "SAN MARTÍN": 16367,
+      "MADRE DE DIOS": 4496,
+      "JUNÍN": 10767,
+      "PASCO": 7126,
+      "CAJAMARCA": 1607,
+      "ÁNCASH": 0,
+      "total": 51005
     },
     {
       "year": 2003,
-      "HUÁNUCO": 9,
-      "SAN MARTÍN": 800,
-      "MADRE DE DIOS": 14,
-      "JUNÍN": 37,
-      "PASCO": 4,
-      "CAJAMARCA": 772,
-      "ÁNCASH": 10,
-      "total": 1646
+      "HUÁNUCO": 9800,
+      "SAN MARTÍN": 14037,
+      "MADRE DE DIOS": 4772,
+      "JUNÍN": 10035,
+      "PASCO": 6944,
+      "CAJAMARCA": 1132,
+      "ÁNCASH": 0,
+      "total": 46720
     },
     {
       "year": 2004,
-      "HUÁNUCO": 11,
-      "SAN MARTÍN": 489,
-      "MADRE DE DIOS": 20,
-      "JUNÍN": 443,
-      "PASCO": 5,
-      "CAJAMARCA": 888,
-      "ÁNCASH": 12,
-      "total": 1868
+      "HUÁNUCO": 11489,
+      "SAN MARTÍN": 20443,
+      "MADRE DE DIOS": 5888,
+      "JUNÍN": 12398,
+      "PASCO": 8924,
+      "CAJAMARCA": 1222,
+      "ÁNCASH": 0,
+      "total": 60364
     },
     {
       "year": 2005,
-      "HUÁNUCO": 19,
-      "SAN MARTÍN": 531,
-      "MADRE DE DIOS": 30,
-      "JUNÍN": 551,
-      "PASCO": 14,
-      "CAJAMARCA": 642,
-      "ÁNCASH": 19,
-      "total": 1806
+      "HUÁNUCO": 19531,
+      "SAN MARTÍN": 30551,
+      "MADRE DE DIOS": 14642,
+      "JUNÍN": 19774,
+      "PASCO": 11357,
+      "CAJAMARCA": 1605,
+      "ÁNCASH": 0,
+      "total": 97460
     },
     {
       "year": 2006,
-      "HUÁNUCO": 10,
-      "SAN MARTÍN": 483,
-      "MADRE DE DIOS": 12,
-      "JUNÍN": 236,
-      "PASCO": 6,
-      "CAJAMARCA": 554,
-      "ÁNCASH": 10,
-      "total": 1311
+      "HUÁNUCO": 10483,
+      "SAN MARTÍN": 12236,
+      "MADRE DE DIOS": 6554,
+      "JUNÍN": 10816,
+      "PASCO": 6303,
+      "CAJAMARCA": 1449,
+      "ÁNCASH": 0,
+      "total": 47841
     },
     {
       "year": 2007,
-      "HUÁNUCO": 14,
-      "SAN MARTÍN": 946,
-      "MADRE DE DIOS": 18,
-      "JUNÍN": 367,
-      "PASCO": 6,
-      "CAJAMARCA": 956,
-      "ÁNCASH": 12,
-      "total": 2319
+      "HUÁNUCO": 14946,
+      "SAN MARTÍN": 18367,
+      "MADRE DE DIOS": 6956,
+      "JUNÍN": 12968,
+      "PASCO": 9738,
+      "CAJAMARCA": 2752,
+      "ÁNCASH": 0,
+      "total": 65727
     },
     {
       "year": 2008,
-      "HUÁNUCO": 13,
-      "SAN MARTÍN": 873,
-      "MADRE DE DIOS": 14,
-      "JUNÍN": 74,
-      "PASCO": 6,
-      "CAJAMARCA": 707,
-      "ÁNCASH": 12,
-      "total": 1699
+      "HUÁNUCO": 13873,
+      "SAN MARTÍN": 14074,
+      "MADRE DE DIOS": 6707,
+      "JUNÍN": 12796,
+      "PASCO": 9566,
+      "CAJAMARCA": 2827,
+      "ÁNCASH": 0,
+      "total": 59843
     },
     {
       "year": 2009,
-      "HUÁNUCO": 22,
-      "SAN MARTÍN": 233,
-      "MADRE DE DIOS": 31,
-      "JUNÍN": 438,
-      "PASCO": 9,
-      "CAJAMARCA": 796,
-      "ÁNCASH": 16,
-      "total": 1545
+      "HUÁNUCO": 22233,
+      "SAN MARTÍN": 31438,
+      "MADRE DE DIOS": 9796,
+      "JUNÍN": 16774,
+      "PASCO": 13118,
+      "CAJAMARCA": 2231,
+      "ÁNCASH": 0,
+      "total": 95590
     },
     {
       "year": 2010,
-      "HUÁNUCO": 20,
-      "SAN MARTÍN": 535,
-      "MADRE DE DIOS": 22,
-      "JUNÍN": 572,
-      "PASCO": 8,
-      "CAJAMARCA": 829,
-      "ÁNCASH": 16,
-      "total": 2002
+      "HUÁNUCO": 20535,
+      "SAN MARTÍN": 22572,
+      "MADRE DE DIOS": 8829,
+      "JUNÍN": 16366,
+      "PASCO": 12927,
+      "CAJAMARCA": 2492,
+      "ÁNCASH": 0,
+      "total": 83721
     },
     {
       "year": 2011,
-      "HUÁNUCO": 19,
-      "SAN MARTÍN": 252,
-      "MADRE DE DIOS": 18,
-      "JUNÍN": 874,
-      "PASCO": 7,
-      "CAJAMARCA": 495,
-      "ÁNCASH": 13,
-      "total": 1678
+      "HUÁNUCO": 19252,
+      "SAN MARTÍN": 18874,
+      "MADRE DE DIOS": 7495,
+      "JUNÍN": 13674,
+      "PASCO": 10683,
+      "CAJAMARCA": 2279,
+      "ÁNCASH": 0,
+      "total": 72257
     },
     {
       "year": 2012,
-      "HUÁNUCO": 24,
-      "SAN MARTÍN": 960,
-      "MADRE DE DIOS": 26,
-      "JUNÍN": 66,
-      "PASCO": 9,
-      "CAJAMARCA": 864,
-      "ÁNCASH": 14,
-      "total": 1963
+      "HUÁNUCO": 24960,
+      "SAN MARTÍN": 26066,
+      "MADRE DE DIOS": 9864,
+      "JUNÍN": 14484,
+      "PASCO": 12333,
+      "CAJAMARCA": 1664,
+      "ÁNCASH": 0,
+      "total": 89371
     },
     {
       "year": 2013,
-      "HUÁNUCO": 19,
-      "SAN MARTÍN": 301,
-      "MADRE DE DIOS": 24,
-      "JUNÍN": 996,
-      "PASCO": 7,
-      "CAJAMARCA": 858,
-      "ÁNCASH": 11,
-      "total": 2216
+      "HUÁNUCO": 19301,
+      "SAN MARTÍN": 24996,
+      "MADRE DE DIOS": 7858,
+      "JUNÍN": 11269,
+      "PASCO": 10951,
+      "CAJAMARCA": 1947,
+      "ÁNCASH": 0,
+      "total": 76322
     },
     {
       "year": 2014,
-      "HUÁNUCO": 28,
-      "SAN MARTÍN": 103,
-      "MADRE DE DIOS": 30,
-      "JUNÍN": 953,
-      "PASCO": 10,
-      "CAJAMARCA": 230,
-      "ÁNCASH": 16,
-      "total": 1370
+      "HUÁNUCO": 28103,
+      "SAN MARTÍN": 30953,
+      "MADRE DE DIOS": 10230,
+      "JUNÍN": 16112,
+      "PASCO": 14611,
+      "CAJAMARCA": 2423,
+      "ÁNCASH": 0,
+      "total": 102432
     },
     {
       "year": 2015,
-      "HUÁNUCO": 21,
-      "SAN MARTÍN": 373,
-      "MADRE DE DIOS": 21,
-      "JUNÍN": 574,
-      "PASCO": 13,
-      "CAJAMARCA": 767,
-      "ÁNCASH": 13,
-      "total": 1782
+      "HUÁNUCO": 21373,
+      "SAN MARTÍN": 21574,
+      "MADRE DE DIOS": 13767,
+      "JUNÍN": 13293,
+      "PASCO": 12251,
+      "CAJAMARCA": 2276,
+      "ÁNCASH": 0,
+      "total": 84534
     },
     {
       "year": 2016,
-      "HUÁNUCO": 24,
-      "SAN MARTÍN": 78,
-      "MADRE DE DIOS": 26,
-      "JUNÍN": 678,
-      "PASCO": 18,
-      "CAJAMARCA": 46,
-      "ÁNCASH": 13,
-      "total": 883
+      "HUÁNUCO": 24078,
+      "SAN MARTÍN": 26678,
+      "MADRE DE DIOS": 18046,
+      "JUNÍN": 13446,
+      "PASCO": 10878,
+      "CAJAMARCA": 2525,
+      "ÁNCASH": 0,
+      "total": 95651
     },
     {
       "year": 2017,
-      "HUÁNUCO": 19,
-      "SAN MARTÍN": 890,
-      "MADRE DE DIOS": 22,
-      "JUNÍN": 787,
-      "PASCO": 22,
-      "CAJAMARCA": 668,
-      "ÁNCASH": 13,
-      "total": 2421
+      "HUÁNUCO": 19890,
+      "SAN MARTÍN": 22787,
+      "MADRE DE DIOS": 22668,
+      "JUNÍN": 13842,
+      "PASCO": 10404,
+      "CAJAMARCA": 2238,
+      "ÁNCASH": 0,
+      "total": 91829
     },
     {
       "year": 2018,
-      "HUÁNUCO": 17,
-      "SAN MARTÍN": 917,
-      "MADRE DE DIOS": 21,
-      "JUNÍN": 769,
-      "PASCO": 23,
-      "CAJAMARCA": 242,
-      "ÁNCASH": 13,
-      "total": 2002
+      "HUÁNUCO": 17917,
+      "SAN MARTÍN": 21769,
+      "MADRE DE DIOS": 23242,
+      "JUNÍN": 13788,
+      "PASCO": 9573,
+      "CAJAMARCA": 2497,
+      "ÁNCASH": 0,
+      "total": 88786
     },
     {
       "year": 2019,
-      "HUÁNUCO": 16,
-      "SAN MARTÍN": 47,
-      "MADRE DE DIOS": 18,
-      "JUNÍN": 806,
-      "PASCO": 21,
-      "CAJAMARCA": 281,
-      "ÁNCASH": 13,
-      "total": 1202
+      "HUÁNUCO": 16047,
+      "SAN MARTÍN": 18806,
+      "MADRE DE DIOS": 21281,
+      "JUNÍN": 13858,
+      "PASCO": 8970,
+      "CAJAMARCA": 2126,
+      "ÁNCASH": 0,
+      "total": 81088
     },
     {
       "year": 2020,
-      "HUÁNUCO": 22,
-      "SAN MARTÍN": 236,
-      "MADRE DE DIOS": 29,
-      "JUNÍN": 484,
-      "PASCO": 24,
-      "CAJAMARCA": 374,
-      "ÁNCASH": 18,
-      "total": 1187
+      "HUÁNUCO": 22236,
+      "SAN MARTÍN": 29484,
+      "MADRE DE DIOS": 24374,
+      "JUNÍN": 18290,
+      "PASCO": 12187,
+      "CAJAMARCA": 2829,
+      "ÁNCASH": 0,
+      "total": 109400
     },
     {
       "year": 2021,
-      "HUÁNUCO": 15,
-      "SAN MARTÍN": 21,
-      "MADRE DE DIOS": 13,
-      "JUNÍN": 80,
-      "PASCO": 23,
-      "CAJAMARCA": 142,
-      "ÁNCASH": 11,
-      "total": 305
+      "HUÁNUCO": 15021,
+      "SAN MARTÍN": 13080,
+      "MADRE DE DIOS": 23142,
+      "JUNÍN": 11811,
+      "PASCO": 9139,
+      "CAJAMARCA": 1833,
+      "ÁNCASH": 0,
+      "total": 74026
     },
     {
       "year": 2022,
-      "HUÁNUCO": 17,
-      "SAN MARTÍN": 912,
-      "MADRE DE DIOS": 17,
-      "JUNÍN": 764,
-      "PASCO": 24,
-      "CAJAMARCA": 485,
-      "ÁNCASH": 12,
-      "total": 2231
+      "HUÁNUCO": 17912,
+      "SAN MARTÍN": 17764,
+      "MADRE DE DIOS": 24485,
+      "JUNÍN": 12082,
+      "PASCO": 5597,
+      "CAJAMARCA": 388,
+      "ÁNCASH": 0,
+      "total": 78228
     },
     {
       "year": 2023,
-      "HUÁNUCO": 15,
-      "SAN MARTÍN": 20,
-      "MADRE DE DIOS": 16,
-      "JUNÍN": 825,
-      "PASCO": 18,
-      "CAJAMARCA": 779,
-      "ÁNCASH": 11,
-      "total": 1684
+      "HUÁNUCO": 15020,
+      "SAN MARTÍN": 16825,
+      "MADRE DE DIOS": 18779,
+      "JUNÍN": 11826,
+      "PASCO": 5029,
+      "CAJAMARCA": 1928,
+      "ÁNCASH": 0,
+      "total": 69407
     },
     {
       "year": 2024,
-      "HUÁNUCO": 15,
-      "SAN MARTÍN": 616,
-      "MADRE DE DIOS": 17,
-      "JUNÍN": 183,
-      "PASCO": 31,
-      "CAJAMARCA": 382,
-      "ÁNCASH": 7,
-      "total": 1251
+      "HUÁNUCO": 15616,
+      "SAN MARTÍN": 17183,
+      "MADRE DE DIOS": 31382,
+      "JUNÍN": 7910,
+      "PASCO": 3657,
+      "CAJAMARCA": 3378,
+      "ÁNCASH": 0,
+      "total": 79126
     }
   ],
   "kpi": {
-    "totalAcumulado": 39009,
-    "añoPico": 2017,
-    "deforestacionPico": 2421,
+    "totalAcumulado": 1848604,
+    "añoPico": 2020,
+    "deforestacionPico": 109400,
     "ultimoAño": 2024,
-    "deforestacionUltimoAño": 1251,
-    "tendencia": "-25.7"
+    "deforestacionUltimoAño": 79126,
+    "tendencia": "14.0"
   },
   "totalesPorRegion": [
     {
-      "region": "CAJAMARCA",
-      "total": 13502
-    },
-    {
       "region": "SAN MARTÍN",
-      "total": 12042
-    },
-    {
-      "region": "JUNÍN",
-      "total": 11945
-    },
-    {
-      "region": "MADRE DE DIOS",
-      "total": 490
+      "total": 501945
     },
     {
       "region": "HUÁNUCO",
-      "total": 409
+      "total": 421042
+    },
+    {
+      "region": "MADRE DE DIOS",
+      "total": 329502
+    },
+    {
+      "region": "JUNÍN",
+      "total": 318395
     },
     {
       "region": "PASCO",
-      "total": 316
+      "total": 228632
     },
     {
-      "region": "ÁNCASH",
-      "total": 305
+      "region": "CAJAMARCA",
+      "total": 49088
     }
   ]
 }

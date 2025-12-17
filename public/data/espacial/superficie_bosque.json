@@ -5,67 +5,67 @@
   },
   "regiones": [
     {
-      "region": "JUNÍN",
-      "superficieTotal": 3,
-      "supBosque": 684,
-      "cobertura": 885,
-      "fuente": "1",
-      "observacion": "772"
-    },
-    {
-      "region": "ÁNCASH",
-      "superficieTotal": 3,
-      "supBosque": 591,
-      "cobertura": 481,
-      "fuente": "0",
-      "observacion": "0"
-    },
-    {
-      "region": "PASCO",
-      "superficieTotal": 2,
-      "supBosque": 531,
-      "cobertura": 963,
-      "fuente": "1",
-      "observacion": "354"
-    },
-    {
       "region": "MADRE DE DIOS",
-      "superficieTotal": 8,
-      "supBosque": 530,
-      "cobertura": 54,
-      "fuente": "7",
-      "observacion": "763"
-    },
-    {
-      "region": "HUÁNUCO",
-      "superficieTotal": 4,
-      "supBosque": 419,
-      "cobertura": 723,
-      "fuente": "1",
-      "observacion": "451"
-    },
-    {
-      "region": "CAJAMARCA",
-      "superficieTotal": 3,
-      "supBosque": 331,
-      "cobertura": 754,
-      "fuente": "339",
-      "observacion": "512"
+      "superficieTotal": 8530054,
+      "supBosque": 7763535,
+      "cobertura": 91,
+      "fuente": "GeoBosques (2024)",
+      "observacion": "Cobertura Total BHA."
     },
     {
       "region": "SAN MARTÍN",
-      "superficieTotal": 5,
-      "supBosque": 125,
-      "cobertura": 331,
-      "fuente": "3",
-      "observacion": "248"
+      "superficieTotal": 5125331,
+      "supBosque": 3248576,
+      "cobertura": 63.4,
+      "fuente": "GeoBosques (2024)",
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "JUNÍN",
+      "superficieTotal": 3684885,
+      "supBosque": 1772923,
+      "cobertura": 39.4,
+      "fuente": "GeoBosques (2024)",
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "HUÁNUCO",
+      "superficieTotal": 4419723,
+      "supBosque": 1451891,
+      "cobertura": 40.1,
+      "fuente": "GeoBosques (2024)",
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "PASCO",
+      "superficieTotal": 2531963,
+      "supBosque": 1354764,
+      "cobertura": 53.5,
+      "fuente": "GeoBosques (2024)",
+      "observacion": "Cobertura Total BHA."
+    },
+    {
+      "region": "CAJAMARCA",
+      "superficieTotal": 3331754,
+      "supBosque": 339512,
+      "cobertura": 10.2,
+      "fuente": "GeoBosques (2024)",
+      "observacion": "Dato Parcial. Solo incluye ámbito amazónico; excluye bosques secos/andinos."
+    },
+    {
+      "region": "ÁNCASH",
+      "superficieTotal": 3591481,
+      "supBosque": 0,
+      "cobertura": 0,
+      "fuente": "GeoBosques",
+      "observacion": "No Aplica. Región fuera del ámbito de monitoreo de Bosque Húmedo Amazónico."
     }
   ],
   "kpi": {
-    "totalBosque": 3211,
-    "totalSuperficie": 28,
-    "coberturaPromedio": "598.71",
-    "regionLider": "PASCO",
-    "regionLiderCobertura": 963
+    "totalBosque": 15931201,
+    "totalSuperficie": 31215191,
+    "coberturaPromedio": "49.60",
+    "regionLider": "MADRE DE DIOS",
+    "regionLiderCobertura": 91
   }
 }
