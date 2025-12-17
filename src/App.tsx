@@ -63,8 +63,8 @@ import RegistrosPlantaciones from '@/pages/espacial/sniffs/RegistrosPlantaciones
 import RegistrosInfracciones from '@/pages/espacial/sniffs/RegistrosInfracciones';
 import RegistrosRegentes from '@/pages/espacial/sniffs/RegistrosRegentes';
 import EstudiosMercado from '@/pages/espacial/comercial/EstudiosMercado';
-import Estadisticas from '@/pages/espacial/comercial/Estadisticas';
-import Boletines from '@/pages/espacial/comercial/Boletines';
+import EstadisticasComercio from '@/pages/espacial/comercial/EstadisticasComercio';
+import BoletinesComerciales from '@/pages/espacial/comercial/BoletinesComerciales';
 import PlantacionesRegistradas from '@/pages/espacial/otros/PlantacionesRegistradas';
 import TierrasPFC from '@/pages/espacial/otros/TierrasPFC';
 import MapaBosque from '@/pages/espacial/otros/MapaBosque';
@@ -118,8 +118,8 @@ function App() {
 
             {/* Comercial */}
             <Route path="comercial/estudios-mercado" element={<EstudiosMercado />} />
-            <Route path="comercial/estadisticas" element={<Estadisticas />} />
-            <Route path="comercial/boletines" element={<Boletines />} />
+            <Route path="comercial/estadisticas" element={<EstadisticasComercio />} />
+            <Route path="comercial/boletines" element={<BoletinesComerciales />} />
 
             {/* Otros */}
             <Route path="otros/plantaciones-registradas" element={<PlantacionesRegistradas />} />
