@@ -143,7 +143,7 @@ export default function EntidadesPNF() {
                                 <YAxis dataKey="name" type="category" width={100} fontSize={11} />
                                 <Tooltip />
                                 <Bar dataKey="value" name="Entidades" fill="#10B981" radius={[0, 4, 4, 0]}>
-                                    {data.charts.byRegion.map((entry, index) => (
+                                    {data.charts.byRegion.map((_, index) => (
                                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                     ))}
                                 </Bar>
@@ -167,9 +167,9 @@ export default function EntidadesPNF() {
                                     fill="#8884d8"
                                     paddingAngle={5}
                                     dataKey="value"
-                                    label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                                    label={({ name, percent }) => `${name} (${((percent || 0) * 100).toFixed(0)}%)`}
                                 >
-                                    {data.charts.byConcurso.map((entry, index) => (
+                                    {data.charts.byConcurso.map((_, index) => (
                                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                     ))}
                                 </Pie>
