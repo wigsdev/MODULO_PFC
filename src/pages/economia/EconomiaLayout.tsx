@@ -14,7 +14,8 @@ import {
     Scale,
     PieChart,
     Smartphone,
-    Users
+    Users,
+    Award
 } from 'lucide-react';
 
 const ECONOMIA_ITEMS: SidebarItem[] = [
@@ -30,6 +31,7 @@ const ECONOMIA_ITEMS: SidebarItem[] = [
         icon: TrendingUp,
         subItems: [
             { id: 'proveedores', label: 'Proveedores de Bienes y Servicios', icon: Users, path: '/economia/proveedores', highlight: true },
+            { id: 'entidades-pnf', label: 'Entidades Ejecutoras de PNF', icon: Award, path: '/economia/entidades-pnf', highlight: true },
             { id: 'especies', label: 'Especies Aprovechadas', icon: TreePine, path: '/economia/especies' },
             { id: 'precios', label: 'Precios Maderas', icon: DollarSign, path: '/economia/precios' },
             { id: 'industria', label: 'Transformación Industrial', icon: Factory, path: '/economia/industria' },
