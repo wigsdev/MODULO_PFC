@@ -71,7 +71,10 @@ export default function CambioHistorico() {
     if (!data) return <div className="p-8 text-center text-red-500">Error al cargar datos (Verifique conexión o archivo JSON)</div>;
 
     const tendenciaNum = parseFloat(data?.kpi?.tendencia || '0');
+    const metadata = data?.metadata || { source: '', lastUpdated: '', nota: '' };
     const regiones = data?.regiones || [];
+    const serieHistorica = data?.serieHistorica || [];
+    const totalesPorRegion = data?.totalesPorRegion || [];
     const activeRegions = regiones.filter(r => r !== 'ÁNCASH*');
 
     return (
@@ -82,7 +85,7 @@ export default function CambioHistorico() {
                     <TrendingDown className="text-red-600" size={24} />
                     <div>
                         <h1 className="text-xl font-bold text-gray-800">Cambio Histórico de Superficie de Bosque</h1>
-                        <p className="text-xs text-gray-500">Fuente: {data.metadata.source} | {data.metadata.nota}</p>
+                        <p className="text-xs text-gray-500">Fuente: {metadata.source} | {metadata.nota}</p>
                     </div>
                 </div>
             </div>
@@ -120,50 +123,62 @@ export default function CambioHistorico() {
             </div>
 
             {/* Line Chart - Time Series */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[400px]">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[400px] min-h-[400px]">
                 <h3 className="text-sm font-bold text-gray-700 uppercase mb-2">Serie Histórica de Deforestación (2001-2024)</h3>
-                <ResponsiveContainer width="100%" height="90%">
-                    <LineChart data={data.serieHistorica} margin={{ left: 10, right: 10 }}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
-                        <XAxis dataKey="year" tick={{ fontSize: 10 }} />
-                        <YAxis tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 10 }} />
-                        <Tooltip
-                            formatter={(v: number) => `${v.toLocaleString()} ha`}
-                            labelFormatter={(label) => `Año ${label}`}
-                        />
-                        <Legend wrapperStyle={{ fontSize: '10px' }} />
-                        {activeRegions.map((region) => (
-                            <Line
-                                key={region}
-                                type="monotone"
-                                dataKey={region}
-                                name={region}
-                                stroke={REGION_COLORS[region] || '#94A3B8'}
-                                strokeWidth={2}
-                                dot={{ r: 2 }}
-                                activeDot={{ r: 4 }}
+                {serieHistorica.length > 0 ? (
+                    <ResponsiveContainer width="100%" height="90%">
+                        <LineChart data={serieHistorica} margin={{ left: 10, right: 10 }}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
+                            <XAxis dataKey="year" tick={{ fontSize: 10 }} />
+                            <YAxis tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 10 }} />
+                            <Tooltip
+                                formatter={(v: number) => `${v.toLocaleString()} ha`}
+                                labelFormatter={(label) => `Año ${label}`}
                             />
-                        ))}
-                    </LineChart>
-                </ResponsiveContainer>
+                            <Legend wrapperStyle={{ fontSize: '10px' }} />
+                            {activeRegions.map((region) => (
+                                <Line
+                                    key={region}
+                                    type="monotone"
+                                    dataKey={region}
+                                    name={region}
+                                    stroke={REGION_COLORS[region] || '#94A3B8'}
+                                    strokeWidth={2}
+                                    dot={{ r: 2 }}
+                                    activeDot={{ r: 4 }}
+                                />
+                            ))}
+                        </LineChart>
+                    </ResponsiveContainer>
+                ) : (
+                    <div className="h-full flex items-center justify-center text-gray-400 text-sm">
+                        No hay datos históricos disponibles
+                    </div>
+                )}
             </div>
 
             {/* Bar Chart - Total by Region */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[300px]">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 h-[300px] min-h-[300px]">
                 <h3 className="text-sm font-bold text-gray-700 uppercase mb-2">Deforestación Acumulada por Región (2001-2024)</h3>
-                <ResponsiveContainer width="100%" height="90%">
-                    <BarChart data={data.totalesPorRegion} layout="vertical" margin={{ left: 100, right: 30 }}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" horizontal={true} vertical={false} />
-                        <XAxis type="number" tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 10 }} />
-                        <YAxis type="category" dataKey="region" tick={{ fontSize: 11 }} width={95} />
-                        <Tooltip formatter={(v: number) => `${v.toLocaleString()} ha`} />
-                        <Bar dataKey="total" name="Total Acumulado" radius={[0, 4, 4, 0]}>
-                            {data.totalesPorRegion.map((entry, index) => (
-                                <Cell key={index} fill={REGION_COLORS[entry.region] || '#94A3B8'} />
-                            ))}
-                        </Bar>
-                    </BarChart>
-                </ResponsiveContainer>
+                {totalesPorRegion.length > 0 ? (
+                    <ResponsiveContainer width="100%" height="90%">
+                        <BarChart data={totalesPorRegion} layout="vertical" margin={{ left: 100, right: 30 }}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" horizontal={true} vertical={false} />
+                            <XAxis type="number" tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 10 }} />
+                            <YAxis type="category" dataKey="region" tick={{ fontSize: 11 }} width={95} />
+                            <Tooltip formatter={(v: number) => `${v.toLocaleString()} ha`} />
+                            <Bar dataKey="total" name="Total Acumulado" radius={[0, 4, 4, 0]}>
+                                {totalesPorRegion.map((entry, index) => (
+                                    <Cell key={index} fill={REGION_COLORS[entry.region] || '#94A3B8'} />
+                                ))}
+                            </Bar>
+                        </BarChart>
+                    </ResponsiveContainer>
+                ) : (
+                    <div className="h-full flex items-center justify-center text-gray-400 text-sm">
+                        No hay datos acumulados disponibles
+                    </div>
+                )}
             </div>
 
             {/* Table - Last 5 years */}
@@ -181,7 +196,7 @@ export default function CambioHistorico() {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
-                            {data.serieHistorica.slice(-5).reverse().map((row, idx) => (
+                            {serieHistorica.slice(-5).reverse().map((row, idx) => (
                                 <tr key={idx} className="hover:bg-gray-50">
                                     <td className="px-3 py-2 font-bold text-gray-900">{row.year}</td>
                                     {activeRegions.map(r => (
