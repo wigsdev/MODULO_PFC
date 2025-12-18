@@ -27,49 +27,80 @@ try {
     ];
 
     const timeline = rawData.map(r => {
-        const year = r['AÑO'];
-        const rowData = { name: year.toString() }; // 'name' for Recharts XAxis
+        const year = parseInt(r['AÑO']);
+        const rowData = { year }; // changed 'name' to 'year'
 
+        let rowTotal = 0;
         regions.forEach(region => {
-            rowData[region] = cleanNum(r[region]);
+            const val = cleanNum(r[region]);
+            rowData[region] = val;
+            rowTotal += val;
         });
+        rowData.total = rowTotal;
         return rowData;
-    }).filter(r => r.name && r.name !== 'TOTAL');
+    }).filter(r => !isNaN(r.year));
 
     // KPI Calculations
-    let totalAccumulated = 0;
-    let maxLossValue = 0;
-    let maxLossYear = '';
-    let totalYears = timeline.length;
+    let totalAcumulado = 0;
+    let deforestacionPico = 0;
+    let añoPico = 0;
+    const regionTotalsMap = {};
+
+    // Initialize region totals
+    regions.forEach(r => regionTotalsMap[r] = 0);
 
     timeline.forEach(t => {
-        let yearlyTotal = 0;
-        regions.forEach(r => {
-            const val = t[r] || 0;
-            yearlyTotal += val;
-            totalAccumulated += val;
-        });
+        totalAcumulado += t.total;
 
-        if (yearlyTotal > maxLossValue) {
-            maxLossValue = yearlyTotal;
-            maxLossYear = t.name;
+        // Peak Year
+        if (t.total > deforestacionPico) {
+            deforestacionPico = t.total;
+            añoPico = t.year;
         }
+
+        // Region Totals
+        regions.forEach(r => {
+            regionTotalsMap[r] += (t[r] || 0);
+        });
     });
+
+    // Last Year Stats
+    const lastRecord = timeline[timeline.length - 1] || {};
+    const prevRecord = timeline[timeline.length - 2] || {};
+    const ultimoAño = lastRecord.year || 0;
+    const deforestacionUltimoAño = lastRecord.total || 0;
+
+    // Tendencia (Change vs previous year)
+    let tendencia = "0";
+    if (lastRecord.total && prevRecord.total) {
+        const diff = lastRecord.total - prevRecord.total;
+        const pct = (diff / prevRecord.total) * 100;
+        tendencia = pct.toFixed(1);
+    }
+
+    // Totales Por Region Array
+    const totalesPorRegion = regions.map(r => ({
+        region: r,
+        total: regionTotalsMap[r]
+    })).sort((a, b) => b.total - a.total);
 
     const output = {
         metadata: {
-            title: "Tendencia de Pérdida de Bosque (2001-2024)",
             source: "GeoBosques (2025)",
-            lastUpdated: new Date().toISOString().split('T')[0]
+            lastUpdated: new Date().toISOString().split('T')[0],
+            nota: "Deforestación anual en hectáreas"
         },
         kpi: {
-            totalAccumulated,
-            avgYearly: totalYears > 0 ? totalAccumulated / totalYears : 0,
-            maxLossYear,
-            maxLossValue
+            totalAcumulado,
+            añoPico,
+            deforestacionPico,
+            ultimoAño,
+            deforestacionUltimoAño,
+            tendencia
         },
-        regionsList: regions,
-        timeline
+        regiones: regions,
+        serieHistorica: timeline,
+        totalesPorRegion
     };
 
     // Write Output
