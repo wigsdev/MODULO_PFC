@@ -39,10 +39,17 @@ export default function AutoridadesAmbientales() {
     if (loading) return <div className="p-8 text-center">Cargando datos...</div>;
     if (!data) return <div className="p-8 text-center text-red-500">Error al cargar datos</div>;
 
-    const allEntidades = [...data.byNivel.nacional, ...data.byNivel.regional];
+    // Defensive check: ensure byNivel exists, otherwise use empty arrays
+    const nacional = data?.byNivel?.nacional || [];
+    const regional = data?.byNivel?.regional || [];
+    const allEntidades = [...nacional, ...regional];
+
     const filteredEntidades = filterNivel
         ? allEntidades.filter(e => e.nivel === filterNivel)
         : allEntidades;
+
+    // Defensive check for KPIs
+    const kpi = data?.kpi || { totalEntidades: 0, nacionales: 0, regionales: 0 };
 
     return (
         <div className="space-y-4">
@@ -61,19 +68,19 @@ export default function AutoridadesAmbientales() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4">
                     <p className="text-xs font-semibold text-gray-500 uppercase">Total Entidades</p>
-                    <h3 className="text-2xl font-bold text-gray-800">{data.kpi.totalEntidades}</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">{kpi.totalEntidades}</h3>
                 </div>
                 <div className="bg-white rounded-lg shadow-sm border-l-4 border-indigo-500 p-4">
                     <p className="text-xs font-semibold text-gray-500 uppercase flex items-center gap-1">
                         <Globe size={12} /> Nivel Nacional
                     </p>
-                    <h3 className="text-2xl font-bold text-gray-800">{data.kpi.nacionales}</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">{kpi.nacionales}</h3>
                 </div>
                 <div className="bg-white rounded-lg shadow-sm border-l-4 border-green-500 p-4">
                     <p className="text-xs font-semibold text-gray-500 uppercase flex items-center gap-1">
                         <MapPin size={12} /> Nivel Regional
                     </p>
-                    <h3 className="text-2xl font-bold text-gray-800">{data.kpi.regionales}</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">{kpi.regionales}</h3>
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 // Normativa Imports
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NormativaLayout from './pages/normativa/NormativaLayout';
 import NormativaInicio from './pages/normativa/NormativaInicio';
 import Planificacion from './pages/normativa/Planificacion';
@@ -74,7 +74,7 @@ import SistemasInversionista from '@/pages/espacial/otros/SistemasInversionista'
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Inicio />} />
