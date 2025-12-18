@@ -55,17 +55,24 @@ export default function CambioHistorico() {
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}data/espacial/cambio_historico.json`)
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+                return res.json();
+            })
             .then(d => setData(d))
-            .catch(err => console.error('Error loading data:', err))
+            .catch(err => {
+                console.error('Error loading data:', err);
+                setData(null); // Ensure data is null on error
+            })
             .finally(() => setLoading(false));
     }, []);
 
     if (loading) return <div className="p-8 text-center">Cargando datos...</div>;
-    if (!data) return <div className="p-8 text-center text-red-500">Error al cargar datos</div>;
+    if (!data) return <div className="p-8 text-center text-red-500">Error al cargar datos (Verifique conexión o archivo JSON)</div>;
 
-    const tendenciaNum = parseFloat(data.kpi.tendencia);
-    const activeRegions = data.regiones.filter(r => r !== 'ÁNCASH*');
+    const tendenciaNum = parseFloat(data?.kpi?.tendencia || '0');
+    const regiones = data?.regiones || [];
+    const activeRegions = regiones.filter(r => r !== 'ÁNCASH*');
 
     return (
         <div className="space-y-4">
@@ -85,7 +92,7 @@ export default function CambioHistorico() {
                 <div className="bg-white rounded-lg shadow-sm border-l-4 border-red-500 p-4">
                     <p className="text-xs font-semibold text-gray-500 uppercase">Deforestación Acumulada</p>
                     <h3 className="text-xl font-bold text-red-600">
-                        {(data.kpi.totalAcumulado / 1000000).toFixed(2)}M
+                        {((data?.kpi?.totalAcumulado || 0) / 1000000).toFixed(2)}M
                         <span className="text-sm font-normal text-gray-400 ml-1">ha</span>
                     </h3>
                     <p className="text-xs text-gray-500">2001 - 2024</p>
@@ -94,19 +101,19 @@ export default function CambioHistorico() {
                     <p className="text-xs font-semibold text-gray-500 uppercase flex items-center gap-1">
                         <AlertTriangle size={12} /> Año Pico
                     </p>
-                    <h3 className="text-2xl font-bold text-gray-800">{data.kpi.añoPico}</h3>
-                    <p className="text-xs text-orange-600">{data.kpi.deforestacionPico.toLocaleString()} ha</p>
+                    <h3 className="text-2xl font-bold text-gray-800">{data?.kpi?.añoPico || '-'}</h3>
+                    <p className="text-xs text-orange-600">{(data?.kpi?.deforestacionPico || 0).toLocaleString()} ha</p>
                 </div>
                 <div className="bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4">
                     <p className="text-xs font-semibold text-gray-500 uppercase flex items-center gap-1">
-                        <Calendar size={12} /> Último Año ({data.kpi.ultimoAño})
+                        <Calendar size={12} /> Último Año ({data?.kpi?.ultimoAño || '-'})
                     </p>
-                    <h3 className="text-xl font-bold text-gray-800">{data.kpi.deforestacionUltimoAño.toLocaleString()} ha</h3>
+                    <h3 className="text-xl font-bold text-gray-800">{(data?.kpi?.deforestacionUltimoAño || 0).toLocaleString()} ha</h3>
                 </div>
                 <div className="bg-white rounded-lg shadow-sm border-l-4 border-purple-500 p-4">
                     <p className="text-xs font-semibold text-gray-500 uppercase">Tendencia Anual</p>
                     <h3 className={`text-2xl font-bold ${tendenciaNum >= 0 ? 'text-red-600' : 'text-green-600'}`}>
-                        {tendenciaNum >= 0 ? '+' : ''}{data.kpi.tendencia}%
+                        {tendenciaNum >= 0 ? '+' : ''}{data?.kpi?.tendencia || 0}%
                     </h3>
                     <p className="text-xs text-gray-500">vs año anterior</p>
                 </div>
