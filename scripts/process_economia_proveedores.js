@@ -3,7 +3,7 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 // 1. Configuración
-const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.0.PROV_BIENES_SERVICIOS.csv');
+const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.1.PROV_BIENES_SERVICIOS.csv');
 const OUTPUT_FILE = path.join(__dirname, '../public/data/economia/proveedores.json');
 
 console.log(`\nProcesando Proveedores de Bienes y Servicios...`);
