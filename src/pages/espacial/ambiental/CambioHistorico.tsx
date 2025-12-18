@@ -54,7 +54,8 @@ export default function CambioHistorico() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}data/espacial/cambio_historico.json`)
+        const timestamp = new Date().getTime();
+        fetch(`${import.meta.env.BASE_URL}data/espacial/cambio_historico.json?v=${timestamp}`)
             .then(res => {
                 if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
                 return res.json();
