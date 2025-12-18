@@ -28,21 +28,23 @@ import Inicio from '@/pages/inicio/Inicio';
 import GestionOrganizacional from '@/pages/inicio/GestionOrganizacional';
 
 import SectorInicio from './pages/sector/SectorInicio';
-import EconomiaInicio from './pages/economia/EconomiaInicio';
-import EspeciesAprovechadas from './pages/economia/EspeciesAprovechadas';
-import Proveedores from './pages/economia/Proveedores';
-import TransformacionIndustrial from './pages/economia/TransformacionIndustrial';
-import VolumenMovilizado from './pages/economia/VolumenMovilizado';
-import Concesiones from './pages/economia/Concesiones';
-import Exportaciones from './pages/economia/Exportaciones';
-import Importaciones from './pages/economia/Importaciones';
-import BalanzaComercial from './pages/economia/BalanzaComercial';
-import OfertaForestal from './pages/economia/OfertaForestal';
-import ConsumoIntermedio from './pages/economia/ConsumoIntermedio';
-import UtilizacionTotal from './pages/economia/UtilizacionTotal';
-import ConsumoIntensidad from './pages/economia/ConsumoIntensidad';
-import CostosPlantaciones from './pages/economia/CostosPlantaciones';
-import GeovisorCostos from './pages/economia/GeovisorCostos';
+import EconomiaInicio from '@/pages/economia/EconomiaInicio';
+import EntidadesPNF from '@/pages/economia/EntidadesPNF';
+import Proveedores from '@/pages/economia/Proveedores';
+import EspeciesAprovechadas from '@/pages/economia/EspeciesAprovechadas';
+import TransformacionIndustrial from '@/pages/economia/TransformacionIndustrial';
+import VolumenMovilizado from '@/pages/economia/VolumenMovilizado';
+import Concesiones from '@/pages/economia/Concesiones';
+import Exportaciones from '@/pages/economia/Exportaciones';
+import Importaciones from '@/pages/economia/Importaciones';
+import BalanzaComercial from '@/pages/economia/BalanzaComercial';
+import OfertaForestal from '@/pages/economia/OfertaForestal';
+import ConsumoIntermedio from '@/pages/economia/ConsumoIntermedio';
+import UtilizacionTotal from '@/pages/economia/UtilizacionTotal';
+import ConsumoIntensidad from '@/pages/economia/ConsumoIntensidad';
+import CostosPlantaciones from '@/pages/economia/CostosPlantaciones';
+import GeovisorCostos from '@/pages/economia/GeovisorCostos';
+
 import FronteraAgricola from '@/pages/espacial/planificacion/FronteraAgricola';
 import ZonificacionCultivos from '@/pages/espacial/planificacion/ZonificacionCultivos';
 import ZonasSusceptibles from '@/pages/espacial/planificacion/ZonasSusceptibles';
@@ -159,6 +161,7 @@ function App() {
           <Route path="economia" element={<EconomiaLayout />}>
             <Route index element={<Navigate to="inicio" replace />} />
             <Route path="inicio" element={<EconomiaInicio />} />
+            <Route path="entidades-pnf" element={<EntidadesPNF />} />
             <Route path="proveedores" element={<Proveedores />} />
             <Route path="especies" element={<EspeciesAprovechadas />} />
             <Route path="precios" element={<Precios />} />

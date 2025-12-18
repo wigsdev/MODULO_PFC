@@ -1,0 +1,601 @@
+{
+  "metadata": {
+    "title": "Entidades Ejecutoras de Planes de Negocios Forestales",
+    "source": "SERFOR (2024)",
+    "lastUpdated": "2025-12-18"
+  },
+  "kpi": {
+    "totalEntidades": 54,
+    "topRegion": "Junín",
+    "topRegionCount": 18,
+    "anio": 2024
+  },
+  "charts": {
+    "byRegion": [
+      {
+        "name": "Junín",
+        "value": 18
+      },
+      {
+        "name": "Ancash",
+        "value": 12
+      },
+      {
+        "name": "Cajamarca",
+        "value": 9
+      },
+      {
+        "name": "San Martín",
+        "value": 5
+      },
+      {
+        "name": "Pasco",
+        "value": 4
+      },
+      {
+        "name": "Huánuco",
+        "value": 4
+      },
+      {
+        "name": "Madre de Dios",
+        "value": 2
+      }
+    ],
+    "byConcurso": [
+      {
+        "name": "CONCURSO-2024-0002",
+        "value": 36
+      },
+      {
+        "name": "CONCURSO-2024-0001",
+        "value": 17
+      },
+      {
+        "name": "CONCURSO-2024-0003",
+        "value": 1
+      }
+    ]
+  },
+  "lista": [
+    {
+      "id": 1,
+      "entidad": "CC.CC. Palaco",
+      "distrito": "Chongos Alto",
+      "provincia": "Huancayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 2,
+      "entidad": "CC.CC. Raquina",
+      "distrito": "Pucará",
+      "provincia": "Huancayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 3,
+      "entidad": "CC.CC. Pumpunya",
+      "distrito": "Chongos Bajo",
+      "provincia": "Chupaca",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 4,
+      "entidad": "CC.CC. Ingenio",
+      "distrito": "Ingenio",
+      "provincia": "Huancayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 5,
+      "entidad": "CC.CC. Jatun Suclla",
+      "distrito": "Pucara",
+      "provincia": "Huancayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 6,
+      "entidad": "CC.CC. La Punta",
+      "distrito": "Sapallanga",
+      "provincia": "Huancayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 7,
+      "entidad": "CC.CC. Muquiyauyo",
+      "distrito": "Muquiyauyo",
+      "provincia": "Jauja",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 8,
+      "entidad": "CC.CC. Huaripampa",
+      "distrito": "Huaripampa",
+      "provincia": "Jauja",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 9,
+      "entidad": "CC.CC. Chacapalpa",
+      "distrito": "Chacapalpa",
+      "provincia": "Jauja",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 10,
+      "entidad": "CC.CC. Mito",
+      "distrito": "Mito",
+      "provincia": "Concepción",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 11,
+      "entidad": "CC.CC. Huertas",
+      "distrito": "Huertas",
+      "provincia": "Jauja",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 12,
+      "entidad": "CC.CC. Muqui",
+      "distrito": "Muqui",
+      "provincia": "Jauja",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 13,
+      "entidad": "ASOCIACION DE AGRICULTORES Y PRODUCTORES NOMATSIGENGA DE CUBANTIA",
+      "distrito": "San Martin de Pangoa",
+      "provincia": "Satipo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 14,
+      "entidad": "CC.NN. Bajo Quimiriki",
+      "distrito": "Pichanaqui",
+      "provincia": "Chanchamayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 15,
+      "entidad": "CC.NN. Capachari",
+      "distrito": "Pichanaqui",
+      "provincia": "Chanchamayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 16,
+      "entidad": "COOPERATIVA AGRARIA FORESTAL INTERCULTURAL PERU VERDE LTDA - COOP. PERU VERDE",
+      "distrito": "Pichanaqui",
+      "provincia": "Pichanaqui",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 17,
+      "entidad": "CC.NN. San Lorenzo de Autiki",
+      "distrito": "Pichanaqui",
+      "provincia": "Chanchamayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 18,
+      "entidad": "CC.NN. Shankivironi",
+      "distrito": "Perene",
+      "provincia": "Chanchamayo",
+      "region": "Junín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 19,
+      "entidad": "CC.CC. Huasta",
+      "distrito": "Huasta",
+      "provincia": "Bolognesi",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 20,
+      "entidad": "CC.CC. Cajacay",
+      "distrito": "Cajacay",
+      "provincia": "Bolognesi",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 21,
+      "entidad": "CC.CC. Ticllos",
+      "distrito": "Ticllos",
+      "provincia": "Bolognesi",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 22,
+      "entidad": "CC.CC. Yanas",
+      "distrito": "Huacchis",
+      "provincia": "Huari",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 23,
+      "entidad": "CC.CC. Cordillera Blanca",
+      "distrito": "Catac",
+      "provincia": "Recuay",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 24,
+      "entidad": "CC.CC. Santo Toribio de Macate",
+      "distrito": "Macate",
+      "provincia": "Santa",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 25,
+      "entidad": "CC.CC. JOSE MARTIN RIOS SOTERO - CONOPA",
+      "distrito": "Pomabamba",
+      "provincia": "Pomabamba",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 26,
+      "entidad": "CC.CC. 7 Imperios",
+      "distrito": "Marcara",
+      "provincia": "Carhuaz",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 27,
+      "entidad": "CC.CC. Huayllapampa",
+      "distrito": "Huayllapmapa",
+      "provincia": "Recuay",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 28,
+      "entidad": "CC.CC. Paucas",
+      "distrito": "Paucas",
+      "provincia": "Huari",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 29,
+      "entidad": "CC.CC. Paras",
+      "distrito": "Mirgas",
+      "provincia": "Antonio Raymindi",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 30,
+      "entidad": "CC.CC. Recuay",
+      "distrito": "Recuay",
+      "provincia": "Recuay",
+      "region": "Ancash",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 31,
+      "entidad": "BF Tocache SAC",
+      "distrito": "Tocache",
+      "provincia": "Tocache",
+      "region": "San Martín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 32,
+      "entidad": "CC.NN. Shitariyacu",
+      "distrito": "Zapatero",
+      "provincia": "Lamas",
+      "region": "San Martín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 33,
+      "entidad": "CC.NN. Shampuyacu",
+      "distrito": "Awajun",
+      "provincia": "Rioja",
+      "region": "San Martín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 34,
+      "entidad": "Asociación Ikam y café Awajun Alto Mayo",
+      "distrito": "Awajun",
+      "provincia": "Rioja",
+      "region": "San Martín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 35,
+      "entidad": "Agroforestal Sarayacu SAC",
+      "distrito": "Caynarachi",
+      "provincia": "Lamas",
+      "region": "San Martín",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 36,
+      "entidad": "Fundo Gramazú S.A.C.",
+      "distrito": "Huancabamba",
+      "provincia": "Oxapampa",
+      "region": "Pasco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 37,
+      "entidad": "REFORESTADORES Y AGRICULTORES PRIVADOS ASOCIADOS - REFAGRIP",
+      "distrito": "Chontabamba",
+      "provincia": "Oxapampa",
+      "region": "Pasco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 38,
+      "entidad": "Forestal PAMA SAC",
+      "distrito": "Huancabamba",
+      "provincia": "Oxapampa",
+      "region": "Pasco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 39,
+      "entidad": "INVERSIONES Y SERVICIOS FORESTA S.A.C.",
+      "distrito": "Palcazu",
+      "provincia": "Oxapampa",
+      "region": "Pasco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 40,
+      "entidad": "Bosques silvestres SAC",
+      "distrito": "Honoria",
+      "provincia": "Puerto Inca",
+      "region": "Huánuco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 41,
+      "entidad": "Atlantexco forestal SAC",
+      "distrito": "Yuyapichis",
+      "provincia": "Puerto Inca",
+      "region": "Huánuco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 42,
+      "entidad": "Diacos SAC",
+      "distrito": "Puerto Inca",
+      "provincia": "Puerto Inca",
+      "region": "Huánuco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 43,
+      "entidad": "JHYPERIONM SAC",
+      "distrito": "Puerto Inca",
+      "provincia": "Puerto Inca",
+      "region": "Huánuco",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 44,
+      "entidad": "ASOCIACION DE AGROPECUARIOS Y FORESTALES LOS RIELES",
+      "distrito": "Encañada",
+      "provincia": "Cajamarca",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 45,
+      "entidad": "ASOCIACION DE PRODUCTORES EL CHAQUIL DE YANACANCHA GRANDE",
+      "distrito": "Encañada",
+      "provincia": "Cajamarca",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 46,
+      "entidad": "Cooperativa Agraria Jalca Verde",
+      "distrito": "Encañada",
+      "provincia": "Cajamarca",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 47,
+      "entidad": "CC.CC. De la Encañada",
+      "distrito": "Encañada",
+      "provincia": "Cajamarca",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 48,
+      "entidad": "Asociacion El Valle Pachachaca",
+      "distrito": "Encañada",
+      "provincia": "Cajamarca",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 49,
+      "entidad": "JL Mercadona EIRL",
+      "distrito": "Jaen y Pirias",
+      "provincia": "Jaen",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 50,
+      "entidad": "COMITÉ DE PRODUCTORES AGRARIOS \"SAN FELIPE\"",
+      "distrito": "San Jose de Lourdes",
+      "provincia": "San Ignacio",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 51,
+      "entidad": "CC.CC. San Miguel de Tabaconas",
+      "distrito": "Tabaconas",
+      "provincia": "San Ignacio",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 52,
+      "entidad": "H.A.B.C. Cometa Ventigris EIRL",
+      "distrito": "Prado",
+      "provincia": "San Miguel",
+      "region": "Cajamarca",
+      "convocatoria": "BPS-PIF-2024-0001",
+      "concurso": "CONCURSO-2024-0001",
+      "anio": 2024
+    },
+    {
+      "id": 53,
+      "entidad": "DIS - FRUTA TAMBOPATA E.I.R.L.",
+      "distrito": "Tambopata",
+      "provincia": "Madre de Dios",
+      "region": "Madre de Dios",
+      "convocatoria": "BPS-PIF-2024-0002",
+      "concurso": "CONCURSO-2024-0002",
+      "anio": 2024
+    },
+    {
+      "id": 54,
+      "entidad": "Agroindustrias Maranguape S.R.L",
+      "distrito": "Iñapari",
+      "provincia": "Tahuamanu",
+      "region": "Madre de Dios",
+      "convocatoria": "BPS-PIF-2024-0003",
+      "concurso": "CONCURSO-2024-0003",
+      "anio": 2024
+    }
+  ]
+}

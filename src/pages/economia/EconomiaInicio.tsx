@@ -14,7 +14,8 @@ import {
     Coins,
     Map,
     Sprout,
-    Users
+    Users,
+    Award
 } from 'lucide-react';
 
 const EconomiaInicio = () => {
@@ -25,6 +26,13 @@ const EconomiaInicio = () => {
             icon: Users,
             link: '/economia/proveedores',
             color: 'bg-indigo-600'
+        },
+        {
+            title: 'Entidades PNF',
+            description: 'Entidades Ejecutoras de Planes de Negocios Forestales.',
+            icon: Award,
+            link: '/economia/entidades-pnf',
+            color: 'bg-emerald-600'
         },
         {
             title: 'Esp. Aprovechadas',
