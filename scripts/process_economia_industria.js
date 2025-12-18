@@ -2,7 +2,7 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
-const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.3.BD_CTP_REGISTRO_SNIFFS.csv');
+const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.5.BD_CTP_REGISTRO_SNIFFS.csv');
 const OUTPUT_FILE = path.join(__dirname, '../public/data/economia/industria.json');
 
 console.log('Processing Economia 4.1.3: Industria CTP...');

@@ -2,7 +2,7 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
-const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.1.BD_ESPECIES_APROVECHADAS_PFC.csv');
+const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.3.BD_ESPECIES_APROVECHADAS_PFC.csv');
 const OUTPUT_FILE = path.join(__dirname, '../public/data/economia/especies_aprovechadas.json');
 
 console.log('Processing Economia 4.1.1: Especies Aprovechadas...');

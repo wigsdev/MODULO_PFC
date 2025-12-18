@@ -2,7 +2,7 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
-const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.2.BD_PRECIOS_MADERAS.csv');
+const INPUT_FILE = path.join(__dirname, '../data/IV. ECONOMIA/4.1.4.BD_PRECIOS_MADERAS.csv');
 const OUTPUT_FILE = path.join(__dirname, '../public/data/economia/precios_madera.json');
 
 console.log('Processing Economia 4.1.2: Precios Maderas...');
@@ -51,12 +51,12 @@ try {
         const year = parseInt(r['AÑO']);
         if (year) yearCounts[year] = (yearCounts[year] || 0) + 1;
     });
-    
+
     // Exclude current year if it has less than 30% of last complete year's records
     const lastCompleteYear = currentYear - 1;
-    const excludeCurrentYear = yearCounts[currentYear] && yearCounts[lastCompleteYear] && 
+    const excludeCurrentYear = yearCounts[currentYear] && yearCounts[lastCompleteYear] &&
         (yearCounts[currentYear] < yearCounts[lastCompleteYear] * 0.3);
-    
+
     if (excludeCurrentYear) {
         console.log(`Note: Excluding ${currentYear} from evolution charts (only ${yearCounts[currentYear]} records vs ${yearCounts[lastCompleteYear]} in ${lastCompleteYear})`);
     }
