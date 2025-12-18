@@ -60,7 +60,12 @@ export default function CambioHistorico() {
                 if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
                 return res.json();
             })
-            .then(d => setData(d))
+            .then(d => {
+                console.log('🔍 [DEBUG] CambioHistorico Data Received:', d);
+                console.log('🔍 [DEBUG] KPIs:', d?.kpi);
+                console.log('🔍 [DEBUG] Serie:', d?.serieHistorica);
+                setData(d);
+            })
             .catch(err => {
                 console.error('Error loading data:', err);
                 setData(null); // Ensure data is null on error
