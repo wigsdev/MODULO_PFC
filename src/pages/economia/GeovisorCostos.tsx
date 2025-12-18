@@ -39,7 +39,7 @@ interface GeoData {
 }
 
 // Placeholder URL - will be updated when geovisor is deployed
-const GEOVISOR_URL = "https://geovisor-costos-pfc.example.com"; // TODO: Update with actual URL
+const GEOVISOR_URL = "https://geovisor-costos-web.up.railway.app/";
 
 const GeovisorCostos = () => {
     const [data, setData] = useState<GeoData | null>(null);
