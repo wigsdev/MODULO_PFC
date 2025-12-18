@@ -1,0 +1,741 @@
+
+ RUN  v4.0.16 C:/Users/WIGUSA/Documents/GitHub/MODULO_PFC
+
+(node:11860) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/WIGUSA/Documents/GitHub/MODULO_PFC/postcss.config.js?t=1766072202522 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to C:\Users\WIGUSA\Documents\GitHub\MODULO_PFC\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ src/pages/espacial/ambiental/__tests__/AutoridadesAmbientales.test.tsx > AutoridadesAmbientales Component > shows loading state initially 105ms
+ × src/pages/espacial/ambiental/__tests__/AutoridadesAmbientales.test.tsx > AutoridadesAmbientales Component > renders data correctly when fetch succeeds 1039ms
+   → Found multiple elements with the text: Entity 1
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<p[39m
+  [33mclass[39m=[32m"text-xs text-gray-600 mb-2"[39m
+[36m>[39m
+  [0mEntity 1[0m
+[36m</p>[39m
+
+Ignored nodes: comments, script, style
+[36m<td[39m
+  [33mclass[39m=[32m"px-3 py-2 text-gray-700 max-w-[200px]"[39m
+[36m>[39m
+  [0mEntity 1[0m
+[36m</td>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"space-y-4"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 px-4 h-[54px] flex items-center"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex items-center gap-3"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-building2 lucide-building-2 text-blue-600"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M10 12h4"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M10 8h4"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M14 21v-3a2 2 0 0 0-4 0v3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [36m<div>[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"text-xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0mAutoridades Ambientales[0m
+            [36m</h1>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs text-gray-500"[39m
+            [36m>[39m
+              [0mFuente: [0m
+              [0mTest Source[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-4"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase"[39m
+          [36m>[39m
+            [0mTotal Entidades[0m
+          [36m</p>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+          [36m>[39m
+            [0m10[0m
+          [36m</h3>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-indigo-500 p-4"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-globe"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"12"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"12"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M2 12h20"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Nivel Nacional[0m
+          [36m</p>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+          [36m>[39m
+            [0m5[0m
+          [36m</h3>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-green-500 p-4"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-map-pin"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"12"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"12"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"10"[39m
+                [33mr[39m=[32m"3"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Nivel Regional[0m
+          [36m</p>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+          [36m>[39m
+            [0m5[0m
+          [36m</h3>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 p-4"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex justify-between items-center mb-4"[39m
+        [36m>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-sm font-bold text-gray-700 uppercase"[39m
+          [36m>[39m
+            [0mDirectorio de Entidades[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex gap-2"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"px-3 py-1 text-xs rounded-full bg-blue-600 text-white"[39m
+            [36m>[39m
+              [0mTodas[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"px-3 py-1 text-xs rounded-full bg-gray-100 te...
+
+Ignored nodes: comments, script, style
+[36m<html>[39m
+  [36m<head />[39m
+  [36m<body>[39m
+    [36m<div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"space-y-4"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 px-4 h-[54px] flex items-center"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex items-center gap-3"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-building2 lucide-building-2 text-blue-600"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M10 12h4"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M10 8h4"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M14 21v-3a2 2 0 0 0-4 0v3"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [36m<div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"text-xl font-bold text-gray-800"[39m
+              [36m>[39m
+                [0mAutoridades Ambientales[0m
+              [36m</h1>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-xs text-gray-500"[39m
+              [36m>[39m
+                [0mFuente: [0m
+                [0mTest Source[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase"[39m
+            [36m>[39m
+              [0mTotal Entidades[0m
+            [36m</p>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0m10[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-indigo-500 p-4"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-globe"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"12"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"12"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<circle[39m
+                  [33mcx[39m=[32m"12"[39m
+                  [33mcy[39m=[32m"12"[39m
+                  [33mr[39m=[32m"10"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M2 12h20"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+              [0m Nivel Nacional[0m
+            [36m</p>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0m5[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-green-500 p-4"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-map-pin"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"12"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"12"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"[39m
+                [36m/>[39m
+                [36m<circle[39m
+                  [33mcx[39m=[32m"12"[39m
+                  [33mcy[39m=[32m"10"[39m
+                  [33mr[39m=[32m"3"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+              [0m Nivel Regional[0m
+            [36m</p>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0m5[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 p-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex justify-between items-center mb-4"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-sm font-bold text-gray-700 uppercase"[39m
+            [36m>[39m
+              [0mDirectorio de Entidades[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"...
+ ✓ src/pages/espacial/ambiental/__tests__/AutoridadesAmbientales.test.tsx > AutoridadesAmbientales Component > handles missing or malformed data gracefully (Defense against undefined) 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/espacial/ambiental/__tests__/AutoridadesAmbientales.test.tsx > AutoridadesAmbientales Component > renders data correctly when fetch succeeds
+TestingLibraryElementError: Found multiple elements with the text: Entity 1
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<p[39m
+  [33mclass[39m=[32m"text-xs text-gray-600 mb-2"[39m
+[36m>[39m
+  [0mEntity 1[0m
+[36m</p>[39m
+
+Ignored nodes: comments, script, style
+[36m<td[39m
+  [33mclass[39m=[32m"px-3 py-2 text-gray-700 max-w-[200px]"[39m
+[36m>[39m
+  [0mEntity 1[0m
+[36m</td>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"space-y-4"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 px-4 h-[54px] flex items-center"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex items-center gap-3"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-building2 lucide-building-2 text-blue-600"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M10 12h4"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M10 8h4"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M14 21v-3a2 2 0 0 0-4 0v3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [36m<div>[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"text-xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0mAutoridades Ambientales[0m
+            [36m</h1>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs text-gray-500"[39m
+            [36m>[39m
+              [0mFuente: [0m
+              [0mTest Source[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-4"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase"[39m
+          [36m>[39m
+            [0mTotal Entidades[0m
+          [36m</p>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+          [36m>[39m
+            [0m10[0m
+          [36m</h3>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-indigo-500 p-4"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-globe"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"12"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"12"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M2 12h20"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Nivel Nacional[0m
+          [36m</p>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+          [36m>[39m
+            [0m5[0m
+          [36m</h3>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-green-500 p-4"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-map-pin"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"12"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"12"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"10"[39m
+                [33mr[39m=[32m"3"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Nivel Regional[0m
+          [36m</p>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+          [36m>[39m
+            [0m5[0m
+          [36m</h3>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 p-4"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex justify-between items-center mb-4"[39m
+        [36m>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"text-sm font-bold text-gray-700 uppercase"[39m
+          [36m>[39m
+            [0mDirectorio de Entidades[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex gap-2"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"px-3 py-1 text-xs rounded-full bg-blue-600 text-white"[39m
+            [36m>[39m
+              [0mTodas[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"px-3 py-1 text-xs rounded-full bg-gray-100 te...
+
+Ignored nodes: comments, script, style
+[36m<html>[39m
+  [36m<head />[39m
+  [36m<body>[39m
+    [36m<div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"space-y-4"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 px-4 h-[54px] flex items-center"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex items-center gap-3"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-building2 lucide-building-2 text-blue-600"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M10 12h4"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M10 8h4"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M14 21v-3a2 2 0 0 0-4 0v3"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [36m<div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"text-xl font-bold text-gray-800"[39m
+              [36m>[39m
+                [0mAutoridades Ambientales[0m
+              [36m</h1>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-xs text-gray-500"[39m
+              [36m>[39m
+                [0mFuente: [0m
+                [0mTest Source[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-3 gap-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-blue-500 p-4"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase"[39m
+            [36m>[39m
+              [0mTotal Entidades[0m
+            [36m</p>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0m10[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-indigo-500 p-4"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-globe"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"12"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"12"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<circle[39m
+                  [33mcx[39m=[32m"12"[39m
+                  [33mcy[39m=[32m"12"[39m
+                  [33mr[39m=[32m"10"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M2 12h20"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+              [0m Nivel Nacional[0m
+            [36m</p>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0m5[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border-l-4 border-green-500 p-4"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold text-gray-500 uppercase flex items-center gap-1"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-map-pin"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"12"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"12"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"[39m
+                [36m/>[39m
+                [36m<circle[39m
+                  [33mcx[39m=[32m"12"[39m
+                  [33mcy[39m=[32m"10"[39m
+                  [33mr[39m=[32m"3"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+              [0m Nivel Regional[0m
+            [36m</p>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-2xl font-bold text-gray-800"[39m
+            [36m>[39m
+              [0m5[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"bg-white rounded-lg shadow-sm border border-gray-100 p-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex justify-between items-center mb-4"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"text-sm font-bold text-gray-700 uppercase"[39m
+            [36m>[39m
+              [0mDirectorio de Entidades[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"...
+ ❯ waitForWrapper node_modules/@testing-library/dom/dist/wait-for.js:163:27
+ ❯ src/pages/espacial/ambiental/__tests__/AutoridadesAmbientales.test.tsx:35:15
+     33|         render(<AutoridadesAmbientales />);
+     34| 
+     35|         await waitFor(() => {
+       |               ^
+     36|             expect(screen.getByText('Autoridades Ambientales')).toBeIn…
+     37|             expect(screen.getByText('Entity 1')).toBeInTheDocument();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  10:36:43
+   Duration  4.82s (transform 364ms, setup 595ms, import 600ms, tests 1.16s, environment 1.85s)
+
