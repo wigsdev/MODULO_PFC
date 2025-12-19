@@ -1,286 +1,71 @@
-# 🌲 MODULO PFC - Sistema de Información para Plantaciones Forestales Comerciales
+# VISUALIZACIÓN INTERACTIVA DE LA PROPUESTA DE MAPA DE SITIO (OBSE-PFC)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-green.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/React-19.x-blue.svg" alt="React"/>
-  <img src="https://img.shields.io/badge/TypeScript-5.x-blue.svg" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Vite-7.x-purple.svg" alt="Vite"/>
-  <img src="https://img.shields.io/badge/TailwindCSS-3.x-cyan.svg" alt="Tailwind"/>
-  <img src="https://img.shields.io/badge/License-ISC-yellow.svg" alt="License"/>
+  <img src="https://img.shields.io/badge/Estado-Prototipo%20de%20Validación-blue.svg" alt="Estado"/>
+  <img src="https://img.shields.io/badge/Alcance-Propuesta%20de%20Arquitectura-green.svg" alt="Alcance"/>
 </p>
 
 <p align="center">
-  <strong>Plataforma de visualización y análisis de datos para inversión en plantaciones forestales comerciales en Perú</strong>
+  <strong>Herramienta de demostración funcional desarrollada para visualizar la arquitectura de información propuesta para el Observatorio de Plantaciones Forestales Comerciales.</strong>
 </p>
 
 <p align="center">
-  <a href="https://wigsdev.github.io/MODULO_PFC">🔗 Demo en Vivo</a>
+  <a href="https://wigsdev.github.io/MODULO_PFC">🔗 VER DEMO INTERACTIVA</a>
 </p>
 
----
-
-## 📋 Descripción
-
-**MODULO PFC** es una aplicación web interactiva desarrollada para el **Servicio Nacional Forestal y de Fauna Silvestre (SERFOR)** del Perú. Proporciona herramientas de visualización y análisis de datos geoespaciales, económicos y sectoriales orientados a facilitar la toma de decisiones para inversiones en plantaciones forestales comerciales.
-
-### 🎯 Objetivo Principal
-
-Centralizar y visualizar información relevante para inversionistas interesados en el sector forestal peruano, presentando datos de:
-- Zonificación y aptitud de tierras
-- Información ambiental y cobertura boscosa
-- Estadísticas de producción y comercio
-- Indicadores económicos del sector
-- Sistemas de información disponibles
+> [!NOTE]
+> **Aviso de Alcance:** Este desarrollo informático **excede los requisitos contractuales** (Mapa de Sitio Documental) y se entrega como un "Valor Agregado" del equipo consultor. Su objetivo es permitir a los tomadores de decisiones (SERFOR) visualizar de manera realista cómo se organizará la información. **La implementación final, despliegue y mantenimiento de la plataforma recaerá sobre las áreas de TI competentes del Estado.**
 
 ---
 
-## ✨ Características Principales
+## 🏗️ Propósito del Repositorio
 
-### 📊 Visualizaciones Interactivas
-- **KPIs dinámicos** con indicadores clave por sección
-- **Gráficos interactivos** (barras, líneas, tortas, áreas apiladas) con Recharts
-- **Tablas filtables y paginadas** para grandes conjuntos de datos
-- **Mapas de calor** y distribución geográfica
+Este código fuente constituye la **materialización digital de la "Propuesta de Mapa de Sitio"**. A diferencia de un diagrama estático en papel, este prototipo permite navegar por la estructura propuesta para validar la experiencia de usuario (UX) y la lógica de negocio antes de su desarrollo oficial.
 
-### 🗂️ Módulos del Sistema
-
-| Módulo | Descripción |
-|--------|-------------|
-| **I. Sector Forestal** | Indicadores macro del sector forestal peruano |
-| **II. Espacial** | Datos geoespaciales, zonificación, planificación y comercio |
-| **III. Economía** | Análisis económico, oferta forestal y proveedores |
-| **IV. Geovisor** | Visualización cartográfica interactiva |
-
-### 🔧 Arquitectura Técnica
-- **ETL automatizado**: Scripts Node.js para procesamiento de CSV/Excel → JSON
-- **Build pipeline**: Generación automática de datos en cada despliegue
-- **Responsive design**: Adaptable a cualquier dispositivo
-- **Deploy automático**: GitHub Actions + GitHub Pages
+### Objetivos del Prototipo
+1.  **Validar la Arquitectura:** Demostrar que la organización propuesta (Espacial, Economía, Sector) es intuitiva y funcional.
+2.  **Facilitar la Decisión:** Permitir a los funcionarios "tocar" la propuesta y entender el flujo de datos.
+3.  **Reducir Riesgos:** Identificar brechas de información o inconsistencias lógicas antes de invertir en el desarrollo de software definitivo.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🗺️ Estructura de la Propuesta (Mapa de Sitio)
 
-### Frontend
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| React | 19.x | UI Framework |
-| TypeScript | 5.x | Type Safety |
-| Vite | 7.x | Build Tool |
-| TailwindCSS | 3.x | Estilos |
-| Recharts | 3.x | Gráficos |
-| React Router | 7.x | Navegación |
-| Lucide React | 0.5x | Iconografía |
+La navegación del prototipo refleja fielmente la jerarquía de información presentada en el informe técnico, sirviendo como **medio de demostración** de las capacidades funcionales propuestas:
 
-### ETL & Data Processing
-| Tecnología | Propósito |
-|------------|-----------|
-| Node.js | Scripts de procesamiento |
-| xlsx | Parsing de Excel |
+### 1. 🌍 Módulo Espacial (Geovisor de Mapas)
+*   **Concepto:** Visualizador demostrativo de interoperabilidad espacial.
+*   **Propósito de la Demostración:** Ilustrar **cómo se podrían presentar y gestionar** las capas vectoriales oficiales (Zonificación, Bosques) en un entorno web ágil, permitiendo a la autoridad validar la utilidad de la superposición de datos para la toma de decisiones.
 
-### DevOps
-| Herramienta | Propósito |
-|-------------|-----------|
-| GitHub Actions | CI/CD Pipeline |
-| GitHub Pages | Hosting |
-| gh-pages | Deployment |
+### 2. 💰 Módulo de Economía (Geovisor de Costos)
+*   **Concepto:** Calculadora demostrativa de inversión.
+*   **Propósito de la Demostración:** Enseñar **cómo se pueden calcular de forma interactiva** los costos de inversión, transformando datos estáticos en simulaciones dinámicas. Permite visualizar el potencial de una herramienta que diferencie costos por especie (Pino, Eucalipto) y zona geográfica.
+
+### 3. 📊 Módulo Sectorial
+*   **Propuesta:** Tableros de control (Dashboards) para la Alta Dirección.
+*   **Demostración:** Gráficos reactivos que visualizan la producción nacional y balanza comercial.
 
 ---
 
-## 📁 Estructura del Proyecto
+## 🛠️ Stack Tecnológico (Demo)
 
-```
-MODULO_PFC/
-├── 📂 data/                    # Datos fuente (CSV, Excel)
-│   └── II. ESPACIAL/
-│       └── 02_DATA_ATRIBUTOS/  # Archivos CSV originales
-├── 📂 public/
-│   └── data/                   # JSON generados (consumidos por frontend)
-│       ├── espacial/
-│       ├── economia/
-│       └── sector/
-├── 📂 scripts/                 # ETL Scripts (Node.js)
-│   ├── update_data.js          # Orquestador principal
-│   ├── process_*.js            # Scripts de procesamiento individual
-│   └── ...
-├── 📂 src/
-│   ├── components/             # Componentes reutilizables
-│   ├── pages/                  # Páginas por módulo
-│   │   ├── espacial/           # Módulo Espacial (zonificación, comercial, etc.)
-│   │   ├── economia/           # Módulo Economía
-│   │   └── sector/             # Módulo Sector
-│   ├── App.tsx                 # Router principal
-│   └── main.tsx                # Entry point
-├── 📂 docs/                    # Documentación técnica
-├── 📜 package.json
-├── 📜 vite.config.ts
-├── 📜 tailwind.config.js
-└── 📜 tsconfig.json
-```
+Para construir esta visualización, se utilizaron tecnologías web modernas que permiten una rápida iteración. *Nota: Este stack es referencial para el prototipo; la implementación final dependerá de los estándares de la Oficina de Tecnologías de la Información (OTI) del SERFOR.*
+
+| Capa | Tecnología Usada (Demo) | Propósito en la Propuesta |
+|------|-------------------------|---------------------------|
+| **Frontend** | React 19 + TypeScript | Demostrar interactividad y respuesta inmediata. |
+| **Estilos** | TailwindCSS | Proponer una línea gráfica moderna y limpia (UI). |
+| **Mapas** | Leaflet | Validar la visualización de capas WMS/GeoJSON. |
+| **Gráficos** | Recharts | Visualizar la presentación de indicadores KPIs. |
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Acceso a la Visualización
 
-### Prerrequisitos
-- Node.js 18+ 
-- npm 9+
-
-### Instalación
-
-```bash
-# Clonar repositorio
-git clone https://github.com/wigsdev/MODULO_PFC.git
-cd MODULO_PFC
-
-# Instalar dependencias
-npm install
-```
-
-### Desarrollo
-
-```bash
-# Iniciar servidor de desarrollo
-npm run dev
-
-# Aplicación disponible en http://localhost:5173
-```
-
-### Build de Producción
-
-```bash
-# Genera JSON desde datos fuente + compila TypeScript + build Vite
-npm run build
-
-# Preview del build
-npm run preview
-```
-
-### Despliegue
-
-```bash
-# Deploy a GitHub Pages
-npm run deploy
-```
+*   **URL Pública:** [https://wigsdev.github.io/MODULO_PFC](https://wigsdev.github.io/MODULO_PFC)
+*   **Código Fuente:** [https://github.com/wigsdev/MODULO_PFC](https://github.com/wigsdev/MODULO_PFC)
 
 ---
-
-## 📊 Pipeline de Datos (ETL)
-
-El sistema incluye un pipeline ETL automatizado que transforma los datos fuente en JSON optimizados para el frontend.
-
-```mermaid
-graph LR
-    A[CSV/Excel] -->|Node.js Scripts| B[JSON Procesados]
-    B -->|Vite Build| C[Aplicación React]
-    C -->|GitHub Actions| D[GitHub Pages]
-```
-
-### Scripts ETL Disponibles
-
-| Script | Datos Procesados |
-|--------|------------------|
-| `process_bosques.js` | Superficie cubierta por bosque |
-| `process_cambio.js` | Cambio histórico de cobertura |
-| `process_comercial.js` | Estadísticas comerciales |
-| `process_otros.js` | Registro PFC, Tierras, Bosque/No Bosque |
-| `process_economia_*.js` | Datos económicos (precios, industria) |
-| ... | + 30 scripts adicionales |
-
-### Ejecutar ETL Manualmente
-
-```bash
-# Ejecutar script específico
-node scripts/process_bosques.js
-
-# Ejecutar todos los scripts
-node scripts/update_data.js
-```
-
----
-
-## 🌐 Demo
-
-La aplicación está desplegada en GitHub Pages:
-
-🔗 **[https://wigsdev.github.io/MODULO_PFC](https://wigsdev.github.io/MODULO_PFC)**
-
----
-
-## 📈 Módulos Implementados
-
-### II. Espacial
-
-| Subsección | Página | Estado |
-|------------|--------|--------|
-| 2.1 Zonificación | Aptitud de Tierras, Frontera Agrícola | ✅ |
-| 2.2 Cobertura Boscosa | Superficie, Cambio Histórico, Indicadores | ✅ |
-| 2.3 Información Ambiental | Superficie Cubierta, Autoridades, Cambio Histórico | ✅ |
-| 2.4 Producción Forestal | Aprovechamientos, Movilizaciones, Decomisos, Viveros, Regentes | ✅ |
-| 2.5 Información Comercial | Estudios de Mercado, Estadísticas, Boletines | ✅ |
-| 2.6 Otros Datos | Registro PFC, Tierras, Bosque/No Bosque, Sistemas Info | ✅ |
-| 2.7 Planificación | Zonas Susceptibles, Áreas de Formalización | ✅ |
-
-### III. Economía
-
-| Subsección | Página | Estado |
-|------------|--------|--------|
-| 4.1 Oferta Forestal | Regional, Especies, Precios, Industria | ✅ |
-| 4.2 Proveedores | Bienes y Servicios | ✅ |
-
-### I. Sector Forestal
-
-| Página | Estado |
-|--------|--------|
-| Dashboard Principal | ✅ |
-| Deforestación | ✅ |
-| Especies Forestales | ✅ |
-| Reservas y BPP | ✅ |
-
----
-
-## 🤝 Contribución
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el repositorio
-2. Crea una rama feature (`git checkout -b feature/NuevaCaracteristica`)
-3. Commit tus cambios (`git commit -m 'feat: agregar nueva característica'`)
-4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
-5. Abre un Pull Request
-
-### Convención de Commits
-
-Utilizamos [Conventional Commits](https://www.conventionalcommits.org/):
-
-- `feat:` Nueva funcionalidad
-- `fix:` Corrección de bugs
-- `docs:` Documentación
-- `style:` Estilos (sin cambios de lógica)
-- `refactor:` Refactorización
-- `data:` Cambios en datos/ETL
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **ISC**.
-
----
-
-## 👥 Equipo
-
-Desarrollado para el **Servicio Nacional Forestal y de Fauna Silvestre (SERFOR)** - Perú
-
----
-
-## 📞 Contacto
-
-- **Repositorio**: [github.com/wigsdev/MODULO_PFC](https://github.com/wigsdev/MODULO_PFC)
-- **Demo**: [wigsdev.github.io/MODULO_PFC](https://wigsdev.github.io/MODULO_PFC)
-
----
-
 <p align="center">
-  <sub>Hecho con ❤️ para el sector forestal peruano</sub>
+  <sub>Este software es un entregable instrumental para la validación de la Actividad 1.2.1.1 (Diseño del Observatorio). No constituye el sistema final en producción.</sub>
 </p>

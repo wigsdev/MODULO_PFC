@@ -1,15 +1,18 @@
+import { useState } from 'react';
 import { Briefcase, LayoutGrid, Users, Map, Calendar } from 'lucide-react';
 import Sidebar, { SidebarItem } from '@/components/layout/Sidebar';
-import GestionContent from './GestionContent';
-import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import LineasPrioritarias from './gestion/LineasPrioritarias';
+import Organigrama from './gestion/Organigrama';
+import RolesEntidades from './gestion/RolesEntidades';
+import AutoridadForestal from './gestion/AutoridadForestal';
+import PlanOperativo from './gestion/PlanOperativo';
 
 const GESTION_ITEMS: SidebarItem[] = [
     {
         id: 'lineas',
         label: 'Líneas Prioritarias',
         icon: LayoutGrid,
-        path: '#lineas'
+        path: '#lineas' // Retain for consistent type, but handled via state
     },
     {
         id: 'organigrama',
@@ -38,29 +41,31 @@ const GESTION_ITEMS: SidebarItem[] = [
 ];
 
 export default function GestionOrganizacional() {
-    const location = useLocation();
+    const [activeTab, setActiveTab] = useState('lineas');
 
-    // Handle hash scrolling for internal page navigation
-    useEffect(() => {
-        if (location.hash) {
-            const element = document.getElementById(location.hash.slice(1));
-            if (element) {
-                // Small timeout to allow render
-                setTimeout(() => {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-            }
+    const renderContent = () => {
+        switch (activeTab) {
+            case 'lineas': return <LineasPrioritarias />;
+            case 'organigrama': return <Organigrama />;
+            case 'roles': return <RolesEntidades />;
+            case 'autoridad': return <AutoridadForestal />;
+            case 'plan': return <PlanOperativo />;
+            default: return <LineasPrioritarias />;
         }
-    }, [location]);
+    };
 
     return (
-        <div className="flex h-full">
+        <div className="flex h-full bg-gray-50">
             <Sidebar
                 title="GESTIÓN"
                 items={GESTION_ITEMS}
+                activeId={activeTab}
+                onItemClick={(id) => setActiveTab(id)}
             />
-            <main className="flex-1 overflow-y-auto bg-gray-50 h-full relative">
-                <GestionContent />
+            <main className="flex-1 overflow-y-auto p-8">
+                <div className="max-w-6xl mx-auto">
+                    {renderContent()}
+                </div>
             </main>
         </div>
     );

@@ -16,9 +16,11 @@ export interface SidebarItem {
 interface SidebarProps {
     title: string;
     items: SidebarItem[];
+    activeId?: string;
+    onItemClick?: (id: string) => void;
 }
 
-export default function Sidebar({ title, items }: SidebarProps) {
+export default function Sidebar({ title, items, activeId, onItemClick }: SidebarProps) {
     const location = useLocation();
     // State to keep track of open menus. 
     // We can auto-expand based on current path on initial load if needed, 
@@ -31,6 +33,9 @@ export default function Sidebar({ title, items }: SidebarProps) {
 
     // Helper to check if a specific item or any of its children is active
     const isItemActive = (item: SidebarItem): boolean => {
+        if (activeId) {
+            return activeId === item.id;
+        }
         if (item.path && location.pathname === item.path) return true;
         if (item.subItems) {
             return item.subItems.some(sub => isItemActive(sub));
@@ -91,6 +96,22 @@ export default function Sidebar({ title, items }: SidebarProps) {
                     <span>{item.label}</span>
                     <ChevronRight size={14} className="ml-auto text-green-300 opacity-50" />
                 </a>
+            );
+        }
+
+        // If onItemClick is provided, use div instead of Link to prevent navigation if path defaults to #
+        if (onItemClick) {
+            return (
+                <div
+                    key={item.id}
+                    onClick={() => onItemClick(item.id)}
+                    className={commonClasses}
+                    style={{ paddingLeft: `${paddingLeft}px` }}
+                >
+                    <item.icon size={16} className={isActive ? 'text-yellow-400' : (item.highlight ? 'text-yellow-300' : 'text-green-300')} />
+                    <span>{item.label}</span>
+                    {!hasSubItems && isActive && <ChevronRight size={14} className="ml-auto text-yellow-400" />}
+                </div>
             );
         }
 

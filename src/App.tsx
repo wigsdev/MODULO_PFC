@@ -26,6 +26,7 @@ import SectorCarbono from '@/pages/sector/SectorCarbono';
 import Precios from '@/pages/economia/Precios';
 import Inicio from '@/pages/inicio/Inicio';
 import GestionOrganizacional from '@/pages/inicio/GestionOrganizacional';
+import MapaDeSitio from '@/pages/inicio/MapaDeSitio';
 
 import SectorInicio from './pages/sector/SectorInicio';
 import EconomiaInicio from '@/pages/economia/EconomiaInicio';
@@ -82,6 +83,7 @@ function App() {
           <Route index element={<Inicio />} />
           <Route path="inicio" element={<Navigate to="/" replace />} />
           <Route path="gestion/*" element={<GestionOrganizacional />} />
+          <Route path="mapa-sitio" element={<MapaDeSitio />} />
           <Route path="gestion/*" element={<GestionOrganizacional />} />
 
           {/* Espacial Routes */}
